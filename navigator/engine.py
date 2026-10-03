@@ -7,6 +7,7 @@ reports applies / unknown / superseded / not_yet_effective / pending, with the r
 
 import csv
 import json
+import math
 from dataclasses import dataclass, field
 from datetime import date
 
@@ -288,13 +289,33 @@ def lookup(addr, rules, as_of=None):
             "team_rule_id": rid,
             "result": result,
             "explanation": explain(rule, addr, result, reasons + flag_reasons),
+            "reasons": list(dict.fromkeys(reasons + flag_reasons)),
             "conflict_flag": flag,
             "needs_review": needs_review(rule),
+            "confidence": answer_confidence(rule, addr, result),
         })
     return results
 
 
 REVIEW_CONFIDENCE = 0.7
+
+
+def uses_unit_count(rule):
+    cov = rule["coverage"]
+    return bool(cov.get("min_units") or cov.get("max_units")
+                or any(e.get("if_units_at_most") is not None for e in rule.get("exemption_tests") or []))
+
+
+def answer_confidence(rule, addr, result):
+    """Rule extraction confidence, discounted for each weaker link behind this particular answer."""
+    c = rule.get("confidence") or 0.5
+    if result == "unknown":
+        c *= 0.5
+    if addr.geocode_method != "census":
+        c *= 0.9
+    if addr.units_note.startswith("unit count not recorded; inferred") and uses_unit_count(rule):
+        c *= 0.9
+    return math.floor(c * 100 + 0.5) / 100  # same rounding as Math.round in the browser
 
 
 def needs_review(rule):

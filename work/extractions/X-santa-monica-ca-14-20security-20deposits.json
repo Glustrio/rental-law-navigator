@@ -1,0 +1,55 @@
+{
+ "doc_id": "X-santa-monica-ca-14-20security-20deposits",
+ "doc_sha256": "da1e9ef5316ad44b9e87c4ff58ace1f8e661be48d5c5524210ed41309176ea9e",
+ "model": "claude-opus-5-5",
+ "extracted_at": "2026-10-03T22:51:58+00:00",
+ "rules": [
+  {
+   "jurisdiction": "Santa Monica, CA",
+   "level": "city",
+   "category": "security_deposits",
+   "status": "in_force",
+   "title": "Santa Monica Rent Control Regulations Chapter 14 \u2013 Security Deposits",
+   "requirement": "For a rent-controlled unit rented after January 1, 1983, the security deposit may be no more than one month's maximum allowable rent, cannot be raised during the tenancy, and must be kept in an FDIC-insured interest-bearing account. A small landlord may charge up to two months' rent if the tenant is not a service member. That landlord must be a natural person or an LLC whose members are all natural persons, and must own no more than two rental properties with no more than four units in total.",
+   "key_value": "1 month's maximum allowable rent (2 months for qualifying small landlords; tenants since before 1/1/1983 keep their 1/1/1983 deposit)",
+   "coverage_conditions": "Controlled rental units under Santa Monica rent control. Tenancies that began on or before 1/1/1983 are capped at the deposit in effect on that date. Tenancies that began later are capped at one month's maximum allowable rent or base rent after vacancy. For tenancies that began before 1/1/1999, an extra deposit of up to one month's rent is allowed with the tenant's written consent in exchange for an added use such as pets or extra occupants. The total may never exceed the state-law maximum.",
+   "exemptions": "Two-month deposit is allowed where the landlord is a natural person or an LLC of natural persons owning no more than two residential rental properties with no more than four units collectively, and the tenant is not a service member. The additional deposit under Reg. 14003 applies only to tenancies that began before 1/1/1999 and must be refunded within 30 days if the tenant revokes consent and gives up the additional use.",
+   "effective_date": "2024-08-17",
+   "citation": "Santa Monica Rent Control Board Regs. \u00a7\u00a7 14000\u201314003",
+   "quoted_span": "who rents a controlled rental unit subsequent to January 1, 1983 is no more than an amount equal to the",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": [
+     "Unit must be a controlled rental unit under the Santa Monica Rent Control Charter (controlled status criteria not stated in this document)"
+    ]
+   },
+   "exemption_tests": [
+    {
+     "description": "Small landlord (natural person or LLC of natural persons owning no more than two rental properties with no more than four units collectively) may charge two months' rent as deposit to non-service-member tenants",
+     "if_units_at_most": 4,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    }
+   ],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.8,
+   "span_match_score": 100,
+   "source_doc_id": "X-santa-monica-ca-14-20security-20deposits",
+   "source_url": "https://www.smgov.net/uploadedFiles/Departments/Rent_Control/Rent_Control_Law/14,%20Security%20Deposits.pdf",
+   "source_type": "official",
+   "source_origin": "extra",
+   "retrieved_at": "2026-10-03 22:51 UTC"
+  }
+ ],
+ "dropped": [],
+ "notes": "The document is Chapter 14 of the Santa Monica Rent Control Board regulations, current version effective 8/17/2024. The chapter was originally adopted in 1983. The effective_date field gives the date of the latest amendment (Reg. 14002(b) and 14003(c)). The rules apply alongside state law (Cal. Civ. Code \u00a7 1950.5); Reg. 14003(c) caps the total deposit at the state maximum, so this rule does not displace state law. The document does not define 'controlled rental unit', so building-level coverage (for example, a construction-date cutoff) cannot be filled from this source. Reg. 14001(b)-(f), the interest provisions, were suspended in 2002 and their text is not shown. Only the requirement to place deposits in an interest-bearing account, Reg. 14001(a), remains visible."
+}

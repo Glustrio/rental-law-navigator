@@ -1,5 +1,5 @@
 {
- "digest": "979e6f4149bb5e09",
+ "digest": "c95a0c5ded794fe6",
  "rules": [
   {
    "member_indices": [
@@ -9,14 +9,14 @@
    ],
    "quote_index": 0,
    "status": "in_force",
-   "title": "Ban on using or distributing common pricing algorithms to restrain trade or coerce price adoption (AB 325)",
-   "requirement": "Landlords, property managers and software vendors may not use or distribute shared rent-pricing software that draws on competitor data as part of an agreement to restrain trade. They also may not use or offer such software while pressuring others to adopt the rents or lease terms it recommends. Renters harmed by algorithmic rent-fixing can report it to the Attorney General or sue under the Cartwright Act.",
-   "key_value": "Unlawful to use or distribute a common pricing algorithm (used by 2+ persons, uses competitor data) in restraint of trade, or to coerce adoption of its recommended prices or terms",
-   "coverage_conditions": "Applies to any person or business, including landlords and apartment rental companies, that uses or distributes a common pricing algorithm in California. A common pricing algorithm is a method or software used by two or more persons that uses competitor data to recommend, align, stabilize, set or influence a price or commercial term. The law covers all products and services, including residential rents, and reaches every rental in California, with no limit by building type.",
-   "exemptions": "End consumers are not 'persons' under the section. Single-firm algorithms that use only the business's own data are not covered (per secondary source).",
+   "title": "Ban on using or distributing common pricing algorithms to collude or coerce (AB 325)",
+   "requirement": "Landlords, property managers and software vendors may not use or distribute a shared pricing algorithm that uses competitor data to set or recommend rents or lease terms as part of an agreement to restrain trade. They also may not use or distribute one while pressuring others to adopt its recommended prices or terms. Renters harmed by algorithmic rent-fixing may report it to the Attorney General or sue under the Cartwright Act.",
+   "key_value": "Unlawful to use/distribute a common pricing algorithm (2+ users, competitor data) in restraint of trade, or to coerce adoption of its recommended price or commercial term",
+   "coverage_conditions": "Applies statewide to any person or business, including landlords and apartment rental companies, that uses or distributes a common pricing algorithm. That means a method or software used by two or more persons that uses competitor data to recommend, align, stabilize, set or influence a price or commercial term. It covers all products and services, including residential rents. The ban is not limited to any class of buildings.",
+   "exemptions": "End consumers are not 'persons' under the section. According to a secondary source, single-firm algorithms that use only the business's own data are not covered.",
    "effective_date": "2026-01-01",
    "citation": "Cal. Bus. & Prof. Code \u00a7 16729 (AB 325, Stats. 2025, ch. 338)",
-   "penalty": "Cartwright Act remedies. Violations can be prosecuted as crimes (per Legislative Counsel's Digest). A secondary source says that under SB 763 (Bus. & Prof. Code \u00a7\u00a7 16755, 16755.1) criminal fines reach the greater of $6 million or twice the gain or loss for corporations, and the greater of $1 million or twice the gain or loss for individuals. The same source cites civil penalties of up to $1 million in actions by the AG or a district attorney, and treble damages, injunctive relief and attorneys' fees in private suits.",
+   "penalty": "Cartwright Act remedies apply, and a violation is punishable as a crime. A secondary source adds amounts under SB 763 (Bus. & Prof. Code \u00a7\u00a7 16755, 16755.1): criminal fines up to the greater of $6 million or twice the gain or loss for corporations, and up to the greater of $1 million or twice the gain or loss for individuals. AG or district attorney actions carry civil penalties up to $1 million. Private suits can recover treble damages, injunctive relief and attorneys' fees.",
    "coverage": {
     "min_units": null,
     "max_units": null,
@@ -30,8 +30,38 @@
    "displaces_state_rule": false,
    "conflict_type": "none",
    "conflict_note": null,
-   "confidence": 0.82,
-   "reason": "Merged subsections (a) and (b) of \u00a7 16729 from the official statute text with a law-firm summary of the same AB 325 provision. The conduct-based condition (using a pricing algorithm) was removed from coverage, and the effective date comes only from the secondary source."
+   "confidence": 0.8,
+   "reason": "Subsections (a) and (b) of \u00a7 16729 from the statute text and a law-firm summary of AB 325 describe one law, so they are merged; landlord conduct was removed from coverage, and the effective date comes only from the secondary source."
+  },
+  {
+   "member_indices": [
+    3
+   ],
+   "quote_index": 3,
+   "status": "failed",
+   "title": "2024 California bill to ban pricing algorithms using competitors' nonpublic data (failed)",
+   "requirement": "A 2024 California bill would have banned pricing algorithms based on nonpublic data from competing companies. It did not advance and is not law.",
+   "key_value": null,
+   "coverage_conditions": "Would have applied statewide; no further details given.",
+   "exemptions": null,
+   "effective_date": null,
+   "citation": "Unnamed 2024 California bill (bill number not given)",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.4,
+   "reason": "A failed 2024 bill reported only in a news story is kept separate from the enacted AB 325."
   }
  ]
 }

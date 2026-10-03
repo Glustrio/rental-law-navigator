@@ -57,8 +57,10 @@ def load_documents(include_supplement=True):
         text = path.read_text()
         url = re.search(r"SOURCE:\s*(\S+)", text[:600])
         juris = re.search(r"JURISDICTION:\s*([^\n]+)", text[:600])
+        stype = re.search(r"SOURCE TYPE:\s*([^\n]+)", text[:600])
         docs.append(Document(path.stem, juris.group(1).strip() if juris else "", url.group(1) if url else "",
-                             "official (released mid-event)", _retrieved_from_header(text), "extra", text))
+                             stype.group(1).strip() if stype else "official", _retrieved_from_header(text),
+                             "extra", text))
     # Two link-only rows point at the same law-firm article; keep the first copy.
     seen, unique = set(), []
     for d in docs:

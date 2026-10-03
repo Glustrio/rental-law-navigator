@@ -125,3 +125,45 @@ th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line
 .counts span { font-size: 13px; padding: 2px 8px; background: var(--bg); border-radius: 6px; }
 
 .foot { color: var(--muted); font-size: 13px; padding-bottom: 32px; }
+
+.title-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.lang { display: flex; gap: 4px; }
+.lang button {
+  font: inherit; font-size: 13px; padding: 4px 10px; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--line); background: var(--panel); color: var(--muted);
+}
+.lang button[aria-pressed="true"] { color: var(--ink); border-color: var(--accent); font-weight: 600; }
+
+button.primary {
+  font: inherit; font-size: 15px; padding: 10px 16px; border-radius: 8px; border: 0; cursor: pointer;
+  background: var(--accent); color: #fff;
+}
+.hint { font-size: 13px; color: var(--muted); margin: 8px 0 0; }
+
+.facts { margin: 0 0 12px; }
+.facts .note { margin: 0 0 6px; }
+.facts-row { display: flex; gap: 10px; flex-wrap: wrap; align-items: end; }
+.facts-row .field input { width: 9em; }
+.facts-row button:not(.primary) {
+  font: inherit; font-size: 14px; padding: 9px 12px; border-radius: 8px; cursor: pointer;
+  border: 1px solid var(--line); background: var(--panel); color: var(--ink);
+}
+
+.means { border-left: 4px solid var(--applies); }
+.means h2 { font-size: 18px; margin: 0 0 6px; }
+.means p { margin: 10px 0 4px; font-weight: 600; }
+.means ul { margin: 0; padding-left: 20px; }
+.means li { margin: 4px 0; }
+.cite { font-size: 12px; color: var(--muted); font-family: ui-monospace, Menlo, monospace; }
+
+.badges { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+.conf { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.rule .summary { font-weight: 600; margin: 8px 0 2px; }
+.settle { font-size: 14px; margin: 6px 0; }
+
+.map { height: 380px; border-radius: var(--radius); border: 1px solid var(--line); margin: 8px 0; background: var(--panel); }
+.map-btn {
+  font: inherit; font-size: 13px; margin-top: 10px; padding: 5px 12px; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--accent); background: var(--panel); color: var(--accent);
+}
+.test.active { border-color: var(--accent); }

@@ -17,6 +17,18 @@ Built for the RealPage × Hack-Nation challenge (7th Global AI Hackathon, Octobe
 | C. Track change | Each change test is matched to our rules once, then the engine compares answers at the test's dates. | `navigator/changes.py` |
 | Site | Address search, "as of" date picker, citations and quotes, conflict flags, all rules, change tests. The browser runs a port of the same engine; a test checks both agree on every address. | `site/` |
 
+## Beyond the minimum
+
+All three stretch goals from the brief, plus two more:
+
+- **Plain language in English and Spanish.** Every rule has a one-line "what this means for you" written for renters (`navigator/plain_language.py`), and the whole site switches to Spanish.
+- **Confidence and conflict flags on every answer.** Each lookup result carries a confidence score (rule confidence, discounted for unknown answers, postal-city fallbacks and inferred unit counts), a conflict flag, and a needs-review flag for rules that rest on a secondary source or a low-confidence extraction.
+- **A new jurisdiction added live.** Santa Monica was added during the event with one command and a pipeline rerun, no code changes:
+  `python -m navigator.add_docs --jurisdiction "Santa Monica, CA" <official PDF URLs>` then `make extract consolidate outputs`.
+- **Any address, not just the samples.** The site geocodes any California, New Jersey or Massachusetts address live with the Census Geocoder (JSONP, no server), and says plainly when a city has no local rules in our data rather than implying it has none.
+- **Fill in what you know.** Year built and unit count can be entered for any building; "unknown" answers resolve on the spot, and every unknown says which document would settle it.
+- **Self-checking change tests with a map.** Each change test is graded against the behavior its type implies (`self_check` in `out/changes.json`, also run in CI), and affected and conflict-flagged addresses are mapped.
+
 ## Design choices
 
 - **The model only reads; code decides.** Claude extracts rules and their coverage tests as data. Whether a rule reaches a building is decided by plain code that anyone can audit, so the same input always gives the same answer.
@@ -39,7 +51,7 @@ make test       # unit tests and the Python/JavaScript parity test
 make serve      # site at http://localhost:8000
 ```
 
-Extraction results are cached per document in `work/extractions/`, so `make all` only calls the model for new documents. To process a document released mid-event, put its text in `extra_docs/` (and any new tests as `extra_docs/*tests*.json`) and run `make extract consolidate outputs`.
+Extraction results are cached per document in `work/extractions/`, so `make all` only calls the model for new documents. To process a document released mid-event, add it with `python -m navigator.add_docs --jurisdiction "Cambridge, MA" --file ordinance.txt` (or URLs), put any new tests in `extra_docs/` as `*tests*.json`, and run `make extract consolidate outputs`. Only new documents and the merges they touch call the model.
 
 ## Outputs
 

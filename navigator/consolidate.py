@@ -23,7 +23,7 @@ JURIS_CODE = {
     "CA": "CA", "NJ": "NJ", "MA": "MA",
     "Los Angeles, CA": "LA", "San Francisco, CA": "SF", "San Diego, CA": "SD", "Berkeley, CA": "BER",
     "Santa Ana, CA": "SA", "Jersey City, NJ": "JC", "Hoboken, NJ": "HOB", "Newark, NJ": "NWK",
-    "Boston, MA": "BOS", "Cambridge, MA": "CAM",
+    "Boston, MA": "BOS", "Cambridge, MA": "CAM", "Santa Monica, CA": "SM",
 }
 CATEGORY_CODE = {
     "rent_increase_limits": "RENT", "just_cause_eviction": "EVICT", "security_deposits": "DEP",

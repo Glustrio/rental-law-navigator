@@ -1,23 +1,24 @@
 {
- "digest": "0915c8427af8c1f1",
+ "digest": "65c513faf765df62",
  "rules": [
   {
    "member_indices": [
     0,
     1,
     2,
-    3
+    3,
+    4
    ],
    "quote_index": 3,
    "status": "in_force",
    "title": "Ban on algorithmic rent-setting devices using nonpublic competitor data",
-   "requirement": "In San Francisco, landlords may not use, and vendors may not sell, software that analyzes nonpublic competitor rental data to recommend rents or manage occupancy for residential units. Tenants or the City Attorney can sue violators for damages, an injunction and civil penalties.",
-   "key_value": "Sale or use banned; civil penalties up to $1,000 per violation, and each month of use for each affected unit can count as a separate violation",
-   "coverage_conditions": "All residential rental units in San Francisco. The ban applies to anyone who sells or uses algorithmic devices that analyze nonpublic competitor rental data to recommend rents or occupancy levels.",
+   "requirement": "San Francisco landlords may not use, and vendors may not sell, algorithmic devices that analyze nonpublic competitor rental data to recommend rents or manage occupancy for residential units. Tenants or the City Attorney can sue for damages, an injunction and civil penalties of up to $1,000 per violation.",
+   "key_value": "Up to $1,000 per violation; each month of use per affected unit may be a separate violation",
+   "coverage_conditions": "All residential dwelling units in San Francisco. The ban applies to anyone selling or using qualifying algorithmic devices, and no building-type limits are stated.",
    "exemptions": null,
    "effective_date": "2024-10-14",
    "citation": "S.F. Admin. Code \u00a7 37.10C",
-   "penalty": "Civil action by a tenant or the City Attorney for damages, injunctive relief and civil penalties of up to $1,000 per violation. Each month of use for each affected unit may be a separate violation (S.F. Admin. Code \u00a7 37.10C(b), (d)).",
+   "penalty": "Civil action by a tenant or the City Attorney for damages, injunctive relief, and civil penalties of up to $1,000 per violation. Each month of use for each affected unit may count as a separate violation (S.F. Admin. Code \u00a7 37.10C(b), (d)).",
    "coverage": {
     "min_units": null,
     "max_units": null,
@@ -29,10 +30,10 @@
    "exemption_tests": [],
    "yields_to_local_rule": false,
    "displaces_state_rule": false,
-   "conflict_type": "none",
-   "conflict_note": null,
+   "conflict_type": "inconsistent_sources",
+   "conflict_note": "A news article (X-santa-monica) says San Francisco banned the software in July 2023. Official sources say the Board of Supervisors approved the legislation in July 2024 and that it took effect 2024-10-14. The official dates are used here.",
    "confidence": 0.85,
-   "reason": "All four candidates describe the same San Francisco ordinance (Admin. Code \u00a7 37.10C, approved July 2024). Official sources were merged with law-firm and news sources, and the official source gives the exact effective date, which matches the October 2024 month in the secondary sources."
+   "reason": "All five candidates describe the same San Francisco ordinance banning algorithmic rent-setting devices (S.F. Admin. Code \u00a7 37.10C), so they were merged, citing the official D081 text."
   }
  ]
 }

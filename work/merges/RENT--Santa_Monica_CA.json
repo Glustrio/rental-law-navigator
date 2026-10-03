@@ -1,0 +1,51 @@
+{
+ "digest": "78c974c3c4c409cd",
+ "rules": [
+  {
+   "member_indices": [
+    0,
+    1
+   ],
+   "quote_index": 0,
+   "status": "in_force",
+   "title": "Santa Monica Rent Control Charter Amendment \u2013 maximum allowable rent and annual general adjustment",
+   "requirement": "Rent on a controlled Santa Monica unit may not exceed the maximum allowable rent set by the Rent Control Board. It rises each September 1 by 75% of the local CPI increase, never below 0% or above 3%. Landlords who have not registered the unit or who have uncorrected code violations may not raise rent, and tenants can petition the Board for a rent reduction.",
+   "key_value": "75% of CPI-U (LA area), floor 0%, cap 3% per year",
+   "coverage_conditions": "All residential rental units in Santa Monica, including mobile homes and spaces, built (first receiving occupancy permits) on or before April 10, 1979. A property stays covered until the owner applies for and receives a Rent Control Board exemption. Rent resets to the initial rent at a new tenancy where state law allows vacancy increases.",
+   "exemptions": "Board-granted exemptions only: new construction first receiving occupancy permits after April 10, 1979, except units created by conversion, units moved into the city, or units built within five years after an Ellis Act withdrawal and demolition of controlled units. Owner-occupied properties with three or fewer units on April 10, 1979, where a natural person holding at least 50% lives there as a principal residence (at least 120 days before applying). Single-family homes not used as rentals on July 1, 1984, or exempted after two years of owner occupancy. Transient hotels, motels, inns and rooming houses (stays under 14 days, except tenants of 3+ months). Hospitals, extended care facilities, asylums run by 501(c)(3) organizations, and university dormitories. Government-owned or subsidized units where federal or state law exempts them. Nonprofit child care or social service units. State park and tidelands property. Current residents keep their rent and eviction protections when an exemption is granted, and exemptions lapse when the qualifying facts end.",
+   "effective_date": "1979-04-10",
+   "citation": "Santa Monica City Charter Art. XVIII, \u00a7\u00a7 1801, 1804\u20131805",
+   "penalty": "Civil liability for the excess rent plus attorney's fees, with a treble civil penalty for willful conduct. In an administrative proceeding, up to $500 additional. Misdemeanor punishable by a fine of up to $500 and/or up to 6 months in jail.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": "1979-04-10",
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [
+    {
+     "description": "Owner-occupied property with three or fewer units (natural-person owner with at least 50% interest residing on site); requires Board determination",
+     "if_units_at_most": 3,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    },
+    {
+     "description": "Single-family home not used as a rental on July 1, 1984, or exempted after two years of owner occupancy",
+     "if_units_at_most": 1,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    }
+   ],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": true,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.8,
+   "reason": "Both candidates describe the maximum allowable rent provisions of Santa Monica's Rent Control Charter Amendment (Art. XVIII) and its Board exemption rules. They are merged into one record dated from the Article's April 10, 1979 adoption rather than the 2022 amendment that set the 75%-of-CPI, 3%-cap adjustment formula."
+  }
+ ]
+}

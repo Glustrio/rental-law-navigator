@@ -133,6 +133,20 @@ function isPrecedence(a, b) {
   return Boolean(state.yields_to_local_rule && local.displaces_state_rule);
 }
 
+function usesUnitCount(rule) {
+  const cov = rule.coverage;
+  return Boolean(cov.min_units || cov.max_units || (rule.exemption_tests || []).some((e) => e.if_units_at_most != null));
+}
+
+// Rule extraction confidence, discounted for each weaker link behind this particular answer.
+function answerConfidence(rule, a, result) {
+  let c = rule.confidence || 0.5;
+  if (result === "unknown") c *= 0.5;
+  if (a.geocode_method !== "census") c *= 0.9;
+  if (a.units_note.startsWith("unit count not recorded; inferred") && usesUnitCount(rule)) c *= 0.9;
+  return Math.round(c * 100) / 100;
+}
+
 function conflictFor(rule, raw, byId) {
   if (rule.conflict_type === "inconsistent_sources") return [true, [`review: ${rule.conflict_note}`]];
   // A state rule that says how it yields to local law has settled precedence.
@@ -186,8 +200,10 @@ export function lookup(a, rules, asOf) {
       team_rule_id: id,
       result,
       explanation: explain(rule, a, result, reasons.concat(flagReasons)),
+      reasons: [...new Set(reasons.concat(flagReasons))],
       conflict_flag: flag,
       needs_review: needsReview(rule),
+      confidence: answerConfidence(rule, a, result),
     });
   }
   return out;

@@ -1,0 +1,45 @@
+{
+ "doc_id": "X-santa-monica-ca-santa-monica-bans-algorithmic-rental-pricing-software-after-",
+ "doc_sha256": "d29ca21a3e1827b8d72dd3dc54117f4f459440797ae4a15d2be086e5925df8e3",
+ "model": "claude-opus-5-5",
+ "extracted_at": "2026-10-03T22:51:49+00:00",
+ "rules": [
+  {
+   "jurisdiction": "Santa Monica, CA",
+   "level": "city",
+   "category": "algorithmic_rent_setting",
+   "status": "in_force",
+   "title": "Santa Monica ban on algorithmic rental pricing software",
+   "requirement": "Landlords in Santa Monica may not use, and vendors may not sell, software that uses competitor data to recommend rents or whether to leave units vacant. If your landlord used such software, you can sue or raise it as a defense in an eviction case.",
+   "key_value": "Ban on sale and use of algorithmic rent-pricing devices; $1,000 per violation or actual damages, whichever is greater",
+   "coverage_conditions": "Residential rental units in Santa Monica. The ban covers selling or using 'algorithmic devices,' meaning software that uses competitor data to advise landlords on rent pricing or occupancy and vacancy decisions.",
+   "exemptions": null,
+   "effective_date": null,
+   "citation": "Santa Monica algorithmic rental price fixing ordinance (ordinance number not stated in source)",
+   "quoted_span": "The Santa Monica ordinance defines prohibited \"algorithmic devices\" as software that uses competitor data to advise landlords on rent pricing or whether to leave units vacant.",
+   "penalty": "$1,000 per offense or actual damages, whichever is greater, plus attorney fees; civil enforcement by affected renters or the city; violation is an affirmative defense in eviction proceedings.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.7,
+   "span_match_score": 100,
+   "source_doc_id": "X-santa-monica-ca-santa-monica-bans-algorithmic-rental-pricing-software-after-",
+   "source_url": "https://www.smdp.com/santa-monica-bans-algorithmic-rental-pricing-software-after-wildfire-crisis/",
+   "source_type": "secondary (news)",
+   "source_origin": "extra",
+   "retrieved_at": "2026-10-03 22:51 UTC"
+  }
+ ],
+ "dropped": [],
+ "notes": "Secondary news source. It gives no ordinance number, municipal code section, adoption date or effective date. The article says the council passed the ordinance 'last week' and refers to January's wildfires and a January DOJ suit. That context suggests adoption in 2025, so the rule is treated as in force by 2026-10-01. However, the retrieval date is 2026-10-03, so if adoption actually happened in late September 2026, the usual 30-day effective period could make it not_yet_effective. Verify the adoption and effective dates. The article also says San Francisco and Berkeley have banned algorithmic rent-pricing software and San Diego is 'moving forward with similar prohibitions.' These were not extracted as separate records because the document gives no citation, dates or details for them; reviewers should check those cities' ordinances in their own sources. The California Apartment Association opposition is noted, but no legal challenge or preemption is described."
+}

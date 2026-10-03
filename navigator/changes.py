@@ -119,6 +119,38 @@ def run_test(test, mapping, addresses, rules):
     return out
 
 
+def self_check(test, result, addresses, rules):
+    """Check a test's result against the behavior its type and fields imply. Returns (passed, detail)."""
+    by_id = {r["team_rule_id"]: r for r in rules}
+    states = set(test.get("states", []))
+    in_states = {aid for aid, a in addresses.items() if a.state in states}
+    affected = set(result["affected_address_ids"])
+    flagged = set(result["conflict_flag_address_ids"])
+    if not result["our_rule_ids"]:
+        return False, "no matching rule extracted"
+    if test["type"] == "negative":
+        return not affected, "affected set is empty" if not affected else f"{len(affected)} addresses wrongly affected"
+    if test["type"] in ("as_of", "pending"):
+        ok = affected == in_states
+        detail = (f"all {len(in_states)} {'/'.join(sorted(states))} addresses affected" if ok
+                  else f"{len(affected & in_states)} of {len(in_states)} expected, {len(affected - in_states)} extra")
+        if test.get("conflict_with"):
+            cities = {by_id[i]["jurisdiction"] for i in result.get("conflict_rule_ids", []) if i in by_id}
+            want = {aid for aid, a in addresses.items() if a.city and f"{a.city}, {a.state}" in cities}
+            ok = ok and flagged == want and bool(want)
+            detail += f"; {len(flagged)} flagged (expected {len(want)}: {', '.join(sorted(cities))})"
+        return ok, detail
+    if test["type"] == "boundary":
+        bad = [aid for aid in affected
+               if not any(by_id[i]["jurisdiction"] == f"{addresses[aid].city}, {addresses[aid].state}"
+                          for i in result["our_rule_ids"])]
+        cities = {by_id[i]["jurisdiction"] for i in result["our_rule_ids"]}
+        want = {aid for aid, a in addresses.items() if a.city and f"{a.city}, {a.state}" in cities}
+        ok = not bad and affected == want
+        return ok, f"{len(affected)} affected, all inside {', '.join(sorted(cities))}" if ok else f"{len(bad)} outside their city"
+    return None, "no automatic check for this test type"
+
+
 def load_tests():
     tests = json.loads(CHANGE_TESTS.read_text())
     for path in sorted(EXTRA_DOCS.glob("*tests*.json")) if EXTRA_DOCS.exists() else []:
@@ -130,11 +162,17 @@ def main():
     refresh = "--refresh" in sys.argv
     rules, addresses, tests = load_rules(), load_addresses(), load_tests()
     mapping = map_tests(tests, rules, refresh)
-    out = {t["test_id"]: run_test(t, mapping[t["test_id"]], addresses, rules) for t in tests}
+    out = {}
+    for t in tests:
+        result = run_test(t, mapping[t["test_id"]], addresses, rules)
+        result["conflict_rule_ids"] = mapping[t["test_id"]].get("conflict_rule_ids", [])
+        result["self_check"] = dict(zip(("passed", "detail"), self_check(t, result, addresses, rules), strict=True))
+        out[t["test_id"]] = result
     CHANGES_OUT.write_text(json.dumps(out, indent=1))
     for tid, r in out.items():
         print(f"{tid}: {len(r['affected_address_ids'])} affected, {len(r['conflict_flag_address_ids'])} flagged "
-              f"({', '.join(r['our_rule_ids']) or 'no rule'})", file=sys.stderr)
+              f"({', '.join(r['our_rule_ids']) or 'no rule'}) "
+              f"self-check {'PASS' if r['self_check']['passed'] else 'FAIL'}: {r['self_check']['detail']}", file=sys.stderr)
 
 
 if __name__ == "__main__":

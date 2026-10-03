@@ -2259,7 +2259,12 @@
     }
    }
   },
-  "notes": "Results for CA-ALG-01 compared on 2025-12-31 and 2026-01-02. 250 addresses change."
+  "notes": "Results for CA-ALG-01 compared on 2025-12-31 and 2026-01-02. 250 addresses change.",
+  "conflict_rule_ids": [],
+  "self_check": {
+   "passed": true,
+   "detail": "all 250 CA addresses affected"
+  }
  },
  "T2": {
   "affected_address_ids": [
@@ -2902,7 +2907,12 @@
     }
    }
   },
-  "notes": "Addresses covered by HOB-ALG-01, JC-ALG-01 on 2026-10-01. 90 addresses."
+  "notes": "Addresses covered by HOB-ALG-01, JC-ALG-01 on 2026-10-01. 90 addresses.",
+  "conflict_rule_ids": [],
+  "self_check": {
+   "passed": true,
+   "detail": "90 affected, all inside Hoboken, NJ, Jersey City, NJ"
+  }
  },
  "T3": {
   "affected_address_ids": [
@@ -4265,7 +4275,15 @@
     }
    }
   },
-  "notes": "Results for NJ-ALG-01 compared on 2026-10-01 and 2027-07-02. 140 addresses change."
+  "notes": "Results for NJ-ALG-01 compared on 2026-10-01 and 2027-07-02. 140 addresses change.",
+  "conflict_rule_ids": [
+   "JC-ALG-01",
+   "HOB-ALG-01"
+  ],
+  "self_check": {
+   "passed": true,
+   "detail": "all 140 NJ addresses affected; 90 flagged (expected 90: Hoboken, NJ, Jersey City, NJ)"
+  }
  },
  "T4": {
   "affected_address_ids": [
@@ -5158,7 +5176,12 @@
     }
    }
   },
-  "notes": "MA-ALG-02, MA-ALG-01 reported as pending, never in force; affected = addresses covered if enacted. 110 addresses."
+  "notes": "MA-ALG-02, MA-ALG-01 reported as pending, never in force; affected = addresses covered if enacted. 110 addresses.",
+  "conflict_rule_ids": [],
+  "self_check": {
+   "passed": true,
+   "detail": "all 110 MA addresses affected"
+  }
  },
  "T5": {
   "affected_address_ids": [],
@@ -5168,6 +5191,11 @@
   ],
   "mapping_reason": "MA-RENT-02 is Initiative Petition 25-21, the statewide cap on rent increases. It is marked failed because it was blocked from the November 2026 ballot (Cella v. Attorney General, SJC-13893). This matches the struck rent-control ballot question.",
   "before_after": {},
-  "notes": "MA-RENT-02 is not law on 2026-10-01; no address gets it. 0 addresses."
+  "notes": "MA-RENT-02 is not law on 2026-10-01; no address gets it. 0 addresses.",
+  "conflict_rule_ids": [],
+  "self_check": {
+   "passed": true,
+   "detail": "affected set is empty"
+  }
  }
 }

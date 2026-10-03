@@ -33,6 +33,7 @@ JURISDICTIONS = [
     "Los Angeles, CA", "San Francisco, CA", "San Diego, CA", "Berkeley, CA", "Santa Ana, CA",
     "Jersey City, NJ", "Hoboken, NJ", "Newark, NJ",
     "Boston, MA", "Cambridge, MA",
+    "Santa Monica, CA",  # added live during the event with navigator.add_docs
 ]
 
 NULLABLE_STRING = {"type": ["string", "null"]}

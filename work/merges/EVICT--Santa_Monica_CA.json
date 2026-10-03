@@ -1,0 +1,51 @@
+{
+ "digest": "22143b08211c8574",
+ "rules": [
+  {
+   "member_indices": [
+    0,
+    1
+   ],
+   "quote_index": 0,
+   "status": "in_force",
+   "title": "Santa Monica Rent Control Charter Amendment \u2013 just cause eviction",
+   "requirement": "A landlord may not end a tenancy in a rent-controlled unit except for a listed cause, such as nonpayment, an uncured lease breach, nuisance, illegal use, refusal of access, good-faith owner or relative move-in, permitted demolition, or an Ellis Act withdrawal. The cause must be stated in the notice, and the notice must be filed with the Rent Control Board within 3 days. Owner move-in evictions are barred for tenants of 5+ years who are 62 or older or disabled, and for terminally ill tenants.",
+   "key_value": null,
+   "coverage_conditions": "Controlled rental units in Santa Monica, meaning all residential rental units except those the Rent Control Board has determined exempt. Units first built after April 10, 1979 are exempt as new construction. Current residents keep good cause protection even if the property later receives a use exemption.",
+   "exemptions": "Exemptions require a Board determination. They include new construction first receiving occupancy permits after April 10, 1979 (but not Ellis Act replacement units or units moved into the city); owner-occupied buildings with 3 or fewer units; exempt single-family homes; transient hotels and motels; hospitals, care facilities and dormitories; certain government or subsidized units; and state park property. Owner move-in requires the owner to move in within 60 days and stay at least two years.",
+   "effective_date": "1979-04-10",
+   "citation": "Santa Monica City Charter Art. XVIII, \u00a7 1806",
+   "penalty": "Affirmative defense to eviction. Actual and punitive damages (including emotional distress) for wrongful eviction, injunctive relief, and prevailing-party attorney's fees. Misdemeanor punishable by up to $500 and/or 6 months in jail.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": "1979-04-10",
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [
+    {
+     "description": "Owner-occupied property with three or fewer units (Charter \u00a7 1801(c)(4)), if exempted by the Board",
+     "if_units_at_most": 3,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    },
+    {
+     "description": "Exempt single-family home (not used as a rental on July 1, 1984, or exempted after owner occupancy)",
+     "if_units_at_most": 1,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    }
+   ],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": true,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.88,
+   "reason": "Both candidates describe the good cause eviction provisions of Santa Monica Charter \u00a7 1806, so they are merged into one record, using the official charter text as the quote and the Chapter 12 exemption details for coverage."
+  }
+ ]
+}

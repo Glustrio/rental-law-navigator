@@ -1,0 +1,682 @@
+{
+ "CA-ALG-01": {
+  "key": "de688a3cf5092fb1",
+  "summary_en": "Landlords and rental software companies cannot use shared pricing software built on competitor data to fix rents or pressure others to follow it.",
+  "settle_hint_en": null,
+  "title_es": "Prohibición de usar o distribuir algoritmos comunes de precios para ponerse de acuerdo o presionar a otros (AB 325)",
+  "requirement_es": "Los arrendadores, administradores de propiedades y vendedores de software no pueden usar ni distribuir un algoritmo de precios compartido que use datos de la competencia para fijar o recomendar rentas o condiciones del contrato como parte de un acuerdo para limitar la competencia. Tampoco pueden usarlo ni distribuirlo mientras presionan a otros para que adopten los precios o condiciones que recomienda. Los inquilinos afectados por la fijación de rentas con algoritmos pueden reportarlo al Procurador General (Attorney General) o demandar bajo la Ley Cartwright (Cartwright Act).",
+  "key_value_es": "Es ilegal usar o distribuir un algoritmo común de precios (2 o más usuarios, datos de la competencia) para limitar la competencia, o para presionar a otros a adoptar el precio o la condición comercial que recomienda",
+  "summary_es": "Los arrendadores y las empresas de software de alquiler no pueden usar programas de precios compartidos con datos de la competencia para fijar rentas ni presionar a otros a seguirlos.",
+  "settle_hint_es": null
+ },
+ "CA-ALG-02": {
+  "key": "098c248b6e84aaf4",
+  "summary_en": "This 2024 bill to ban pricing software using competitors' private data failed and is not law.",
+  "settle_hint_en": null,
+  "title_es": "Proyecto de ley de California de 2024 para prohibir algoritmos de precios que usan datos no públicos de la competencia (no aprobado)",
+  "requirement_es": "Un proyecto de ley de California de 2024 habría prohibido los algoritmos de precios basados en datos no públicos de empresas competidoras. No avanzó y no es ley.",
+  "key_value_es": null,
+  "summary_es": "Este proyecto de ley de 2024 para prohibir programas de precios con datos privados de la competencia no fue aprobado y no es ley.",
+  "settle_hint_es": null
+ },
+ "CA-FEE-01": {
+  "key": "64ebb5bfcadbefb4",
+  "summary_en": "Your landlord can charge a screening fee only up to actual costs and no more than $30 adjusted yearly, listed as $68.96 for 2026.",
+  "settle_hint_en": null,
+  "title_es": "Cuota de evaluación de solicitud limitada a los costos reales y a $30 (ajustada por el CPI), con límites de reembolso y disponibilidad",
+  "requirement_es": "Un arrendador puede cobrar una cuota de evaluación solo hasta lo que realmente gasta en la evaluación, y nunca más de $30 por solicitante ajustado cada año por el CPI desde 1998 (indicado como $68.96 para 2026). El arrendador debe darle un recibo detallado, devolverle la parte no usada y darle una copia de su reporte de crédito dentro de 7 días. No puede cobrar una cuota si no hay una unidad disponible ni la habrá pronto, y debe revisar las solicitudes en el orden en que llegan y aprobar al primer solicitante que califique, o devolver la cuota completa a los solicitantes no elegidos dentro de 7 días de la selección o 30 días de la solicitud, lo que ocurra primero.",
+  "key_value_es": "$30 por solicitante, ajustado cada año por el CPI desde el 1998-01-01 ($68.96 para 2026 según Berkeley)",
+  "summary_es": "Su arrendador puede cobrar una cuota de evaluación solo hasta sus costos reales y no más de $30 ajustados cada año, indicado como $68.96 para 2026.",
+  "settle_hint_es": null
+ },
+ "CA-EVICT-01": {
+  "key": "ef9064c7df652813",
+  "summary_en": "After 12 months in your home, your landlord needs a legal reason to end your tenancy, and owes one month's rent for no-fault evictions.",
+  "settle_hint_en": "The building's certificate of occupancy date from the city building department, the owner's identity, and any written exemption notice in your lease.",
+  "title_es": "Ley de Protección al Inquilino (Tenant Protection Act): causa justa para desalojo y ayuda de reubicación sin culpa",
+  "requirement_es": "Una vez que haya vivido legalmente en su unidad por 12 meses, su arrendador solo puede terminar su contrato por una causa justa que aparezca en la ley, y el aviso por escrito debe decir cuál es esa causa. Si la causa no es culpa suya, como que el dueño se mude a la unidad, se retire la unidad del mercado, o se demuela o remodele a fondo, el arrendador debe pagarle un mes de renta como ayuda de reubicación dentro de 15 días o perdonarle la renta del último mes.",
+  "key_value_es": "Se requiere causa justa después de 12 meses de contrato; reubicación sin culpa = 1 mes de renta",
+  "summary_es": "Después de 12 meses en su hogar, su arrendador necesita una razón legal para terminar su contrato y le debe un mes de renta en desalojos sin culpa.",
+  "settle_hint_es": "La fecha del certificado de ocupación del edificio, del departamento de construcción de la ciudad, quién es el dueño y cualquier aviso de exención por escrito en su contrato."
+ },
+ "CA-EVICT-02": {
+  "key": "d65afb4bf46f8bfd",
+  "summary_en": "If you leave your San Francisco rent-controlled unit under 20 days for improvement work, your household gets $446.00 per day plus actual moving costs.",
+  "settle_hint_en": "Whether the unit is covered by the San Francisco Rent Ordinance, from the San Francisco Rent Board.",
+  "title_es": "Pagos de reubicación por desplazamiento temporal de menos de 20 días por mejoras capitales (San Francisco)",
+  "requirement_es": "Si tiene que salir por menos de 20 días por obras de mejoras capitales en San Francisco, su pago de reubicación lo fija el Civil Code § 1947.9 y no la Rent Ordinance § 37.9C de la ciudad. Para avisos entregados del 1 de marzo de 2026 al 28 de febrero de 2027, son $446.00 por día por hogar inquilino más los gastos reales de mudanza.",
+  "key_value_es": "$446.00 por día por hogar más los gastos reales de mudanza (avisos entregados del 3/1/26 al 2/28/27)",
+  "summary_es": "Si deja su unidad con control de renta en San Francisco por menos de 20 días por obras, su hogar recibe $446.00 por día más gastos reales de mudanza.",
+  "settle_hint_es": "Si la unidad está cubierta por la Rent Ordinance de San Francisco, según la Junta de Renta de San Francisco (San Francisco Rent Board)."
+ },
+ "CA-EVICT-03": {
+  "key": "acb130935ea5d065",
+  "summary_en": "If your protected home is torn down for new housing and your household earns 80% of area median income or less, you get relocation benefits.",
+  "settle_hint_en": "Whether your unit counts as a protected unit under the Housing Crisis Act, from the city planning department's records for the project.",
+  "title_es": "Reubicación bajo la Ley de Crisis de Vivienda (Housing Crisis Act) para hogares de bajos ingresos desplazados por demolición",
+  "requirement_es": "Si su unidad protegida se demuele para construir vivienda nueva y su hogar gana el 80% del ingreso medio del área o menos, debe recibir beneficios de reubicación iguales a los que pagan las entidades públicas bajo el Gov. Code § 7260 et seq. En Los Ángeles, el dueño paga la cantidad de la HCA o la de la ciudad, la que sea más alta.",
+  "key_value_es": "Reubicación de acuerdo con el Gov. Code § 7260 et seq. para hogares de bajos ingresos",
+  "summary_es": "Si su hogar protegido se derrumba para construir vivienda nueva y su hogar gana el 80% del ingreso medio del área o menos, recibe beneficios de reubicación.",
+  "settle_hint_es": "Si su unidad cuenta como unidad protegida bajo la Housing Crisis Act, según los registros del proyecto en el departamento de planificación de la ciudad."
+ },
+ "CA-RENT-01": {
+  "key": "36b7f1c7736b668e",
+  "summary_en": "In a covered unit, your landlord can raise rent at most 5% plus local inflation, or 10%, whichever is lower, each 12 months.",
+  "settle_hint_en": "The building's certificate of occupancy date from the city building department, the owner type, and whether local rent control covers the unit.",
+  "title_es": "Límite estatal de renta de California (Tenant Protection Act, AB 1482)",
+  "requirement_es": "En una unidad cubierta, su arrendador no puede subir su renta más del 5% más el cambio local en el costo de vida, o el 10%, lo que sea menor, en cualquier período de 12 meses, y puede subirla como máximo dos veces en 12 meses. Cuando empieza un contrato nuevo, el arrendador puede fijar cualquier renta inicial, y el límite se aplica a los aumentos después de eso.",
+  "key_value_es": "El menor entre 5% + CPI regional o 10% cada 12 meses; como máximo 2 aumentos cada 12 meses",
+  "summary_es": "En una unidad cubierta, su arrendador puede subir la renta como máximo 5% más la inflación local, o 10%, lo que sea menor, cada 12 meses.",
+  "settle_hint_es": "La fecha del certificado de ocupación del edificio, del departamento de construcción de la ciudad, el tipo de dueño y si la unidad tiene control de renta local."
+ },
+ "CA-SCREEN-01": {
+  "key": "ed88f86b6902fe91",
+  "summary_en": "Landlords cannot reject everyone with a criminal record or consider arrests without conviction, sealed or expunged records, or juvenile records.",
+  "settle_hint_en": "Whether the owner lives in the home and rents to only one other person.",
+  "title_es": "Límites al uso de antecedentes penales en la evaluación de inquilinos (reglamentos de FEHA / Civil Rights Council)",
+  "requirement_es": "Los arrendadores de California no pueden rechazar a todas las personas con antecedentes penales, y no pueden tomar en cuenta arrestos que no terminaron en condena, antecedentes sellados o borrados, ni antecedentes juveniles. Si un arrendador lo rechaza por una condena, esa condena debe estar directamente relacionada con su capacidad de ser un buen inquilino.",
+  "key_value_es": "No se permiten prohibiciones generales por antecedentes penales; no se pueden considerar arrestos sin condena, antecedentes sellados o borrados ni antecedentes juveniles",
+  "summary_es": "Los arrendadores no pueden rechazar a todos los que tienen antecedentes penales ni considerar arrestos sin condena, antecedentes sellados o borrados, ni antecedentes juveniles.",
+  "settle_hint_es": "Si el dueño vive en la casa y le renta a solo una persona más."
+ },
+ "CA-SCREEN-02": {
+  "key": "af82220c9dbba8d1",
+  "summary_en": "California landlords cannot reject or treat you differently for using Section 8 or other lawful income, and voucher holders may show proof besides credit.",
+  "settle_hint_en": "Whether the owner lives in the home and rents to only one other person, which the lease or the owner can confirm.",
+  "title_es": "Prohibición de discriminar por fuente de ingresos, incluidos Section 8 y otros vales de vivienda, y alternativa al historial de crédito para quienes reciben subsidio (FEHA)",
+  "requirement_es": "Un arrendador en California no puede negarse a rentarle, ponerle condiciones o depósitos diferentes, ni anunciar 'No Section 8' por su fuente de ingresos legal y comprobable, incluidos Section 8, HUD-VASH y otros subsidios de vivienda. Si usted recibe un subsidio de renta del gobierno, cualquier prueba de ingresos debe usar solo la parte de la renta que usted paga, y un arrendador que revisa el crédito debe dejarle mostrar otra prueba de que puede pagar, como registros de beneficios, registros de pago o estados de cuenta del banco, y debe tomarla en cuenta de forma razonable (SB 267, desde el 1 de enero de 2024).",
+  "key_value_es": "La fuente de ingresos, incluidos los vales Section 8 y VASH, es una categoría protegida; quienes reciben subsidio pueden mostrar otras pruebas en lugar del historial de crédito",
+  "summary_es": "En California, el arrendador no puede rechazarle ni tratarle diferente por usar Section 8 u otros ingresos legales, y con subsidio puede mostrar pruebas distintas al crédito.",
+  "settle_hint_es": "Si el dueño vive en la casa y le renta solo a una persona más, algo que el contrato o el dueño pueden confirmar."
+ },
+ "CA-DEP-01": {
+  "key": "997eed9969b61f23",
+  "summary_en": "Your landlord can charge a deposit of at most one month's rent (two for some small landlords) and must return it within 21 days.",
+  "settle_hint_en": "County property records showing who owns the building and how many rental properties and units that owner has.",
+  "title_es": "Ley de depósitos de garantía de California: límite de un mes, devolución en 21 días y límites a los descuentos",
+  "requirement_es": "Desde el 1 de julio de 2024, un arrendador no puede pedir ni recibir un depósito de garantía (sin importar cómo lo llame) de más de un mes de renta, además de la renta del primer mes; ciertos arrendadores pequeños pueden cobrar hasta dos meses de renta. Dentro de los 21 días después de que usted se mude, el arrendador debe devolverle el depósito o lo que quede, con una lista detallada, recibos y (desde el 1 de abril de 2025) fotos de cualquier descuento. El arrendador no puede descontar por el desgaste normal ni por daños que ya existían, y ningún depósito puede llamarse no reembolsable.",
+  "key_value_es": "1 mes de renta (2 meses para ciertos arrendadores pequeños); devolución en 21 días",
+  "summary_es": "Su arrendador puede cobrar un depósito de máximo un mes de renta (dos para algunos arrendadores pequeños) y debe devolverlo en 21 días.",
+  "settle_hint_es": "Los registros de propiedad del condado que muestran quién es dueño del edificio y cuántas propiedades y unidades de renta tiene ese dueño."
+ },
+ "MA-ALG-01": {
+  "key": "160e27c272aef389",
+  "summary_en": "This Massachusetts bill to stop algorithmic rent fixing is only a proposal; it is not law.",
+  "settle_hint_en": null,
+  "title_es": "H.5222 – Ley para prevenir la fijación de rentas por algoritmos en el mercado de vivienda de renta",
+  "requirement_es": "Este es un proyecto de ley de la Cámara de Massachusetts para prevenir la fijación de rentas por algoritmos en el mercado de vivienda de renta. No es ley.",
+  "key_value_es": null,
+  "summary_es": "Este proyecto de ley de Massachusetts para frenar la fijación de rentas por algoritmos es solo una propuesta; no es ley.",
+  "settle_hint_es": null
+ },
+ "MA-ALG-02": {
+  "key": "845a65cf792b4118",
+  "summary_en": "This Massachusetts bill to ban algorithmic rent setting is only a proposal; it is not law, so it does not protect you yet.",
+  "settle_hint_en": null,
+  "title_es": "S.2983 – Ley que prohíbe fijar rentas por algoritmos (194.ª Corte General)",
+  "requirement_es": "Este es un proyecto de ley de Massachusetts para prohibir que las rentas se fijen por algoritmos. No es ley, así que todavía no da a los inquilinos protección estatal contra la fijación de rentas por algoritmos.",
+  "key_value_es": null,
+  "summary_es": "Este proyecto de ley de Massachusetts para prohibir fijar rentas por algoritmos es solo una propuesta; no es ley, así que todavía no le protege.",
+  "settle_hint_es": null
+ },
+ "MA-FEE-01": {
+  "key": "40f0e38081b8cbd8",
+  "summary_en": "Only a licensed broker can charge you a fee for finding an apartment, and they must explain the fee in writing at your first meeting.",
+  "settle_hint_en": null,
+  "title_es": "Aviso de la comisión de un corredor con licencia a posibles inquilinos",
+  "requirement_es": "Solo un corredor con licencia puede cobrarle a un posible inquilino una comisión por encontrar un apartamento. En la primera reunión en persona, el corredor debe decirle por escrito cuánto es la comisión, cuándo y cómo se paga, y si depende de que se firme un contrato de renta.",
+  "key_value_es": "Aviso escrito de la comisión en la primera reunión en persona; el corredor debe tener licencia",
+  "summary_es": "Solo un corredor con licencia puede cobrarle por encontrar un apartamento, y debe explicarle la comisión por escrito en su primera reunión.",
+  "settle_hint_es": null
+ },
+ "MA-FEE-02": {
+  "key": "6c4f26527a9cf70b",
+  "summary_en": "You only pay a broker fee if you hired the broker; if the landlord hired them, you cannot be charged.",
+  "settle_hint_en": null,
+  "title_es": "La comisión del corredor la paga solo quien contrató al corredor",
+  "requirement_es": "La comisión de un corredor de rentas solo se le puede cobrar a la parte (arrendador o inquilino) que primero contrató al corredor por medio de un contrato. Si el arrendador o su agente contrató al corredor, no le pueden obligar a usted a pagar la comisión.",
+  "key_value_es": "La comisión del corredor la paga solo la parte que contrató al corredor",
+  "summary_es": "Usted solo paga la comisión del corredor si usted lo contrató; si lo contrató el arrendador, no se la pueden cobrar.",
+  "settle_hint_es": null
+ },
+ "MA-FEE-03": {
+  "key": "9d27cbf08d5335fd",
+  "summary_en": "At move-in, your landlord can only charge first and last month's rent, a deposit up to one month, and lock costs—no application fees.",
+  "settle_hint_en": "The lease, showing whether it is a vacation or recreational rental of 100 days or less.",
+  "title_es": "Límite a los cobros al inicio del contrato de renta (sin cuotas de solicitud)",
+  "requirement_es": "Al mudarse o antes, un arrendador en Massachusetts o su agente solo puede pedir la renta del primer mes, la renta del último mes, un depósito de garantía de no más de un mes de renta, y el costo de comprar e instalar una cerradura y llave nuevas. No se permiten cuotas de solicitud, cuotas de revisión de antecedentes ni otros cobros por adelantado, ni tampoco una comisión de corredor pagada al agente del arrendador.",
+  "key_value_es": "Primer mes + último mes + depósito de garantía (≤1 mes) + costo de cerradura/llave; nada más",
+  "summary_es": "Al mudarse, su arrendador solo puede cobrar el primer y último mes de renta, un depósito de hasta un mes y la cerradura; sin cuotas de solicitud.",
+  "settle_hint_es": "El contrato de renta, que muestra si es una renta de vacaciones o recreo de 100 días o menos."
+ },
+ "MA-EVICT-01": {
+  "key": "f29101fb0724ac79",
+  "summary_en": "Your landlord cannot punish you for complaining in writing, reporting code violations, or joining a tenants' union; you may recover 1 to 3 months' rent.",
+  "settle_hint_en": null,
+  "title_es": "Prohibición de terminar el contrato, subir la renta o cambiar las condiciones como represalia",
+  "requirement_es": "Un arrendador no puede amenazarle ni tomar represalias contra usted, por ejemplo con un aviso de terminación, un aumento de renta o un cambio grande en las condiciones del contrato, porque usted reportó violaciones del código, tomó acción legal bajo las leyes de vivienda, se quejó por escrito, u organizó o se unió a una unión de inquilinos. Un aviso de terminación (que no sea por falta de pago), un aumento de renta o un cambio grande en las condiciones dentro de los seis meses después de esa actividad se presume que es una represalia, y usted puede recibir de 1 a 3 meses de renta o sus daños reales, lo que sea mayor, más los honorarios de abogado.",
+  "key_value_es": "Presunción de represalia de 6 meses que se puede refutar; daños de 1 a 3 meses de renta o daños reales, lo que sea mayor",
+  "summary_es": "Su arrendador no puede castigarle por quejarse por escrito, reportar violaciones del código o unirse a una unión de inquilinos; puede recibir 1 a 3 meses de renta.",
+  "settle_hint_es": null
+ },
+ "MA-RENT-01": {
+  "key": "de43418788d7cde6",
+  "summary_en": "Massachusetts has no legal cap on rent increases, because state law bans cities and towns from passing rent control.",
+  "settle_hint_en": null,
+  "title_es": "Prohibición estatal del control local de rentas (M.G.L. c. 40P)",
+  "requirement_es": "Las ciudades y pueblos de Massachusetts no pueden aprobar, mantener ni hacer cumplir el control de rentas, así que no hay un límite legal estatal ni local a los aumentos de renta en Massachusetts. Una ciudad o pueblo que acepte el Capítulo 40P solo puede adoptar un programa limitado y voluntario en el que la ciudad les paga a los dueños la diferencia entre la renta del mercado y la renta controlada.",
+  "key_value_es": "Control local de rentas prohibido",
+  "summary_es": "Massachusetts no tiene un límite legal a los aumentos de renta, porque la ley estatal prohíbe que las ciudades y pueblos aprueben control de rentas.",
+  "settle_hint_es": null
+ },
+ "MA-RENT-02": {
+  "key": "25a7b97a2197a36a",
+  "summary_en": "This proposed cap on yearly rent increases (lower of CPI or 5%) is not law; the court blocked it from the November 2026 ballot.",
+  "settle_hint_en": null,
+  "title_es": "Petición de Iniciativa 25-21: límite estatal a los aumentos de renta (bloqueada de la boleta de noviembre de 2026)",
+  "requirement_es": "Esta propuesta habría limitado los aumentos anuales de renta al menor entre el CPI o el 5% y habría anulado la G.L. c. 40P. No es ley: el 23 de junio de 2026 la SJC decidió que no puede aparecer en la boleta de noviembre de 2026 porque incluye una exención religiosa.",
+  "key_value_es": "El menor entre el CPI o el 5% al año (propuesto; no aprobado)",
+  "summary_es": "Este límite propuesto a los aumentos anuales de renta (el menor entre el CPI o el 5%) no es ley; la corte lo sacó de la boleta de noviembre de 2026.",
+  "settle_hint_es": null
+ },
+ "MA-SCREEN-01": {
+  "key": "483c875cc03fcf80",
+  "summary_en": "A Massachusetts landlord cannot refuse to rent to you or treat you differently because you get public assistance or a housing voucher.",
+  "settle_hint_en": null,
+  "title_es": "Prohibición en Massachusetts de discriminar por fuente de ingresos (asistencia pública y subsidios de vivienda)",
+  "requirement_es": "Un arrendador en Massachusetts no puede negarse a rentarle ni tratarlo de forma diferente porque usted recibe asistencia pública o un subsidio de vivienda, como un vale de renta. Tampoco puede hacerlo por los requisitos del programa de subsidio.",
+  "key_value_es": "La fuente de ingresos (asistencia pública, subsidios de vivienda, ayuda para la renta) es una categoría protegida en las rentas",
+  "summary_es": "Un arrendador en Massachusetts no puede negarse a rentarle ni tratarlo diferente porque usted recibe asistencia pública o un vale de vivienda.",
+  "settle_hint_es": null
+ },
+ "MA-DEP-01": {
+  "key": "e5c5584ada683620",
+  "summary_en": "Your landlord can charge a deposit of at most one month's rent and must return it, with interest, within 30 days after your rental ends.",
+  "settle_hint_en": "Your lease, showing whether it is a vacation or recreational rental of 100 days or less.",
+  "title_es": "Ley de depósitos de garantía de Massachusetts: límite de un mes, cuenta bancaria separada, intereses y devolución en 30 días",
+  "requirement_es": "Su arrendador no puede cobrar un depósito de garantía de más de un mes de renta, y debe guardarlo en una cuenta separada que genere intereses en un banco de Massachusetts, darle un recibo dentro de 30 días y una declaración por escrito del estado de la vivienda dentro de 10 días. El arrendador debe pagarle 5% de interés al año (o la tasa más baja que el banco realmente pagó), y debe devolverle el depósito más los intereses dentro de 30 días después de que termine su contrato de renta, quitando solo los descuentos permitidos respaldados por una lista detallada y bajo juramento.",
+  "key_value_es": "Máximo 1 mes de renta; cuenta separada en un banco de MA; 5% de interés anual (o la tasa real más baja del banco); devolución en 30 días; daños triples",
+  "summary_es": "Su arrendador puede cobrar un depósito de máximo un mes de renta y debe devolverlo, con intereses, dentro de 30 días después de que termine su renta.",
+  "settle_hint_es": "Su contrato de renta, que muestra si es una renta de vacaciones o recreo de 100 días o menos."
+ },
+ "NJ-ALG-01": {
+  "key": "0cb19dcd8ebe68a7",
+  "summary_en": "Starting July 1, 2027, New Jersey landlords cannot use rent-setting software that uses competitors' private data; this is not in effect yet.",
+  "settle_hint_en": null,
+  "title_es": "FAIR Act: prohibición de programas que fijan rentas con algoritmos usando datos no públicos de la competencia",
+  "requirement_es": "A partir del 1 de julio de 2027, los arrendadores de New Jersey no pueden pagar ni usar un 'coordinador': un programa o aparato algorítmico que fija o recomienda rentas, condiciones del contrato o niveles de ocupación usando datos no públicos de la competencia. Nadie puede hacer una función de coordinación ni participar en una coordinación paralela de precios. Los inquilinos pueden reportar violaciones en el portal de quejas del Attorney General.",
+  "key_value_es": "El uso de coordinadores algorítmicos para fijar rentas que usan datos no públicos de la competencia está prohibido desde el 2027-07-01; las violaciones cuentan como violaciones de la NJ Antitrust Act",
+  "summary_es": "A partir del 1 de julio de 2027, los arrendadores de New Jersey no pueden usar programas para fijar rentas con datos privados de la competencia; aún no está vigente.",
+  "settle_hint_es": null
+ },
+ "NJ-FEE-01": {
+  "key": "32812d4f266188db",
+  "summary_en": "A New Jersey landlord cannot charge you more than $50 to apply to rent a home, except in one- or two-family houses.",
+  "settle_hint_en": "The number of homes in the building, showing whether it is a one-family or two-family dwelling.",
+  "title_es": "Cuota de solicitud para rentar vivienda limitada a $50 (ajustada por CPI)",
+  "requirement_es": "Un arrendador en New Jersey o su agente no puede cobrar más de $50 como cuota de solicitud o cuota parecida para rentar o subarrendar una vivienda; a partir del 1 de enero de 2027 el límite se ajusta cada año por la inflación. Si le cobran de más, puede reportarlo a la Division of Consumer Affairs, y se le devuelve lo que pagó de más con la multa cobrada.",
+  "key_value_es": "Cuota de solicitud máxima de $50; se ajusta cada año por CPI a partir del 1 de enero de 2027 (solo aumentos)",
+  "summary_es": "Un arrendador en New Jersey no puede cobrarle más de $50 por solicitar rentar una vivienda, excepto en casas de una o dos familias.",
+  "settle_hint_es": "El número de viviendas en el edificio, que muestra si es una casa de una familia o de dos familias."
+ },
+ "NJ-EVICT-01": {
+  "key": "852d736159e5d64e",
+  "summary_en": "Your New Jersey landlord can evict you or refuse to renew your lease only for a good cause listed in the law, with proper notice.",
+  "settle_hint_en": "Whether the owner lives in the building and how many rental units it has.",
+  "title_es": "Anti-Eviction Act: se necesita una causa justa para desalojar o no renovar",
+  "requirement_es": "Su arrendador no puede desalojarlo ni negarse a renovar su contrato, escrito o verbal, sin una de las causas justas que da la ley, como no pagar, conducta desordenada, daños o romper reglas del contrato después de un aviso para que pare. Cada causa requiere su propio aviso de desalojo, y los cierres de la vivienda u otros desalojos por cuenta propia son ilegales. Si lo desalojan para que el arrendador corrija una ocupación ilegal, el arrendador debe pagarle ayuda para mudarse igual a seis meses de renta.",
+  "key_value_es": "Causas justas listadas (N.J.S.A. 2A:18-61.1(a)-(r)), cada una con su propio plazo de aviso de 3 días a 3 años; ayuda para mudarse de 6 meses de renta en desalojos para corregir una ocupación ilegal",
+  "summary_es": "Su arrendador en New Jersey solo puede desalojarlo o no renovar su contrato por una causa justa de la ley, con el aviso correcto.",
+  "settle_hint_es": "Si el dueño vive en el edificio y cuántas unidades de renta tiene."
+ },
+ "NJ-RENT-01": {
+  "key": "f3aae8fa0aab4266",
+  "summary_en": "New Jersey has no set rent cap, but increases cannot be unfairly high (unconscionable), must follow local rent control, and cannot start mid-lease.",
+  "settle_hint_en": "Whether the owner lives in the building and how many rental units it has, plus whether your town has a rent control ordinance.",
+  "title_es": "No hay límite estatal a la renta; los aumentos no pueden ser abusivos y deben seguir el control local de rentas",
+  "requirement_es": "New Jersey no tiene un límite estatal a la renta, pero cualquier aumento no puede ser abusivo (unconscionable), debe seguir cualquier ordenanza local de control de rentas y solo puede aplicarse con un aviso de desalojo y una oferta de nuevo contrato, no a mitad del contrato. Si cree que un aumento es abusivo, puede reclamarlo ante una junta local de rentas o en la corte.",
+  "key_value_es": "No hay límite numérico estatal; regla de aumentos no abusivos",
+  "summary_es": "New Jersey no tiene un límite fijo a la renta, pero los aumentos no pueden ser abusivos, deben seguir el control local y no pueden empezar a mitad del contrato.",
+  "settle_hint_es": "Si el dueño vive en el edificio y cuántas unidades de renta tiene, y si su pueblo tiene una ordenanza de control de rentas."
+ },
+ "NJ-RENT-02": {
+  "key": "dba795c9e587f894",
+  "summary_en": "If your building is converted to a condo, co-op or fee simple ownership, your landlord cannot raise your rent to pay conversion costs.",
+  "settle_hint_en": "Records or a notice from the owner showing whether the building is being converted to condominium, cooperative or fee simple ownership.",
+  "title_es": "No se puede subir la renta para cubrir los costos de convertir el edificio en condominio o cooperativa",
+  "requirement_es": "Cuando su edificio se convierte en condominio, cooperativa o propiedad fee simple, el dueño no puede subirle la renta para cubrir costos que vienen solo de la conversión. Sí se permiten aumentos por servicios o comodidades nuevas.",
+  "key_value_es": null,
+  "summary_es": "Si su edificio se convierte en condominio, cooperativa o propiedad fee simple, el dueño no puede subirle la renta para pagar los costos de la conversión.",
+  "settle_hint_es": "Registros o un aviso del dueño que muestren si el edificio se está convirtiendo en condominio, cooperativa o propiedad fee simple."
+ },
+ "NJ-RENT-03": {
+  "key": "8c0319d2bdab111c",
+  "summary_en": "If your building is newly built, local rent control does not cover it for 30 years after construction is finished.",
+  "settle_hint_en": "The date the building's construction was completed, such as on its certificate of occupancy from the local building department.",
+  "title_es": "Los edificios de viviendas múltiples recién construidos quedan fuera del control de rentas local por 30 años",
+  "requirement_es": "Los edificios de viviendas múltiples recién construidos quedan fuera de las leyes locales de control de rentas por 30 años después de terminar la construcción. Pregunte a la junta local de control de rentas o al secretario municipal si su unidad está cubierta.",
+  "key_value_es": "30 años fuera del control de rentas local",
+  "summary_es": "Si su edificio es nuevo, el control de rentas local no lo cubre por 30 años después de terminar la construcción.",
+  "settle_hint_es": "La fecha en que se terminó de construir el edificio, por ejemplo en su certificado de ocupación del departamento local de construcción."
+ },
+ "NJ-SCREEN-01": {
+  "key": "9a2aeb96f7839677",
+  "summary_en": "A New Jersey landlord cannot refuse to rent to you because of where your lawful income comes from, like a Section 8 voucher.",
+  "settle_hint_en": "Whether the owner lives in the building and what kind of home it is, such as a two-family or one-family dwelling.",
+  "title_es": "Ley Contra la Discriminación: no se puede negar la renta por la fuente de ingresos legales",
+  "requirement_es": "Un dueño en New Jersey no puede negarse a rentarle, ni tratarlo diferente, por el origen de sus ingresos legales o del dinero de la renta (por ejemplo, un vale de Section 8) o por otras características protegidas. Puede presentar una queja gratis ante la Division on Civil Rights dentro de 180 días, o demandar en la Superior Court dentro de dos años.",
+  "key_value_es": "La fuente de ingresos legales o del pago de renta (por ejemplo, vales de Section 8) no puede ser motivo para negarle la vivienda",
+  "summary_es": "Un dueño en New Jersey no puede negarse a rentarle por el origen de sus ingresos legales, como un vale de Section 8.",
+  "settle_hint_es": "Si el dueño vive en el edificio y qué tipo de vivienda es, por ejemplo una casa para dos familias o para una familia."
+ },
+ "NJ-SCREEN-02": {
+  "key": "42356d72a868b732",
+  "summary_en": "Most New Jersey landlords cannot ask about your criminal record before a conditional offer, and cannot require drug or alcohol tests.",
+  "settle_hint_en": "How many units the building has and whether the owner lives there.",
+  "title_es": "Ley Fair Chance in Housing: límites a la revisión de antecedentes penales y pruebas de drogas a solicitantes",
+  "requirement_es": "El dueño no puede preguntarle por sus antecedentes penales, ni de palabra ni por escrito, hasta después de hacerle una oferta condicional. Después de la oferta, solo puede considerar ciertas condenas dentro de plazos fijos, y debe hacer una evaluación individual antes de retirar la oferta. El dueño tampoco puede exigirle una prueba de drogas o alcohol ni pedirle permiso para obtener registros de un centro de tratamiento de drogas.",
+  "key_value_es": "No se pregunta por antecedentes penales antes de la oferta condicional; límites de revisión de 6 años (1er grado), 4 años (2do/3er grado), 1 año (4to grado)",
+  "summary_es": "La mayoría de los dueños en New Jersey no pueden preguntar por sus antecedentes penales antes de una oferta condicional, ni exigir pruebas de drogas o alcohol.",
+  "settle_hint_es": "Cuántas unidades tiene el edificio y si el dueño vive allí."
+ },
+ "NJ-DEP-01": {
+  "key": "9f904a347454b303",
+  "summary_en": "Your deposit can be at most 1.5 months' rent, kept in an interest-bearing account, and returned within 30 days after your tenancy ends.",
+  "settle_hint_en": "Whether the owner lives in the building and whether it is a two- or three-family home.",
+  "title_es": "Ley de Depósitos de Seguridad: límite de 1.5 meses, cuenta que genera intereses y devolución en 30 días",
+  "requirement_es": "El dueño no puede cobrar un depósito de seguridad mayor a 1.5 veces la renta de un mes, y cualquier aumento anual del depósito no puede pasar del 10% del depósito actual. El dueño debe guardar el depósito en una cuenta asegurada de New Jersey que genere intereses, pagarle los intereses cada año, y devolverle el depósito más intereses, menos los descuentos detallados, dentro de 30 días después de que termine el alquiler. Si usted tuvo que salir por incendio, inundación, condena del edificio o evacuación, el plazo es de 5 días hábiles.",
+  "key_value_es": "Límite de 1.5 veces la renta mensual; aumento anual no mayor al 10% del depósito actual; aviso por escrito de la cuenta dentro de 30 días; devolución dentro de 30 días (5 días hábiles si tuvo que salir); doble indemnización",
+  "summary_es": "Su depósito puede ser como máximo 1.5 meses de renta, guardado en una cuenta con intereses, y devuelto dentro de 30 días al terminar el alquiler.",
+  "settle_hint_es": "Si el dueño vive en el edificio y si es una casa para dos o tres familias."
+ },
+ "NJ-DEP-02": {
+  "key": "21c366024df44b6e",
+  "summary_en": "If you end your lease early due to domestic violence, your landlord must make your deposit plus interest available within 15 business days.",
+  "settle_hint_en": "Your lease, showing whether the rental is transient or seasonal.",
+  "title_es": "Ley Safe Housing: devolución del depósito al terminar el contrato por violencia doméstica",
+  "requirement_es": "Si usted termina su contrato antes de tiempo bajo la Safe Housing Act por violencia doméstica, el dueño debe tener listo su depósito más intereses dentro de 15 días hábiles. Dentro de 3 días hábiles, el dueño debe decirle por escrito cuándo y dónde recogerlo, con una lista detallada de intereses y descuentos.",
+  "key_value_es": "15 días hábiles; aviso por escrito dentro de 3 días hábiles",
+  "summary_es": "Si termina su contrato antes de tiempo por violencia doméstica, el dueño debe tener listo su depósito más intereses dentro de 15 días hábiles.",
+  "settle_hint_es": "Su contrato, que muestra si el alquiler es temporal o de temporada."
+ },
+ "BER-ALG-01": {
+  "key": "1425473d859d0c9f",
+  "summary_en": "Berkeley landlords cannot use rent-pricing software that relies on private competitor data to set your rent; penalties reach $1,000 per violation.",
+  "settle_hint_en": "The property's address, showing whether it is inside the City of Berkeley.",
+  "title_es": "Prohibición de vender o usar algoritmos coordinados para fijar rentas",
+  "requirement_es": "Los dueños en Berkeley no pueden usar un algoritmo coordinado de precios (programa que usa datos privados de competidores de menos de 90 días para recomendar rentas, cargos u ocupación) para fijar rentas o niveles de ocupación, y los vendedores no pueden vender ni dar licencia de estas herramientas a dueños en Berkeley. Un inquilino perjudicado por el uso de un dueño puede demandar para pedir una orden judicial, daños, multas civiles de hasta $1,000 por infracción y honorarios de abogado.",
+  "key_value_es": "Prohibido; multas civiles de hasta $1,000 por infracción (cada unidad y cada mes cuentan como una infracción aparte)",
+  "summary_es": "Los dueños en Berkeley no pueden usar programas de precios que usan datos privados de competidores para fijar su renta; las multas llegan a $1,000 por infracción.",
+  "settle_hint_es": "La dirección de la propiedad, que muestra si está dentro de la Ciudad de Berkeley."
+ },
+ "BER-FEE-01": {
+  "key": "d93ba40f42e4cdec",
+  "summary_en": "Before charging an application fee, a Berkeley landlord must give you a fee rights statement and the maximum fee, and cannot charge non-refundable renewal fees.",
+  "settle_hint_en": "The property's address, showing whether it is inside the City of Berkeley.",
+  "title_es": "Avisos sobre cargos de evaluación de inquilinos en Berkeley y prohibición de cargos no reembolsables por renovación y compañeros de cuarto",
+  "requirement_es": "Antes de que un dueño o agente en Berkeley cobre un cargo de evaluación o de solicitud, debe darle una declaración clara y visible de sus derechos sobre cargos de evaluación y el cargo máximo permitido por el Civil Code § 1950.6(b). Puede incluirlos en la solicitud o en un aviso aparte. El dueño tampoco puede cobrarle a un inquilino actual un cargo no reembolsable por renovar el alquiler, incluidos cargos porque un compañero de cuarto se va o por agregar o cambiar a un compañero de cuarto.",
+  "key_value_es": "Se exige declaración de derechos y aviso del cargo máximo; no se permiten cargos no reembolsables por renovación ni por compañeros de cuarto",
+  "summary_es": "Antes de cobrar un cargo de solicitud, el dueño en Berkeley debe darle una declaración de derechos y el cargo máximo, y no puede cobrar cargos no reembolsables por renovar.",
+  "settle_hint_es": "La dirección de la propiedad, que muestra si está dentro de la Ciudad de Berkeley."
+ },
+ "BER-EVICT-01": {
+  "key": "3ae2e8555b25719b",
+  "summary_en": "If your Berkeley unit is covered, your landlord can evict you only for a listed just cause and must pay $19,413 for owner move-ins.",
+  "settle_hint_en": "Whether an owner lives on the property, shares a kitchen or bath with you, or has an ADU there, plus the unit's coverage status with the Berkeley Rent Board.",
+  "title_es": "Causa justa para desalojo en Berkeley (Ordenanza de Estabilización de Rentas y Desalojo por Causa Justa)",
+  "requirement_es": "Si su unidad en Berkeley está cubierta total o parcialmente por la Ordenanza de Rentas, su arrendador solo puede desalojarlo por una de las causas justas que la ordenanza menciona. Los arrendadores también tienen límites para desalojar por renta no pagada o por violar el contrato, deben presentar los avisos de desalojo ante la Junta de Rentas (Rent Board) y deben pagar ayuda para mudanza cuando desalojan para que el dueño se mude a la unidad.",
+  "key_value_es": "Se requiere causa justa; desalojo por falta de pago solo si la renta debida es al menos 1 mes de la Renta Justa de Mercado de HUD (Oakland-Fremont); avisos presentados ante la Junta de Rentas dentro de 3 días hábiles; ayuda para mudanza cuando el dueño se muda: $19,413 más $6,471 para hogares que califican (2026, se ajusta por inflación cada año)",
+  "summary_es": "Si su unidad en Berkeley está cubierta, su arrendador solo puede desalojarlo por una causa justa de la lista y debe pagar $19,413 si el dueño se muda ahí.",
+  "settle_hint_es": "Si un dueño vive en la propiedad, comparte cocina o baño con usted o tiene una ADU ahí, y si la unidad está cubierta según la Junta de Rentas de Berkeley."
+ },
+ "BER-EVICT-02": {
+  "key": "594c25e37a216909",
+  "summary_en": "If your Berkeley landlord evicts you under the Ellis Act, they must pay $19,413, plus $6,471 more for qualifying households.",
+  "settle_hint_en": "Whether the owner has formally withdrawn the property from the rental market under the Ellis Act.",
+  "title_es": "Ayuda para mudanza por retiro bajo la Ley Ellis (Ordenanza de Implementación de Ellis)",
+  "requirement_es": "Si su arrendador en Berkeley lo desaloja para sacar la propiedad del mercado de alquiler bajo la Ley Ellis, debe pagarle ayuda para mudanza. Desde el 1 de enero de 2026, el pago normal es de $19,413, más $6,471 adicionales para hogares que califican.",
+  "key_value_es": "$19,413 normal; $6,471 adicionales para hogares que califican (montos de 2026, se ajustan por inflación cada año)",
+  "summary_es": "Si su arrendador en Berkeley lo desaloja bajo la Ley Ellis, debe pagarle $19,413, más $6,471 adicionales para hogares que califican.",
+  "settle_hint_es": "Si el dueño retiró oficialmente la propiedad del mercado de alquiler bajo la Ley Ellis."
+ },
+ "BER-RENT-01": {
+  "key": "55d332572636fb4e",
+  "summary_en": "Your landlord can usually raise a fully covered Berkeley unit's rent by only 1.0% for 2026; the yearly adjustment can never exceed 5%.",
+  "settle_hint_en": "The building's certificate of occupancy date (on or before June 1980), from the city building department, plus the building type and when your tenancy began.",
+  "title_es": "Topes de renta en Berkeley: los aumentos anuales se limitan al Ajuste General Anual (1.0% para 2026, nunca más de 5%)",
+  "requirement_es": "Si su unidad en Berkeley está totalmente cubierta por el control de rentas (sobre todo unidades en edificios de varias viviendas con certificado de ocupación de junio de 1980 o antes), su arrendador solo puede subir la renta cada año según el Ajuste General Anual (AGA) que fija la Junta de Rentas. Para 2026 el AGA es 1.0%, aplicado al tope de renta de 2025, no antes del 1 de enero de 2026. Bajo la Medida BB, el AGA nunca puede ser mayor de 5%, aunque un arrendador con ajustes no usados (acumulados) puede pasar del 5% hasta llegar al tope de renta. Los arrendadores pueden pedir aumentos por mejoras de capital solo después de terminar el trabajo.",
+  "key_value_es": "AGA 2026 de 1.0% (65% del cambio de 1.5% en el CPI del Área de la Bahía); el AGA tiene un límite de 5% por año",
+  "summary_es": "Su arrendador normalmente solo puede subir 1.0% la renta de una unidad totalmente cubierta en Berkeley para 2026; el ajuste anual nunca puede pasar de 5%.",
+  "settle_hint_es": "La fecha del certificado de ocupación del edificio (junio de 1980 o antes), del departamento de construcción de la ciudad, además del tipo de edificio y cuándo empezó su alquiler."
+ },
+ "BER-SCREEN-01": {
+  "key": "2db359aca8d6b78f",
+  "summary_en": "Berkeley landlords cannot ask about your criminal record, run criminal background checks, or turn you down because of your record.",
+  "settle_hint_en": "How many units the property has and whether an owner of record lives in one as their main home, or whether it is public housing or Section 8.",
+  "title_es": "Ordenanza Ronald V. Dellums de Acceso Justo a la Vivienda: prohibición de usar antecedentes penales al evaluar inquilinos",
+  "requirement_es": "Los arrendadores en Berkeley no pueden preguntar sobre antecedentes penales ni revisar antecedentes penales. Tampoco pueden decir en sus anuncios que no aceptan a personas con antecedentes, ni negarse a alquilar, terminar un alquiler o cobrar más depósito o renta por antecedentes penales. Si un arrendador toma una acción contra un solicitante o inquilino por sus antecedentes penales, debe darle un aviso por escrito y una oportunidad de responder.",
+  "key_value_es": "Prohibido preguntar o usar antecedentes penales en viviendas de alquiler",
+  "summary_es": "Los arrendadores en Berkeley no pueden preguntar por sus antecedentes penales, revisarlos ni rechazarlo por tenerlos.",
+  "settle_hint_es": "Cuántas unidades tiene la propiedad y si un dueño registrado vive en una como su casa principal, o si es vivienda pública o de Sección 8."
+ },
+ "BER-DEP-01": {
+  "key": "46c29ce644a75e84",
+  "summary_en": "If your Berkeley unit is covered, your landlord must pay you interest on your security deposit every year, prorated when you move out.",
+  "settle_hint_en": "Whether an owner lives on the property, shares a kitchen or bath with you, or has an ADU there, plus the unit's coverage status with the Berkeley Rent Board.",
+  "title_es": "Interés anual sobre depósitos de garantía para unidades cubiertas por la Ordenanza de Rentas",
+  "requirement_es": "Si su unidad en Berkeley está cubierta total o parcialmente por la Ordenanza de Rentas, su arrendador debe pagarle interés sobre su depósito de garantía al final de cada año. Si se muda antes de que termine el año, el arrendador debe pagarle una parte proporcional.",
+  "key_value_es": "Interés pagado cada año; proporcional al mudarse",
+  "summary_es": "Si su unidad en Berkeley está cubierta, su arrendador debe pagarle interés sobre su depósito cada año, y una parte proporcional cuando se mude.",
+  "settle_hint_es": "Si un dueño vive en la propiedad, comparte cocina o baño con usted o tiene una ADU ahí, y si la unidad está cubierta según la Junta de Rentas de Berkeley."
+ },
+ "BOS-EVICT-01": {
+  "key": "996c5bfb1b9d81e0",
+  "summary_en": "If your Boston landlord gives you a Notice to Quit or lease non-renewal notice, they must also give you a tenants' rights notice.",
+  "settle_hint_en": "Whether the home is in the City of Boston and is not a hospital, nursing or health facility, or short-term substance abuse treatment facility.",
+  "title_es": "Ley de Notificación para la Estabilidad de la Vivienda de Boston: se requiere un aviso de derechos del inquilino junto con un aviso de desalojo o de no renovación",
+  "requirement_es": "Si su arrendador en Boston, o un dueño después de una ejecución hipotecaria, le da un Aviso de Desalojo (Notice to Quit) o un aviso de que no renovará su contrato, debe darle al mismo tiempo un Aviso de Derechos y Recursos del Inquilino. También debe enviar una copia a la Oficina de Estabilidad de la Vivienda de la Ciudad. Si no recibe el aviso, repórtelo a la Oficina de Vivienda Justa y Equidad (617-635-2500 o 311).",
+  "key_value_es": "El aviso de derechos debe venir con el Aviso de Desalojo o de no renovación; multas de $300 por día desde la segunda falta",
+  "summary_es": "Si su arrendador en Boston le da un Aviso de Desalojo o de no renovación, también debe darle un aviso de sus derechos como inquilino.",
+  "settle_hint_es": "Si la vivienda está en la Ciudad de Boston y no es un hospital, centro de enfermería o de salud, ni un centro de tratamiento corto para abuso de sustancias."
+ },
+ "BOS-EVICT-02": {
+  "key": "5a3e0334727387f0",
+  "summary_en": "This was a proposal to let Boston add eviction protections, but it failed and is not law.",
+  "settle_hint_en": null,
+  "title_es": "Petición de autonomía local de Boston para protecciones contra desalojos (H.3744, sesión 193)",
+  "requirement_es": "Esta propuesta nunca se convirtió en ley. Habría permitido que Boston creara sus propias protecciones contra desalojos, pero se envió a estudio y murió cuando terminó la sesión de 2023–2024.",
+  "key_value_es": null,
+  "summary_es": "Esta era una propuesta para que Boston agregara protecciones contra desalojos, pero fracasó y no es ley.",
+  "settle_hint_es": null
+ },
+ "BOS-RENT-01": {
+  "key": "4c3a7dca980846f9",
+  "summary_en": "This proposal for Boston rent stabilization failed and is not law, so it does not limit rent increases in Boston.",
+  "settle_hint_en": null,
+  "title_es": "Petición de autonomía local de Boston para estabilización de rentas (H.3744, sesión 193)",
+  "requirement_es": "Esta propuesta nunca se convirtió en ley. Una petición de autonomía local de 2023–2024 habría permitido que Boston adoptara la estabilización de rentas, pero se envió a estudio y murió cuando terminó la sesión. No limita los aumentos de renta en Boston.",
+  "key_value_es": null,
+  "summary_es": "Esta propuesta de estabilización de rentas en Boston fracasó y no es ley, así que no limita los aumentos de renta en Boston.",
+  "settle_hint_es": null
+ },
+ "BOS-SCREEN-01": {
+  "key": "103336bf6176419e",
+  "summary_en": "In Boston DND-funded or BPDA income-restricted units, landlords can't use blanket record bans, convictions over 5 years old, or your credit score.",
+  "settle_hint_en": "Whether the unit received Boston DND funding or land, or is a BPDA Inclusionary Development income-restricted unit, from the building's affordability documents or the city.",
+  "title_es": "Política de Selección Justa de Inquilinos de Boston (límites al uso de antecedentes penales y de crédito)",
+  "requirement_es": "Si usted solicita una vivienda financiada por el DND o una vivienda de ingresos restringidos del programa Inclusionary Development de la BPDA en Boston, el dueño no puede rechazar a todas las personas con antecedentes. No puede tomar en cuenta arrestos que no terminaron en condena, antecedentes sellados, borrados o de menores, ni condenas de hace más de 5 años. Tampoco puede aprobarlo o rechazarlo por su puntaje de crédito, y solo puede revisar su historial de crédito si usted no tiene historial de alquiler.",
+  "key_value_es": "No se permite rechazar a todas las personas con antecedentes penales; solo se revisan condenas de los últimos 5 años; no se usa el puntaje de crédito",
+  "summary_es": "En viviendas de Boston financiadas por el DND o con ingresos restringidos de la BPDA, no pueden rechazar a todos los que tienen antecedentes, usar condenas de más de 5 años ni su puntaje de crédito.",
+  "settle_hint_es": "Si la vivienda recibió fondos o terreno del DND de Boston, o si es una vivienda de ingresos restringidos del programa Inclusionary Development de la BPDA, según los documentos de vivienda asequible del edificio o la ciudad."
+ },
+ "BOS-SCREEN-02": {
+  "key": "da10687f388fbcca",
+  "summary_en": "A Boston landlord cannot refuse to rent to you or treat you differently because you pay with rental assistance, like a Section 8 voucher.",
+  "settle_hint_en": null,
+  "title_es": "Prohibición en Boston de discriminar por la fuente de ingresos (ayuda para el alquiler)",
+  "requirement_es": "En Boston, un dueño no puede negarse a alquilarle ni tratarlo de forma diferente porque usted paga con ayuda para el alquiler, como Section 8, beneficios del seguro social por discapacidad o un vale para veteranos. Si esto pasa, puede presentar una queja ante la Boston Fair Housing Commission.",
+  "key_value_es": "La ayuda para el alquiler (por ejemplo, los vales de Section 8) es una categoría protegida",
+  "summary_es": "En Boston, el dueño no puede negarse a alquilarle ni tratarlo diferente porque usted paga con ayuda para el alquiler, como un vale de Section 8.",
+  "settle_hint_es": null
+ },
+ "CAM-ALG-01": {
+  "key": "4ff81e29d3c54dd3",
+  "summary_en": "This is not law yet: Cambridge has only started studying a possible ban on property managers hiring firms that use algorithms or AI to recommend rents.",
+  "settle_hint_en": null,
+  "title_es": "Orden de política de Cambridge para preparar una prohibición de servicios que fijan alquileres con algoritmos",
+  "requirement_es": "El Concejo Municipal de Cambridge comenzó a trabajar en una posible prohibición para que las compañías que administran viviendas no contraten empresas que usan algoritmos o inteligencia artificial para recomendar alquileres. Todavía no hay nada prohibido, y el City Manager debe presentar opciones de política o el texto de una ordenanza.",
+  "key_value_es": null,
+  "summary_es": "Esto todavía no es ley: Cambridge solo comenzó a estudiar una posible prohibición de que los administradores contraten empresas que usan algoritmos o inteligencia artificial para recomendar alquileres.",
+  "settle_hint_es": null
+ },
+ "CAM-SCREEN-01": {
+  "key": "46a519988d7eefd3",
+  "summary_en": "Cambridge landlords cannot refuse to rent to you or treat you differently because of your source of income, such as Section 8 or public benefits.",
+  "settle_hint_en": "How many units the building has and whether the owner lives there, from city property records.",
+  "title_es": "Ordenanza de Vivienda Justa de Cambridge: no se discrimina por la fuente de ingresos al elegir inquilinos",
+  "requirement_es": "En Cambridge, los dueños y agentes de alquiler no pueden negarse a alquilarle ni tratarlo de forma diferente por la fuente de sus ingresos, incluyendo un vale de Section 8 o beneficios públicos. Solo pueden revisar si usted puede pagar el alquiler y cuidar el apartamento si usan la misma regla con todos los solicitantes.",
+  "key_value_es": "La fuente de ingresos (incluyendo Section 8 y beneficios públicos) es una categoría protegida",
+  "summary_es": "En Cambridge, los dueños no pueden negarse a alquilarle ni tratarlo diferente por la fuente de sus ingresos, como Section 8 o beneficios públicos.",
+  "settle_hint_es": "Cuántas unidades tiene el edificio y si el dueño vive allí, según los registros de propiedad de la ciudad."
+ },
+ "HOB-ALG-01": {
+  "key": "e0f1316caf7b24cd",
+  "summary_en": "Your Hoboken landlord may not use software or algorithms to coordinate or recommend your rent, lease terms or occupancy.",
+  "settle_hint_en": null,
+  "title_es": "Prohibición de coordinar alquileres con algoritmos o programas de computadora",
+  "requirement_es": "En Hoboken, los dueños no pueden usar programas de computadora, algoritmos ni plataformas para compartir datos con el fin de coordinar o recomendar alquileres, condiciones del contrato u ocupación. Si cree que su dueño fijó su alquiler de esta forma, puede informarlo a la ciudad.",
+  "key_value_es": null,
+  "summary_es": "En Hoboken, su dueño no puede usar programas o algoritmos para coordinar o recomendar su alquiler, las condiciones del contrato o la ocupación.",
+  "settle_hint_es": null
+ },
+ "JC-ALG-01": {
+  "key": "1e1d2c0aea1a2203",
+  "summary_en": "Jersey City landlords may not use algorithmic rent-coordination software to set rents, and fines can reach $2,000 per day.",
+  "settle_hint_en": null,
+  "title_es": "Prohibición en Jersey City de servicios que fijan alquileres con algoritmos (coordinación de alquileres)",
+  "requirement_es": "En Jersey City, los dueños no pueden usar servicios de coordinación de alquileres con algoritmos, como programas del tipo RealPage que usan datos privados de la competencia para fijar alquileres. Si cree que su alquiler se fijó de esta forma, puede reportarlo a la ciudad o tomar acción legal por su cuenta.",
+  "key_value_es": "Multas de hasta $2,000 por día",
+  "summary_es": "En Jersey City, los dueños no pueden usar programas con algoritmos para coordinar y fijar alquileres, y las multas pueden llegar a $2,000 por día.",
+  "settle_hint_es": null
+ },
+ "JC-RENT-01": {
+  "key": "ceab9e994a1aec8a",
+  "summary_en": "In Jersey City buildings with 5 or more units, rent increases are limited, and landlords must apply for any bigger increase.",
+  "settle_hint_en": "The number of units in the building, from Jersey City property records, and whether the owner has an approved Rent Control Exemption Request.",
+  "title_es": "Ordenanza de Control de Alquileres de Jersey City (Chapter 260)",
+  "requirement_es": "En los edificios de Jersey City con 5 o más unidades, los aumentos de alquiler están limitados por la Ordenanza de Control de Alquileres de la ciudad, y los dueños deben pedir permiso para cualquier aumento mayor al permitido, como un aumento por mejoras grandes o por dificultad económica. Si cree que su alquiler es ilegal, puede presentar una Illegal Rent Petition ante la Office of Landlord/Tenant Relations.",
+  "key_value_es": null,
+  "summary_es": "En los edificios de Jersey City con 5 o más unidades, los aumentos de alquiler tienen límite, y los dueños deben pedir permiso para aumentos mayores.",
+  "settle_hint_es": "El número de unidades del edificio, según los registros de propiedad de Jersey City, y si el dueño tiene una Rent Control Exemption Request aprobada."
+ },
+ "LA-ALG-01": {
+  "key": "20a902d69ca61421",
+  "summary_en": "This is not law: it is only a motion asking Los Angeles to study whether to ban rent-setting software that uses algorithms.",
+  "settle_hint_en": null,
+  "title_es": "Moción para estudiar una prohibición de programas que fijan alquileres con algoritmos (CF 24-1031)",
+  "requirement_es": "Esto es solo una propuesta. Pide al Los Angeles Housing Department que informe cuántos dueños usan programas con algoritmos para fijar alquileres y si es posible prohibirlos. Esta moción no pone en vigor ninguna prohibición.",
+  "key_value_es": "Informe del LAHD sobre si es posible prohibir los programas que fijan alquileres con algoritmos",
+  "summary_es": "Esto no es ley: es solo una moción que pide a Los Angeles estudiar si debe prohibir los programas que fijan alquileres con algoritmos.",
+  "settle_hint_es": null
+ },
+ "LA-EVICT-01": {
+  "key": "b60734c8fce0d931",
+  "summary_en": "If your Los Angeles unit is not under the RSO, your landlord can evict you only for a listed reason after six months or your first lease ends.",
+  "settle_hint_en": "The building's original construction date (after October 1, 1978 or not) and whether the unit is under the RSO, from city records.",
+  "title_es": "Ordenanza de Causa Justa de Los Angeles (JCO)",
+  "requirement_es": "Si rentas una unidad en Los Angeles que no está bajo la Ordenanza de Estabilización de Rentas (RSO), tu arrendador solo puede desalojarte por una razón que aparece en la ordenanza una vez que hayas vivido ahí seis meses o que tu primer contrato haya terminado, lo que pase primero. No te pueden desalojar por renta no pagada a menos que debas más de un mes de la Renta Justa de Mercado (Fair Market Rent) para el número de recámaras de tu unidad, y un desalojo sin culpa del inquilino requiere ayuda para la mudanza.",
+  "key_value_es": "Se requiere causa justa después de 6 meses de inquilinato o al terminar el primer contrato; desalojo por falta de pago solo si la deuda pasa de un mes de FMR (desde el 27 de marzo de 2023); ayuda para la mudanza en desalojos sin culpa del inquilino",
+  "summary_es": "Si tu unidad en Los Angeles no está bajo la RSO, tu arrendador solo puede desalojarte por una razón de la lista después de seis meses o cuando termine tu primer contrato.",
+  "settle_hint_es": "La fecha original de construcción del edificio (si fue después del 1 de octubre de 1978 o no) y si la unidad está bajo la RSO, según los registros de la ciudad."
+ },
+ "LA-EVICT-02": {
+  "key": "96d81c1eb3195933",
+  "summary_en": "In an RSO unit, you can be evicted only for listed reasons; no-fault evictions require relocation pay, such as $11,000 to $27,400 for 2026–2027.",
+  "settle_hint_en": "The building's original construction date (on or before October 1, 1978) or its status as a replacement unit, from city records.",
+  "title_es": "Desalojo con causa justa bajo la RSO, declaración del arrendador y ayuda para la mudanza",
+  "requirement_es": "Tu arrendador solo puede desalojarte de una unidad con renta estabilizada (RSO) por una razón de la lista. Las razones por culpa del inquilino incluyen no pagar, violar el contrato, causar molestias, uso ilegal o no dar acceso. Las razones sin culpa del inquilino incluyen que el dueño o su familia se mude, la necesidad de un administrador residente, demolición o retiro bajo la Ley Ellis, una orden del gobierno, venta de HUD o conversión a vivienda asequible. Para un desalojo sin culpa, el arrendador primero debe presentar una Declaración de Intención de Desalojar ante LAHD y luego presentar el aviso ante LAHD dentro de 3 días de entregarlo. El arrendador también debe ofrecer ayuda para la mudanza dentro de 15 días del aviso: del 1 de julio de 2026 al 30 de junio de 2027 son $11,000 o $14,400 para inquilinos elegibles y $23,150 o $27,400 para inquilinos calificados.",
+  "key_value_es": "Elegibles $11,000/$14,400; Calificados $23,150/$27,400; Mom & Pop $10,550/$21,250 (1 de julio de 2026 – 30 de junio de 2027); pago dentro de 15 días del aviso",
+  "summary_es": "En una unidad RSO, solo te pueden desalojar por razones de la lista; los desalojos sin culpa requieren ayuda para la mudanza, como $11,000 a $27,400 en 2026–2027.",
+  "settle_hint_es": "La fecha original de construcción del edificio (el 1 de octubre de 1978 o antes) o si es una unidad de reemplazo, según los registros de la ciudad."
+ },
+ "LA-EVICT-03": {
+  "key": "2fec0d67423c1087",
+  "summary_en": "If your Protected Unit is torn down for new construction, you get 6 months' notice, and lower-income tenants may get up to $115,480 relocation.",
+  "settle_hint_en": "Whether the unit is under the RSO, its rent and tenant history over the past 5 years, and any Ellis Act withdrawal in the past 10 years.",
+  "title_es": "Ordenanza de Protección a Residentes (RPO) para la demolición de Unidades Protegidas",
+  "requirement_es": "Si una Unidad Protegida (incluida toda unidad RSO) se demuele para una nueva construcción, puedes quedarte hasta 6 meses antes de que empiece la obra y debes recibir un aviso con 6 meses de anticipación. Puedes regresar si la demolición no se hace, y algunos inquilinos tienen derecho de preferencia en el nuevo edificio. Los inquilinos de bajos ingresos reciben ayuda para la mudanza mayor: $115,480, $96,750 o $87,450 bajo la opción estándar del 1 de julio de 2026 al 30 de junio de 2027.",
+  "key_value_es": "Aviso de 6 meses; ayuda mayor para la mudanza de $115,480 / $96,750 / $87,450 (1 de julio de 2026 – 30 de junio de 2027)",
+  "summary_es": "Si tu Unidad Protegida se demuele para una nueva construcción, recibes aviso con 6 meses de anticipación, y los inquilinos de bajos ingresos pueden recibir hasta $115,480 para la mudanza.",
+  "settle_hint_es": "Si la unidad está bajo la RSO, su historial de renta e inquilinos de los últimos 5 años y cualquier retiro bajo la Ley Ellis en los últimos 10 años."
+ },
+ "LA-RENT-01": {
+  "key": "1434c582b55056c2",
+  "summary_en": "In an RSO unit, your landlord can raise rent only once every 12 months, by the city's yearly percentage: 3% for July 2025–June 2026.",
+  "settle_hint_en": "The building's original construction date (on or before October 1, 1978) or replacement-unit status, which you can check at zimas.lacity.org.",
+  "title_es": "Ordenanza de Estabilización de Rentas de Los Angeles: aumento anual de renta permitido",
+  "requirement_es": "Si tu unidad está cubierta por la RSO de Los Angeles, tu arrendador solo puede subir la renta una vez cada 12 meses, y solo por el porcentaje que LAHD publica para ese año (3% del 1 de julio de 2025 al 30 de junio de 2026). Desde el 2 de febrero de 2026, los arrendadores no pueden agregar un porcentaje extra por servicios ni cobrar un aumento de 10% cuando un dependiente se une al hogar. Todavía se permite un aumento de 10% por un inquilino adicional que no sea dependiente, pero solo dentro de los 60 días después de que el arrendador se entere de ese inquilino.",
+  "key_value_es": "Una vez cada 12 meses por el porcentaje permitido que publica LAHD (3% del 1/7/2025 al 30/6/2026); sin cargo extra por servicios ni por dependientes desde el 2026-02-02",
+  "summary_es": "En una unidad RSO, tu arrendador solo puede subir la renta una vez cada 12 meses, por el porcentaje anual de la ciudad: 3% de julio de 2025 a junio de 2026.",
+  "settle_hint_es": "La fecha original de construcción del edificio (el 1 de octubre de 1978 o antes) o si es una unidad de reemplazo, lo cual puedes revisar en zimas.lacity.org."
+ },
+ "LA-DEP-01": {
+  "key": "80738562e020ed47",
+  "summary_en": "In an RSO unit, your landlord must pay you interest on your security deposit at the city's yearly rate (4.320% in 2025).",
+  "settle_hint_en": "The building's original construction date (on or before October 1, 1978) or replacement-unit status, from city records.",
+  "title_es": "Intereses sobre depósitos de garantía bajo la RSO",
+  "requirement_es": "Si tu unidad en Los Angeles está cubierta por la Ordenanza de Estabilización de Rentas, tu arrendador debe pagarte intereses sobre tu depósito de garantía a la tasa que la Ciudad fija cada año. El arrendador los paga directamente o como un descuento en tu renta, y debe decirte por escrito qué forma eligió.",
+  "key_value_es": "Intereses a la tasa anual de la Ciudad (2025: 4.320%), acumulados cada mes desde el 1 de noviembre de 1990",
+  "summary_es": "En una unidad RSO, tu arrendador debe pagarte intereses sobre tu depósito de garantía a la tasa anual de la ciudad (4.320% en 2025).",
+  "settle_hint_es": "La fecha original de construcción del edificio (el 1 de octubre de 1978 o antes) o si es una unidad de reemplazo, según los registros de la ciudad."
+ },
+ "SD-ALG-01": {
+  "key": "de67f809c423b779",
+  "summary_en": "San Diego landlords cannot use software that analyzes private competitor data to set rents, and each violation can bring a penalty up to $1,000.",
+  "settle_hint_en": null,
+  "title_es": "Prohibición en San Diego de programas algorítmicos para fijar rentas con datos privados de competidores (Ordenanza de Prohibición de Fijación Automatizada y Anticompetitiva de Precios de Renta)",
+  "requirement_es": "Los arrendadores de San Diego no pueden usar programas que analizan datos privados de competidores para fijar rentas o niveles de ocupación, y nadie puede vender ni dar licencias de esos programas a los arrendadores. Los inquilinos pueden demandar para pedir una orden judicial, daños o multas civiles de hasta $1,000 por cada violación, más los honorarios de abogado.",
+  "key_value_es": "Multa civil de hasta $1,000 por violación; cada mes y cada propiedad cuentan como una violación aparte",
+  "summary_es": "Los arrendadores de San Diego no pueden usar programas que analizan datos privados de competidores para fijar rentas, y cada violación puede tener una multa de hasta $1,000.",
+  "settle_hint_es": null
+ },
+ "SD-EVICT-01": {
+  "key": "91923e98f249502c",
+  "summary_en": "After 30 days, a San Diego landlord needs a listed reason to evict; no-fault evictions require 2 months' rent relocation pay (3 for seniors/disabled).",
+  "settle_hint_en": "The building's certificate of occupancy date, from the city building department, and who owns the property, such as a person, REIT, or corporation.",
+  "title_es": "Ordenanza de Protección de Inquilinos Residenciales de San Diego – causa justa para desalojo y ayuda para la mudanza sin culpa del inquilino",
+  "requirement_es": "Un arrendador de San Diego solo puede terminar un inquilinato cubierto por una causa de la lista por culpa del inquilino (como no pagar, no corregir una violación del contrato después de un aviso por escrito, causar molestias o actividad criminal) o por una causa de la lista sin culpa del inquilino (que el dueño o un familiar se mude, retirar la unidad del mercado de renta, una orden del gobierno, demolición o remodelación mayor), y el aviso debe decir la causa. Para una terminación sin culpa, el arrendador debe pagar ayuda para la mudanza de 2 meses de la renta real (3 meses para inquilinos de 62 años o más o con discapacidad), ya sea directamente dentro de 15 días del aviso o como renta no cobrada.",
+  "key_value_es": "Se requiere causa justa; ayuda para la mudanza sin culpa de 2 meses de renta (3 meses para personas mayores de 62 años o más o inquilinos con discapacidad); la mudanza del dueño requiere vivir ahí 12 meses, empezando dentro de 90 días; derecho de preferencia por 5 años después de un desalojo sin culpa",
+  "summary_es": "Después de 30 días, un arrendador de San Diego necesita una razón de la lista para desalojar; los desalojos sin culpa requieren 2 meses de renta para la mudanza (3 para mayores/discapacitados).",
+  "settle_hint_es": "La fecha del certificado de ocupación del edificio, del departamento de construcción de la ciudad, y quién es dueño de la propiedad, como una persona, un REIT o una corporación."
+ },
+ "SF-ALG-01": {
+  "key": "78880a7a91c9d662",
+  "summary_en": "San Francisco landlords cannot use software that analyzes private competitor data to set rents, and each violation can bring a penalty up to $1,000.",
+  "settle_hint_en": null,
+  "title_es": "Prohibición de programas algorítmicos para fijar rentas con datos privados de competidores",
+  "requirement_es": "Los arrendadores de San Francisco no pueden usar, y los vendedores no pueden vender, programas algorítmicos que analizan datos privados de rentas de competidores para recomendar rentas o manejar la ocupación de unidades residenciales. Los inquilinos o el Fiscal de la Ciudad pueden demandar para pedir daños, una orden judicial y multas civiles de hasta $1,000 por cada violación.",
+  "key_value_es": "Hasta $1,000 por violación; cada mes de uso por cada unidad afectada puede ser una violación aparte",
+  "summary_es": "Los arrendadores de San Francisco no pueden usar programas que analizan datos privados de competidores para fijar rentas, y cada violación puede tener una multa de hasta $1,000.",
+  "settle_hint_es": null
+ },
+ "SF-EVICT-01": {
+  "key": "478c0d13e89ebc66",
+  "summary_en": "In covered units, your landlord can evict you only for one of 17 listed reasons and must pay relocation money for no-fault evictions.",
+  "settle_hint_en": "Whether the unit falls under the San Francisco Rent Ordinance, and the date the eviction notice was served.",
+  "title_es": "Protecciones de la Ordenanza de Renta de San Francisco contra desalojos sin causa justa y pagos de reubicación",
+  "requirement_es": "Un propietario puede desalojar a un inquilino de una unidad cubierta por la Ordenanza de Renta solo si uno de los 17 motivos de causa justa de la Sección 37.9(a) es el motivo principal. Que el contrato termine o que cambie el dueño no es causa justa. También se necesita causa justa para quitar servicios de vivienda como estacionamiento, bodega o lavandería. En los desalojos sin culpa del inquilino (mudanza del dueño o de un familiar, demolición o retiro de la unidad, obras temporales de mejoras de capital, rehabilitación sustancial) y en los desalojos por la Ley Ellis, el propietario debe pagar dinero de reubicación, cuyo monto se fija cada 1 de marzo.",
+  "key_value_es": "17 causas justas enumeradas. Reubicación para avisos entregados del 1/3/26 al 28/2/27: mudanza del dueño o familiar, demolición/retiro, mejoras de capital, rehabilitación sustancial: $8,245 por inquilino, máximo $24,733 por unidad, +$5,497 por cada inquilino de 60 años o más, con discapacidad, o en un hogar con hijos menores. Ley Ellis: $11,110.05 por inquilino, máximo $33,330.13 por unidad, +$7,443.90 por cada inquilino de 62 años o más o con discapacidad.",
+  "summary_es": "En las unidades cubiertas, su propietario solo puede desalojarlo por uno de 17 motivos de la lista y debe pagarle dinero de reubicación en desalojos sin culpa suya.",
+  "settle_hint_es": "Si la unidad está cubierta por la Ordenanza de Renta de San Francisco, y la fecha en que se entregó el aviso de desalojo."
+ },
+ "SF-RENT-01": {
+  "key": "250931bf5a385662",
+  "summary_en": "In a rent-controlled unit, your landlord can raise rent by at most 1.6% between March 1, 2026 and February 28, 2027.",
+  "settle_hint_en": "The date the building first got its certificate of occupancy, since units first certified after June 13, 1979 are exempt.",
+  "title_es": "Aumento anual permitido de la renta según la Ordenanza de Renta de San Francisco (1.6% del 1 de marzo de 2026 al 28 de febrero de 2027)",
+  "requirement_es": "Si usted vive en una unidad con control de renta en San Francisco, el aumento anual de renta que haga su propietario del 1 de marzo de 2026 al 28 de febrero de 2027 no puede pasar del 1.6% de su renta base. Por ejemplo, una renta base de $2,000 puede subir como máximo $32.",
+  "key_value_es": "1.6% (del 2026-03-01 al 2027-02-28); periodos anteriores: 1.4% (2025-26) y 1.7% (2024-25)",
+  "summary_es": "En una unidad con control de renta, su propietario puede subir la renta como máximo un 1.6% entre el 1 de marzo de 2026 y el 28 de febrero de 2027.",
+  "settle_hint_es": "La fecha en que el edificio recibió por primera vez su certificado de ocupación, porque las unidades certificadas por primera vez después del 13 de junio de 1979 están exentas."
+ },
+ "SF-SCREEN-01": {
+  "key": "2698814faa85e5cf",
+  "summary_en": "If you apply for or live in San Francisco affordable housing, providers are limited in how they can use your arrest or conviction record.",
+  "settle_hint_en": "Whether the building is an affordable housing property in San Francisco.",
+  "title_es": "Ordenanza de Oportunidad Justa (Fair Chance Ordinance): límites al uso de antecedentes de arrestos y condenas en la vivienda asequible",
+  "requirement_es": "En la vivienda asequible de San Francisco, los proveedores de vivienda tienen límites sobre cómo pueden usar los antecedentes de arrestos o condenas de un solicitante al decidir sobre su solicitud. Si cree que sus antecedentes se usaron de forma indebida, puede comunicarse con la Comisión de Derechos Humanos de San Francisco.",
+  "key_value_es": null,
+  "summary_es": "Si usted solicita o vive en una vivienda asequible en San Francisco, los proveedores tienen límites sobre cómo usar sus antecedentes de arrestos o condenas.",
+  "settle_hint_es": "Si el edificio es una propiedad de vivienda asequible en San Francisco."
+ },
+ "SF-DEP-01": {
+  "key": "75850d60147b37e2",
+  "summary_en": "Your San Francisco landlord must pay you 4.2% yearly interest on your security deposit from March 1, 2026 to February 28, 2027.",
+  "settle_hint_en": null,
+  "title_es": "Requisito de intereses sobre el depósito de garantía en San Francisco (4.2% del 1/3/2026 al 28/2/2027)",
+  "requirement_es": "Los propietarios de San Francisco deben pagar a los inquilinos intereses sobre los depósitos de garantía. La tasa es 4.2% del 1 de marzo de 2026 al 28 de febrero de 2027 (5.0% para 2025–26 y 5.2% para 2024–25).",
+  "key_value_es": "4.2% de interés anual (1 de marzo de 2026 – 28 de febrero de 2027)",
+  "summary_es": "Su propietario en San Francisco debe pagarle un 4.2% de interés al año sobre su depósito de garantía del 1 de marzo de 2026 al 28 de febrero de 2027.",
+  "settle_hint_es": null
+ },
+ "SA-ALG-01": {
+  "key": "26dca03ab3e3e901",
+  "summary_en": "Starting April 2, 2026, Santa Ana landlords cannot use rent-setting software that relies on private competitor data; penalties go up to $1,000 per violation per month.",
+  "settle_hint_en": null,
+  "title_es": "Prohibición en Santa Ana del software algorítmico para fijar rentas (Ordenanza NS-3090)",
+  "requirement_es": "Los propietarios de Santa Ana no pueden usar software para fijar rentas que use datos no públicos de la competencia, y los vendedores no pueden vender, dar licencia ni proporcionar ese software para alquileres de vivienda en la ciudad. Un inquilino cuyo propietario usó ese software puede demandar para pedir una orden judicial, daños o multas civiles de hasta $1,000 por infracción por mes, más los honorarios de abogado.",
+  "key_value_es": "Multas civiles de hasta $1,000 por infracción, por mes",
+  "summary_es": "Desde el 2 de abril de 2026, los propietarios de Santa Ana no pueden usar software para fijar rentas con datos privados de la competencia; las multas llegan a $1,000 por infracción por mes.",
+  "settle_hint_es": null
+ },
+ "SA-EVICT-01": {
+  "key": "3535e57af0c1b640",
+  "summary_en": "After 30 days, your landlord needs a just cause to end your tenancy and owes 3 months' relocation help or free rent for no-fault evictions.",
+  "settle_hint_en": "The date the building was built, showing whether it was produced in the last 15 years, and whether it is deed-restricted affordable housing.",
+  "title_es": "Causa justa para desalojos y ayuda de reubicación en Santa Ana",
+  "requirement_es": "Después de vivir 30 días en su unidad, su propietario solo puede terminar su contrato por una causa justa de la lista, indicada en un aviso por escrito. Si la causa es por culpa suya, primero deben darle la oportunidad de corregir el problema. En desalojos sin culpa suya, el propietario debe pagarle 3 meses de ayuda de reubicación o no cobrarle sus últimos 3 meses de renta.",
+  "key_value_es": "Se requiere causa justa después de 30 días de ocupación; 3 meses de ayuda de reubicación o exención de renta en desalojos sin culpa del inquilino",
+  "summary_es": "Después de 30 días, su propietario necesita una causa justa para terminar su contrato y le debe 3 meses de ayuda de reubicación o renta gratis en desalojos sin culpa suya.",
+  "settle_hint_es": "La fecha en que se construyó el edificio, para saber si se hizo en los últimos 15 años, y si es vivienda asequible con restricción en la escritura."
+ },
+ "SA-RENT-01": {
+  "key": "c742229a5eceb0c9",
+  "summary_en": "In covered Santa Ana rentals, your landlord can raise rent once a year, by at most 2.87% from September 1, 2026, to August 31, 2027.",
+  "settle_hint_en": "The date the building was built (covered if on or before February 1, 1995) and whether the unit is a single-family home or condo.",
+  "title_es": "Límite anual de aumento de renta en Santa Ana (Ordenanza de Estabilización de Rentas y Causa Justa para Desalojos)",
+  "requirement_es": "En los alquileres cubiertos de Santa Ana, su propietario solo puede subir la renta una vez al año, y no más que lo menor entre 3% o el 80% del cambio del CPI de 12 meses, y nada si el CPI es negativo. El límite es 2.87% del 1 de septiembre de 2026 al 31 de agosto de 2027; si su aumento es mayor, puede presentar una Petición del Inquilino (Tenant Petition) ante la Oficina de Estabilización de Rentas.",
+  "key_value_es": "Lo menor entre 3% o el 80% del cambio del CPI (0% si el CPI es negativo); 2.87% del 2026-09-01 al 2027-08-31",
+  "summary_es": "En los alquileres cubiertos de Santa Ana, su propietario puede subir la renta una vez al año, como máximo un 2.87% del 1 de septiembre de 2026 al 31 de agosto de 2027.",
+  "settle_hint_es": "La fecha en que se construyó el edificio (está cubierto si fue el 1 de febrero de 1995 o antes) y si la unidad es una casa unifamiliar o un condominio."
+ },
+ "SM-ALG-01": {
+  "key": "ff09ccdde440abe9",
+  "summary_en": "Santa Monica landlords cannot use software that uses competitor data to set rents, and you can sue for at least $1,000 per violation.",
+  "settle_hint_en": null,
+  "title_es": "Prohibición en Santa Mónica del software algorítmico para fijar precios de alquiler",
+  "requirement_es": "En Santa Mónica, los propietarios no pueden usar, y los vendedores no pueden vender, software que use datos de la competencia para recomendar rentas o decidir si dejar unidades vacías. Si su propietario usó ese software, usted puede demandar por daños o usarlo como defensa en un caso de desalojo.",
+  "key_value_es": "Prohibición de la venta y el uso de dispositivos algorítmicos para fijar rentas; $1,000 por infracción o los daños reales, lo que sea mayor",
+  "summary_es": "Los propietarios de Santa Mónica no pueden usar software con datos de la competencia para fijar rentas, y usted puede demandar por al menos $1,000 por infracción.",
+  "settle_hint_es": null
+ },
+ "SM-ALG-02": {
+  "key": "136dbd98b7423cd9",
+  "summary_en": "This March 2025 proposal to ban landlords' rent-pricing software like RealPage is not law; another record reports a later ban.",
+  "settle_hint_en": null,
+  "title_es": "Propuesta para prohibir el software de fijación de precios de alquiler por algoritmo (asunto del concejo de marzo de 2025)",
+  "requirement_es": "En marzo de 2025, el Concejo Municipal de Santa Monica consideró pedir al personal de la ciudad que escribiera una ordenanza para prohibir que los propietarios usen software de precios de alquiler, como YieldStar y RealPage, que comparte datos no públicos de rentas y ocupación. Otra noticia dice que la ciudad aprobó después esa prohibición; vea ese registro.",
+  "key_value_es": null,
+  "summary_es": "Esta propuesta de marzo de 2025 para prohibir a los propietarios usar software de precios como RealPage no es ley; otro registro reporta una prohibición posterior.",
+  "settle_hint_es": null
+ },
+ "SM-EVICT-01": {
+  "key": "7bdf6ebc0f306985",
+  "summary_en": "In a rent-controlled unit, your landlord can evict you only for a listed reason stated in the notice, like not paying rent.",
+  "settle_hint_en": "The date the building first got occupancy permits and any exemption decision, from the Santa Monica Rent Control Board.",
+  "title_es": "Enmienda a la Carta de Control de Rentas de Santa Monica – desalojo solo con causa justa",
+  "requirement_es": "Un propietario no puede terminar un alquiler en una unidad con control de renta, salvo por una causa de la lista, como no pagar la renta, no corregir una violación del contrato, causar molestias, uso ilegal, negar la entrada, que el dueño o un familiar se mude de buena fe, una demolición permitida o un retiro bajo la Ley Ellis. La causa debe estar escrita en el aviso, y el aviso debe presentarse ante la Junta de Control de Rentas dentro de 3 días. No se permite desalojar para que el dueño se mude a inquilinos de 5 años o más que tengan 62 años o más o una discapacidad, ni a inquilinos con una enfermedad terminal.",
+  "key_value_es": null,
+  "summary_es": "En una unidad con control de renta, su propietario solo puede desalojarle por una razón de la lista escrita en el aviso, como no pagar la renta.",
+  "settle_hint_es": "La fecha en que el edificio recibió sus primeros permisos de ocupación y cualquier decisión de exención, de la Junta de Control de Rentas de Santa Monica."
+ },
+ "SM-RENT-01": {
+  "key": "87ec685e58445d10",
+  "summary_en": "If your unit is rent-controlled, your rent can rise once a year on September 1 by 75% of local CPI, between 0% and 3%.",
+  "settle_hint_en": "The date the building first got occupancy permits and whether an exemption was granted, from the Santa Monica Rent Control Board.",
+  "title_es": "Enmienda a la Carta de Control de Rentas de Santa Monica – renta máxima permitida y ajuste general anual",
+  "requirement_es": "La renta de una unidad con control de renta en Santa Monica no puede pasar de la renta máxima permitida que fija la Junta de Control de Rentas. Sube cada 1 de septiembre en un 75% del aumento del CPI local, nunca menos de 0% ni más de 3%. Los propietarios que no han registrado la unidad o que tienen violaciones de código sin corregir no pueden subir la renta, y los inquilinos pueden pedir a la Junta que baje la renta.",
+  "key_value_es": "75% del CPI-U (área de LA), mínimo 0%, máximo 3% al año",
+  "summary_es": "Si su unidad tiene control de renta, su renta puede subir una vez al año, el 1 de septiembre, un 75% del CPI local, entre 0% y 3%.",
+  "settle_hint_es": "La fecha en que el edificio recibió sus primeros permisos de ocupación y si se otorgó una exención, de la Junta de Control de Rentas de Santa Monica."
+ },
+ "SM-DEP-01": {
+  "key": "2708b152f6797617",
+  "summary_en": "In a rent-controlled unit, your deposit is usually capped at one month's maximum allowable rent and must be kept in an interest-bearing account.",
+  "settle_hint_en": "The date the building first got occupancy permits and any exemption decision, from the Santa Monica Rent Control Board.",
+  "title_es": "Control de Rentas de Santa Monica – límite del depósito de garantía y cuenta que genera intereses",
+  "requirement_es": "Para una unidad con control de renta alquilada después del 1 de enero de 1983, el depósito de garantía no puede ser más de un mes de la renta máxima permitida y no se puede subir durante el alquiler. El propietario debe guardar el depósito, incluida cualquier renta pagada por adelantado, en una cuenta que genere intereses en una institución con seguro federal hasta que lo devuelva o lo use de forma correcta.",
+  "key_value_es": "1 mes de la renta máxima permitida (2 meses para pequeños propietarios que califican; los inquilinos desde antes del 1/1/1983 mantienen su depósito del 1/1/1983)",
+  "summary_es": "En una unidad con control de renta, su depósito normalmente no puede pasar de un mes de la renta máxima permitida y debe guardarse en una cuenta con intereses.",
+  "settle_hint_es": "La fecha en que el edificio recibió sus primeros permisos de ocupación y cualquier decisión de exención, de la Junta de Control de Rentas de Santa Monica."
+ }
+}

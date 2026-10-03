@@ -25,6 +25,7 @@ consolidate:
 	$(PY) -m navigator.consolidate
 
 outputs:
+	$(PY) -m navigator.plain_language
 	$(PY) -m navigator.lookups
 	$(PY) -m navigator.changes
 	$(PY) -m navigator.build_site

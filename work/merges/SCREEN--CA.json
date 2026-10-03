@@ -1,5 +1,5 @@
 {
- "digest": "84de08503e3f0bc4",
+ "digest": "dad1c9d20b04c66c",
  "rules": [
   {
    "member_indices": [
@@ -11,14 +11,14 @@
    ],
    "quote_index": 5,
    "status": "in_force",
-   "title": "FEHA source-of-income protection, including Section 8/VASH vouchers, with income-test and credit-history rules for subsidy holders",
-   "requirement": "A California landlord may not refuse to rent to you or treat you differently because of your lawful, verifiable source of income, including Section 8, HUD-VASH or other housing subsidies, and may not advertise \"No Section 8.\" If you have a rent subsidy, any income test must use only your share of the rent, and a landlord who checks your credit must let you show other proof that you can pay, such as benefit payments, pay records or bank statements.",
-   "key_value": "Source of income (including Section 8 and VASH vouchers) is protected; income test on tenant's share only; alternative evidence must be allowed in place of credit history",
-   "coverage_conditions": "Owners of any housing accommodation in California, including apartments, single-family homes, condos and subsidized housing; also applies to property managers and tenant screening companies. 'Source of income' means lawful, verifiable income paid to the tenant, to the tenant's representative, or to the landlord for the tenant, including public assistance, housing subsidies, Section 8 and VASH vouchers. The credit-history and income-standard rules apply when the applicant has a government rent subsidy.",
-   "exemptions": "An owner who lives in the home and rents to one additional person may exclude applicants based on protected characteristics, but may not publish discriminatory ads. Asking about the level or source of income is not discrimination. Landlords may still verify employment, ask for landlord references and verify identity.",
+   "title": "Source-of-income discrimination ban, including Section 8 and other housing vouchers, and credit-history alternative for subsidy holders (FEHA)",
+   "requirement": "A California landlord may not refuse to rent to you, set different terms or deposits, or advertise 'No Section 8' because of your lawful, verifiable source of income, including Section 8, HUD-VASH and other housing subsidies. If you have a government rent subsidy, any income test must use only your share of the rent, and a landlord who checks credit must let you offer other proof that you can pay, such as benefit records, pay records or bank statements, and must reasonably consider it (SB 267, from January 1, 2024).",
+   "key_value": "Source of income, including Section 8 and VASH vouchers, is a protected class; subsidy holders may offer alternative evidence instead of credit history",
+   "coverage_conditions": "Owners of any housing accommodation in California, including apartments, single-family homes, condos and subsidized housing. Also applies to property managers and tenant screening companies. 'Source of income' means lawful, verifiable income paid to the tenant, to the tenant's representative, or to the landlord on the tenant's behalf, including public assistance and housing subsidies. The credit-history and income-test rules apply when the applicant has a government rent subsidy.",
+   "exemptions": "An owner who lives in the home and rents to one additional person may exclude applicants based on protected characteristics, but may not publish discriminatory advertisements. Asking about the level or source of income is not discrimination. Landlords may still verify employment, ask for landlord references and verify identity.",
    "effective_date": "2020-01-01",
-   "citation": "Cal. Gov. Code \u00a7 12955 (as amended by SB 329 (2019) and SB 267, Stats. 2023, Ch. 776)",
-   "penalty": "CRD enforcement and lawsuits. Remedies include out-of-pocket losses, injunctions, access to the denied housing, emotional distress damages, civil penalties or punitive damages, and attorney's fees. File with CRD within 1 year or in court within 2 years.",
+   "citation": "Cal. Gov. Code \u00a7 12955(a), (o), (p)",
+   "penalty": "Enforced by the California Civil Rights Department. Remedies include out-of-pocket losses, injunctions, access to the denied housing, emotional distress damages, civil penalties or punitive damages, and attorney's fees. File with CRD within 1 year or in court within 2 years.",
    "coverage": {
     "min_units": null,
     "max_units": null,
@@ -33,7 +33,7 @@
    "conflict_type": "none",
    "conflict_note": null,
    "confidence": 0.8,
-   "reason": "Merged the statute text, CRD guidance and secondary descriptions of SB 329 (voucher protection, effective 2020-01-01 per secondary source) and SB 267 (credit-history alternative, effective 2024-01-01), because all are provisions of FEHA's Gov. Code \u00a7 12955."
+   "reason": "Merged the statute text (\u00a7 12955), the CRD page and the secondary summaries of SB 329 and SB 267, because all describe source-of-income provisions of the same FEHA section. The voucher-protection date of January 1, 2020 comes from a secondary source, and SB 267's amendment took effect January 1, 2024."
   },
   {
    "member_indices": [
@@ -42,13 +42,13 @@
    ],
    "quote_index": 4,
    "status": "in_force",
-   "title": "Limits on use of criminal history in tenant screening (FEHA and Civil Rights Council regulations)",
-   "requirement": "A California landlord may not reject everyone who has a criminal record, and may not consider arrests that did not lead to a conviction, sealed or expunged records, or juvenile records. If you are denied because of a conviction, the conviction must be directly related to your ability to be a good tenant.",
+   "title": "Limits on use of criminal history in tenant screening (FEHA / Civil Rights Council regulations)",
+   "requirement": "California landlords may not refuse everyone with a criminal record, and may not consider arrests that did not lead to a conviction, sealed or expunged records, or juvenile records. If a landlord denies you because of a conviction, the conviction must be directly related to your ability to be a good tenant.",
    "key_value": "No blanket criminal-record bans; arrests without conviction, sealed/expunged and juvenile records may not be considered",
-   "coverage_conditions": "Most housing providers in California, including landlords and tenant screening companies, under FEHA and the housing regulations of the Civil Rights Council (formerly the Fair Employment and Housing Council).",
+   "coverage_conditions": "Housing providers in California making rental decisions, including landlords and tenant screening companies, under FEHA regulations adopted by the Civil Rights Council (formerly the Fair Employment and Housing Council).",
    "exemptions": "An owner who lives in the home and rents to one additional person is exempt from most FEHA rules.",
    "effective_date": "2020-01-01",
-   "citation": "Cal. Gov. Code \u00a7 12955; Cal. Code Regs., tit. 2 (Civil Rights Council FEHA housing regulations on criminal history)",
+   "citation": "Cal. Code Regs., tit. 2 (Civil Rights Council FEHA housing regulations); Cal. Gov. Code \u00a7 12955",
    "penalty": "FEHA remedies: losses, injunction, emotional distress damages, civil penalties or punitive damages, attorney's fees.",
    "coverage": {
     "min_units": null,
@@ -64,7 +64,7 @@
    "conflict_type": "none",
    "conflict_note": null,
    "confidence": 0.7,
-   "reason": "Merged the CRD official page and a secondary source on the same Civil Rights Council criminal-history regulations. The effective date comes only from the secondary source."
+   "reason": "Merged the official CRD page and a secondary summary that both describe the same FEHA criminal-history regulations. The effective date comes only from the secondary source."
   }
  ]
 }

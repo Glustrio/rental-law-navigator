@@ -4,22 +4,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rental Housing Law Navigator</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="disclaimer" role="note">
-    <strong>Not legal advice.</strong> This prototype summarizes public law text for research. Check the cited source, and talk to a lawyer or your local housing agency before acting.
-  </div>
+  <div class="disclaimer" role="note" data-i18n-html="disclaimer"></div>
 
   <header class="top">
     <div class="wrap">
-      <h1>Rental Housing Law Navigator</h1>
-      <p class="sub">Which rules cover this apartment on a given date, and what is about to change. Every answer cites the law it comes from.</p>
+      <div class="title-row">
+        <h1 data-i18n="title"></h1>
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" data-lang="en" aria-pressed="true">English</button>
+          <button type="button" data-lang="es" aria-pressed="false">Español</button>
+        </div>
+      </div>
+      <p class="sub" data-i18n="subtitle"></p>
       <nav class="tabs" role="tablist">
-        <button role="tab" data-tab="lookup" aria-selected="true">Address lookup</button>
-        <button role="tab" data-tab="changes">What's changing</button>
-        <button role="tab" data-tab="rules">All rules</button>
-        <button role="tab" data-tab="method">How it works</button>
+        <button role="tab" data-tab="lookup" aria-selected="true" data-i18n="tab_lookup"></button>
+        <button role="tab" data-tab="changes" aria-selected="false" data-i18n="tab_changes"></button>
+        <button role="tab" data-tab="rules" aria-selected="false" data-i18n="tab_rules"></button>
+        <button role="tab" data-tab="method" aria-selected="false" data-i18n="tab_method"></button>
       </nav>
     </div>
   </header>
@@ -28,37 +33,41 @@
     <section id="tab-lookup" class="tab">
       <form class="search" id="search" autocomplete="off">
         <label class="field grow">
-          <span>Address (500 sample buildings in 9 cities)</span>
-          <input id="q" type="search" placeholder="Start typing a street, e.g. Clinton St, Hoboken" list="address-options">
+          <span data-i18n="address_label"></span>
+          <input id="q" type="search" list="address-options" data-i18n-placeholder="address_placeholder">
           <datalist id="address-options"></datalist>
         </label>
+        <button type="submit" class="primary" data-i18n="look_up"></button>
         <label class="field">
-          <span>As of</span>
+          <span data-i18n="as_of"></span>
           <input id="asof" type="date" value="2026-10-01">
         </label>
       </form>
+      <p class="hint" id="search-status" data-i18n="search_hint"></p>
       <div class="quick">
-        <span>Try:</span>
+        <span data-i18n="try"></span>
         <span id="examples"></span>
-        <span class="sep">Dates:</span>
-        <button type="button" data-date="2025-12-31">Dec 31, 2025</button>
-        <button type="button" data-date="2026-01-02">Jan 2, 2026</button>
-        <button type="button" data-date="2026-10-01">Oct 1, 2026</button>
-        <button type="button" data-date="2027-07-02">Jul 2, 2027</button>
+        <span class="sep" data-i18n="dates"></span>
+        <button type="button" data-date="2025-12-31">2025-12-31</button>
+        <button type="button" data-date="2026-01-02">2026-01-02</button>
+        <button type="button" data-date="2026-10-01">2026-10-01</button>
+        <button type="button" data-date="2027-07-02">2027-07-02</button>
       </div>
-      <div id="result"><p class="empty">Pick an address to see the rules that apply to it.</p></div>
+      <div id="result"></div>
     </section>
 
     <section id="tab-changes" class="tab" hidden>
-      <p class="lede">Change tests from the challenge, run against all 500 sample addresses. "Affected" means the address's answer differs between the two dates, or would be covered if a pending bill passed.</p>
+      <p class="lede" data-i18n="changes_lede"></p>
+      <div id="map" class="map" role="img" aria-label="Map of affected addresses"></div>
+      <p class="hint" id="map-caption"></p>
       <div id="changes"></div>
     </section>
 
     <section id="tab-rules" class="tab" hidden>
       <div class="filters">
-        <select id="f-juris"><option value="">All jurisdictions</option></select>
-        <select id="f-cat"><option value="">All categories</option></select>
-        <select id="f-status"><option value="">Any status</option></select>
+        <select id="f-juris"></select>
+        <select id="f-cat"></select>
+        <select id="f-status"></select>
       </div>
       <div id="rules"></div>
     </section>
@@ -68,10 +77,9 @@
     </section>
   </main>
 
-  <footer class="wrap foot">
-    Built for the RealPage × Hack-Nation challenge. Public data only. Not legal advice.
-  </footer>
+  <footer class="wrap foot" data-i18n="footer"></footer>
 
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
   <script type="module" src="app.js"></script>
 </body>
 </html>

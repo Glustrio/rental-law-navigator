@@ -1,0 +1,65 @@
+{
+ "digest": "9569017480d30168",
+ "rules": [
+  {
+   "member_indices": [
+    1
+   ],
+   "quote_index": 1,
+   "status": "in_force",
+   "title": "Santa Monica ban on algorithmic rental pricing software",
+   "requirement": "Landlords in Santa Monica may not use, and vendors may not sell, software that uses competitor data to recommend rents or whether to leave units vacant. If your landlord used such software, you can sue for damages or raise it as a defense in an eviction case.",
+   "key_value": "Ban on sale and use of algorithmic rent-pricing devices; $1,000 per violation or actual damages, whichever is greater",
+   "coverage_conditions": "Residential rental units in Santa Monica. The ban covers selling or using 'algorithmic devices,' meaning software that uses competitor data to advise landlords on rent pricing or on occupancy and vacancy decisions. The source describes no building-size or age limits.",
+   "exemptions": null,
+   "effective_date": null,
+   "citation": "Santa Monica algorithmic rental price-fixing ordinance (ordinance number not stated in source)",
+   "penalty": "$1,000 per offense or actual damages, whichever is greater, plus attorney fees. Affected renters or the city can bring civil enforcement, and a violation is an affirmative defense in eviction proceedings.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.6,
+   "reason": "Single news report of the enacted ordinance, kept separate from the earlier council proposal because pending proposals are not merged into enacted law; confidence is reduced because only a secondary source supports it and it gives no ordinance number or effective date."
+  },
+  {
+   "member_indices": [
+    0
+   ],
+   "quote_index": 0,
+   "status": "pending",
+   "title": "Proposed ban on algorithmic rental price-fixing software (March 2025 council item)",
+   "requirement": "In March 2025 the Santa Monica City Council considered directing staff to draft an ordinance banning landlords from using rent-pricing software such as YieldStar and RealPage that shares non-public rent and occupancy data. A separate news report says the city later enacted such a ban; see that record.",
+   "key_value": null,
+   "coverage_conditions": "As proposed, the ban would apply to landlords renting residential property in Santa Monica. No building limits are described.",
+   "exemptions": null,
+   "effective_date": null,
+   "citation": "Santa Monica City Council agenda item (Councilmembers Torosis, Raskin, Hall), March 11, 2025 meeting",
+   "penalty": "The proposal called for \"enforceable penalties for noncompliance\" (details not specified).",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.4,
+   "reason": "News report of the council proposal, kept as its own pending record because proposals are never merged into enacted law, even though it appears to be the precursor of the enacted ban."
+  }
+ ]
+}

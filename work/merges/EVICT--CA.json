@@ -1,5 +1,5 @@
 {
- "digest": "a487bc43755b9778",
+ "digest": "aba760efe84049fb",
  "rules": [
   {
    "member_indices": [
@@ -9,13 +9,13 @@
    "quote_index": 0,
    "status": "in_force",
    "title": "Tenant Protection Act just cause for eviction and no-fault relocation assistance",
-   "requirement": "Once you have lived in your unit lawfully for 12 months, your landlord can end your tenancy only for a just cause listed in the law, and the written notice must state that cause. For a no-fault cause, such as the owner moving in, taking the unit off the market, or demolition or a major remodel, the landlord must either pay you one month's rent as relocation assistance within 15 days or waive your last month's rent.",
+   "requirement": "Once you have lived in your unit lawfully for 12 months, your landlord can end your tenancy only for a just cause listed in the law, and the written notice must state that cause. For a no-fault cause such as owner move-in, taking the unit off the market, or demolition or major remodel, the landlord must pay one month's rent as relocation assistance within 15 days or waive your last month's rent.",
    "key_value": "Just cause required after 12 months of tenancy; no-fault relocation = 1 month's rent",
-   "coverage_conditions": "Residential real property in California, including mobilehome park units, once the tenant has continuously and lawfully occupied the unit for 12 months. If an adult tenant is added before 24 months, it applies only when all tenants have lived there 12+ months or at least one has lived there 24+ months. Housing must have a certificate of occupancy issued more than 15 years ago (mobilehomes excepted). It does not apply where a qualifying local just cause ordinance covers the unit; for example, the Los Angeles JCO/RSO governs instead where it applies. The 12-month tenancy requirement is about the tenant, not the building, so it is not used as a building coverage test.",
-   "exemptions": "Transient or tourist hotels; nonprofit hospitals, religious facilities, extended care and residential care facilities; school dormitories; units where the tenant shares a bathroom or kitchen with an owner who lives there; owner-occupied single-family homes renting no more than two units or bedrooms (including ADUs/JADUs); owner-occupied duplexes where the owner lived in one unit at the start of the tenancy (neither unit an ADU/JADU); housing with a certificate of occupancy issued within the last 15 years (except mobilehomes); separately alienable units (such as single-family homes or condos) not owned by a REIT, a corporation, or an LLC with a corporate member, if the tenant got the required exemption notice under \u00a7 1946.2(e)(8)(B)(i); deed-restricted or subsidized affordable housing; mobilehome homeowners.",
+   "coverage_conditions": "Residential real property in California, including mobilehome park units, once the tenant has continuously and lawfully occupied the unit for 12 months. If an adult tenant is added before 24 months, it applies only when all tenants have occupied 12+ months or at least one has occupied 24+ months. Housing with a certificate of occupancy issued within the previous 15 years is not covered (except mobilehomes). Does not apply where a qualifying local just cause ordinance (such as the Los Angeles JCO or RSO) covers the unit.",
+   "exemptions": "Transient or tourist hotels; nonprofit hospitals, religious facilities, extended care and residential care facilities; school dormitories; units where the tenant shares a bathroom or kitchen with an owner who lives there; owner-occupied single-family homes renting no more than two units or bedrooms (including ADUs and JADUs); owner-occupied duplexes where the owner lived in one unit at the start of the tenancy (neither unit an ADU or JADU); housing with a certificate of occupancy issued within the last 15 years (except mobilehomes); separately alienable units (such as single-family homes or condos) not owned by a REIT, a corporation, or an LLC with a corporate member, if the tenant got the required written exemption notice; deed-restricted or subsidized affordable housing; mobilehome homeowners.",
    "effective_date": "2020-01-01",
    "citation": "Cal. Civ. Code \u00a7 1946.2",
-   "penalty": "A termination notice that does not comply is void. An owner who tries to recover possession in material violation is liable for actual damages, plus attorney's fees and costs at the court's discretion. For willful conduct, oppression, fraud or malice, the owner can owe up to three times actual damages plus punitive damages. The Attorney General and the city attorney or county counsel may seek an injunction.",
+   "penalty": "A noncompliant termination notice is void. An owner who tries to recover possession in material violation is liable for actual damages, attorney's fees and costs at the court's discretion, and up to three times actual damages plus punitive damages for willful conduct, oppression, fraud or malice. The Attorney General and the city attorney or county counsel may seek an injunction.",
    "coverage": {
     "min_units": null,
     "max_units": null,
@@ -26,14 +26,7 @@
    },
    "exemption_tests": [
     {
-     "description": "Housing issued a certificate of occupancy within the previous 15 years (except mobilehomes)",
-     "if_units_at_most": null,
-     "if_built_after": null,
-     "if_younger_than_years": 15,
-     "needs_unknown_fact": false
-    },
-    {
-     "description": "Two units in one structure where the owner lived in one unit as their principal residence at the start of the tenancy and still lives there; neither unit is an ADU or JADU",
+     "description": "Owner-occupied duplex: owner lived in one of two units in a single structure at the start of the tenancy and still lives there; neither unit is an ADU or JADU",
      "if_units_at_most": 2,
      "if_built_after": null,
      "if_younger_than_years": null,
@@ -56,10 +49,10 @@
    ],
    "yields_to_local_rule": true,
    "displaces_state_rule": false,
-   "conflict_type": "preemption",
-   "conflict_note": "Under subdivision (i), the section steps aside where a local just cause ordinance adopted on or before September 1, 2019 covers the unit, or where a local ordinance adopted or amended later is more protective and the city has made a binding finding saying so (for example, the Los Angeles JCO/RSO). A local ordinance adopted after September 1, 2019 that is less protective cannot be enforced. The current text was amended by AB 1529 (Stats. 2025, Ch. 203). One source gives a 2024-04-01 operative date for a later version of the section, but the just cause requirement itself dates from AB 1482 (2020-01-01). The section sunsets on January 1, 2030.",
-   "confidence": 0.85,
-   "reason": "Merged the statute text and an LA agency page, which both describe the same Civil Code \u00a7 1946.2 just cause rule. I dropped the tenant-tenure condition from building coverage, added unit limits to the testable exemptions, and removed exemptions that cannot be tested."
+   "conflict_type": "none",
+   "conflict_note": "Under subdivision (i), the section does not apply where a local just cause ordinance adopted on or before September 1, 2019 covers the unit, or where a later local ordinance is more protective and the city has made a binding finding; less protective local ordinances adopted after that date are unenforceable. This is ordinary precedence. The section was re-enacted with an operative date of April 1, 2024, amended by AB 1529 (Stats. 2025, Ch. 203) effective January 1, 2026, and sunsets January 1, 2030; the just-cause requirement first took effect January 1, 2020.",
+   "confidence": 0.88,
+   "reason": "Both candidates describe the same Tenant Protection Act just-cause section (Civ. Code \u00a7 1946.2), so they were merged; the 15-year age test was kept as coverage, the tenancy-length condition was removed from building coverage, and untestable exemptions were moved to text."
   },
   {
    "member_indices": [
@@ -68,12 +61,12 @@
    "quote_index": 2,
    "status": "in_force",
    "title": "Housing Crisis Act relocation for lower-income households displaced by demolition",
-   "requirement": "If you are a lower-income household (80% of area median income or below) and your protected unit is demolished for new housing, you must get relocation benefits equal to what public agencies pay under Gov. Code \u00a7 7260 et seq. In Los Angeles, the owner pays the state amount or the city amount, whichever is higher.",
+   "requirement": "If your protected unit is demolished for new housing and your household earns 80% of area median income or less, you must receive relocation benefits equal to those public entities pay under Gov. Code \u00a7 7260 et seq. In Los Angeles, the owner pays the HCA amount or the city amount, whichever is higher.",
    "key_value": "Relocation consistent with Gov. Code \u00a7 7260 et seq. for lower-income households",
-   "coverage_conditions": "Protected units demolished for new housing development and occupied by lower-income households.",
+   "coverage_conditions": "Protected units demolished for new housing development; applies to lower-income occupants (80% AMI or below).",
    "exemptions": null,
    "effective_date": null,
-   "citation": "Cal. Gov. Code \u00a7 66300.6(b)(4)(A)",
+   "citation": "Cal. Gov. Code \u00a7 66300.6",
    "penalty": null,
    "coverage": {
     "min_units": null,
@@ -82,7 +75,8 @@
     "built_after": null,
     "min_building_age_years": null,
     "unresolvable_conditions": [
-     "Applies only to 'protected units' demolished for housing development projects, a status that cannot be determined from the assessor record"
+     "Unit must be a protected unit being demolished for a new housing development",
+     "Occupant household must be lower income (80% AMI or below)"
     ]
    },
    "exemption_tests": [],
@@ -91,7 +85,7 @@
    "conflict_type": "none",
    "conflict_note": null,
    "confidence": 0.6,
-   "reason": "This is a separate state law (the Housing Crisis Act's demolition relocation rule), so it stays as its own record."
+   "reason": "Single candidate on the Housing Crisis Act relocation requirement, a separate statute from the other candidates."
   },
   {
    "member_indices": [
@@ -100,10 +94,10 @@
    ],
    "quote_index": 3,
    "status": "in_force",
-   "title": "State-set relocation payments for temporary displacement under 20 days",
-   "requirement": "If you must move out temporarily for less than 20 days for capital improvement work, your relocation payment is set by Civil Code \u00a7 1947.9, not by a local ordinance. In San Francisco, the Rent Board lists $446.00 per day per household plus actual moving expenses for notices served from March 1, 2026 through February 28, 2027.",
-   "key_value": "$446.00/day per household plus actual moving expenses (SF figure, notices served 3/1/26\u20132/28/27)",
-   "coverage_conditions": "Tenants temporarily displaced for less than 20 days. The sources describe this for San Francisco rent-controlled units.",
+   "title": "Relocation payments for temporary capital improvement displacement under 20 days (San Francisco)",
+   "requirement": "If you must move out for less than 20 days for capital improvement work in San Francisco, your relocation payment is set by Civil Code \u00a7 1947.9 rather than the city's Rent Ordinance \u00a7 37.9C. For notices served March 1, 2026 through February 28, 2027, that is $446.00 per day per tenant household plus actual moving expenses.",
+   "key_value": "$446.00/day per household plus actual moving expenses (notices served 3/1/26\u20132/28/27)",
+   "coverage_conditions": "Tenants in San Francisco rent-controlled units temporarily displaced for less than 20 days for capital improvement work.",
    "exemptions": null,
    "effective_date": null,
    "citation": "Cal. Civ. Code \u00a7 1947.9",
@@ -114,15 +108,17 @@
     "built_on_or_before": null,
     "built_after": null,
     "min_building_age_years": null,
-    "unresolvable_conditions": []
+    "unresolvable_conditions": [
+     "Unit must be in San Francisco and subject to the San Francisco Rent Ordinance"
+    ]
    },
    "exemption_tests": [],
    "yields_to_local_rule": false,
    "displaces_state_rule": false,
-   "conflict_type": "preemption",
-   "conflict_note": "For temporary capital improvement displacements under 20 days, the state statute governs the relocation amount instead of San Francisco Rent Ordinance (Admin. Code) \u00a7 37.9C.",
+   "conflict_type": "none",
+   "conflict_note": "The state statute, not S.F. Admin. Code \u00a7 37.9C, sets relocation for temporary capital improvement displacements under 20 days; this is settled precedence, not an open conflict. The March 1, 2026 date is an annual rate adjustment, not the statute's effective date.",
    "confidence": 0.65,
-   "reason": "Merged two San Francisco Rent Board pages that both describe the Civil Code \u00a7 1947.9 rule for displacements under 20 days. The 2026-03-01 date is an annual rate adjustment, so I did not use it as the effective date."
+   "reason": "Both candidates are San Francisco Rent Board statements that Civ. Code \u00a7 1947.9 governs relocation for sub-20-day capital improvement displacements, so they were merged."
   }
  ]
 }

@@ -1,0 +1,51 @@
+{
+ "digest": "0099791a56696f68",
+ "rules": [
+  {
+   "member_indices": [
+    0,
+    1
+   ],
+   "quote_index": 1,
+   "status": "in_force",
+   "title": "Santa Monica Rent Control \u2013 security deposit cap and interest-bearing account",
+   "requirement": "For a rent-controlled unit rented after January 1, 1983, the security deposit can be no more than one month's maximum allowable rent and cannot be raised during the tenancy. The landlord must keep the deposit, including any advance rent, in an interest-bearing account at a federally insured institution until it is returned or properly applied.",
+   "key_value": "1 month's maximum allowable rent (2 months for qualifying small landlords; tenants since before 1/1/1983 keep their 1/1/1983 deposit)",
+   "coverage_conditions": "Controlled rental units under the Santa Monica Rent Control Charter Amendment. Per the city's rent control records, units first receiving occupancy permits after April 10, 1979 are exempt new construction. Tenancies that began on or before 1/1/1983 are capped at the deposit in effect on that date. Tenancies that began later are capped at one month's maximum allowable rent, or the base rent after vacancy. For tenancies that began before 1/1/1999, an extra deposit of up to one month's rent is allowed with the tenant's written consent in exchange for an added use such as pets or extra occupants. The total deposit may never exceed the state-law maximum. Interest earned is either paid to the tenant or used by the landlord to offset operating expenses, which counts in rent adjustments.",
+   "exemptions": "Units exempt from Article XVIII do not get these protections. Per the rent control records, those include post-April 10, 1979 new construction, owner-occupied properties of three or fewer units, exempt single-family homes, transient hotels, care facilities, dormitories, and certain government or subsidized units, all on Board determination. A small landlord may charge up to two months' rent to a tenant who is not a service member. The landlord must be a natural person or an LLC of natural persons owning no more than two residential rental properties with no more than four units in total. An additional deposit under Reg. 14003 must be refunded within 30 days if the tenant revokes consent and gives up the additional use.",
+   "effective_date": "1979-04-10",
+   "citation": "Santa Monica City Charter Art. XVIII, \u00a7 1803(s); Santa Monica Rent Control Board Regs. \u00a7\u00a7 14000\u201314003",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": "1979-04-10",
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [
+    {
+     "description": "Owner-occupied property with three or fewer units, where an owner with at least a 50% interest lives on site, exempt from rent control on Board determination",
+     "if_units_at_most": 3,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    },
+    {
+     "description": "Small landlord (natural person or LLC of natural persons owning no more than two rental properties with no more than four units collectively) may charge two months' rent as deposit to non-service-member tenants",
+     "if_units_at_most": 4,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    }
+   ],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.72,
+   "reason": "Merged the Charter \u00a7 1803(s) interest-account provision with the Rent Control Board Chapter 14 deposit regulations that implement it, since both are part of Santa Monica's rent control law on security deposits; the 1979 new-construction cutoff comes from the city's rent control exemption records."
+  }
+ ]
+}

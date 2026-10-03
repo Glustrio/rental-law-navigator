@@ -1,0 +1,110 @@
+{
+ "doc_id": "X-santa-monica-ca-12-20exemptions-20and-20coverage",
+ "doc_sha256": "c69195bc8eba24aa504e6ca9bd35dc6e1cb63b5fba65a5455ab700f8071f6e78",
+ "model": "claude-opus-5-5",
+ "extracted_at": "2026-10-03T22:52:10+00:00",
+ "rules": [
+  {
+   "jurisdiction": "Santa Monica, CA",
+   "level": "city",
+   "category": "rent_increase_limits",
+   "status": "in_force",
+   "title": "Santa Monica Rent Control Law \u2013 maximum allowable rent (with Chapter 12 exemption rules)",
+   "requirement": "Rental units under Santa Monica's Rent Control Law have a maximum allowable rent set by the Rent Control Board. A property stays covered until the owner applies for and receives a Board exemption, and even then current tenants keep their rent and eviction protections.",
+   "key_value": "Maximum allowable rent set by the Rent Control Board",
+   "coverage_conditions": "Residential rental units in Santa Monica under the Rent Control Charter Amendment. A property is not exempt until the owner applies for and receives a Rent Control Board exemption determination.",
+   "exemptions": "Exemptions require a Board determination and include: owner-occupied properties that had three or fewer units on April 10, 1979, where the owner holds at least 50% and has lived there as a principal residence for at least 120 days before applying (\u00a71801(c)(4)); new construction first receiving occupancy permits after April 10, 1979 (\u00a71801(c)(5)), but not units moved into the city or units built within five years after an Ellis Act withdrawal and demolition of controlled units; hotels, motels, inns, tourist homes and rooming houses rented mainly to transient guests for stays under 14 days, except tenants of 3 or more months; extended medical care facilities; and asylums run by 501(c)(3) social service organizations. Current residents keep their protections when an exemption is granted, and exemptions lapse when the qualifying facts end.",
+   "effective_date": null,
+   "citation": "Santa Monica City Charter \u00a7\u00a7 1805, 1809, 1801(c); Santa Monica Rent Control Board Regs. \u00a7\u00a7 12000\u201312200",
+   "quoted_span": "Charter Amendment \u00a71806 and the maximum allowable rent provisions of Charter",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [
+    {
+     "description": "Owner-occupied property with three or fewer units on April 10, 1979 (Charter \u00a71801(c)(4)); owner holds at least 50% and lives there as principal residence; requires Board determination",
+     "if_units_at_most": 3,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    },
+    {
+     "description": "New construction first receiving occupancy permits after April 10, 1979 (Charter \u00a71801(c)(5)); excludes relocated buildings and units built within 5 years of an Ellis Act demolition; requires Board determination",
+     "if_units_at_most": null,
+     "if_built_after": "1979-04-10",
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    }
+   ],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": true,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.6,
+   "span_match_score": 100,
+   "source_doc_id": "X-santa-monica-ca-12-20exemptions-20and-20coverage",
+   "source_url": "https://www.santamonica.gov/media/Document%20Library/Detail/Rent%20Control%20Charter%20Amendment%20&%20Regulations/12,%20Exemptions%20and%20Coverage.pdf",
+   "source_type": "official",
+   "source_origin": "extra",
+   "retrieved_at": "2026-10-03 22:51 UTC"
+  },
+  {
+   "jurisdiction": "Santa Monica, CA",
+   "level": "city",
+   "category": "just_cause_eviction",
+   "status": "in_force",
+   "title": "Santa Monica Rent Control Law \u2013 good cause eviction (Charter \u00a71806)",
+   "requirement": "Tenants in Santa Monica rent-controlled units are protected by the Charter's good cause eviction provisions. Current residents keep this protection even if the property later receives a use exemption.",
+   "key_value": null,
+   "coverage_conditions": "Rental units covered by the Santa Monica Rent Control Charter Amendment, including current residents of properties later granted a use exemption under Regulation 12052.",
+   "exemptions": "Properties the Rent Control Board has determined exempt under Charter \u00a71801(c) (see the rent control record). Current residents keep good cause eviction protections when a use exemption is granted.",
+   "effective_date": null,
+   "citation": "Santa Monica City Charter \u00a7 1806",
+   "quoted_span": "These protections include, without limitation, the good ca use eviction provisions of",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [
+    {
+     "description": "Owner-occupied property with three or fewer units on April 10, 1979 (Charter \u00a71801(c)(4)), if exempted by the Board",
+     "if_units_at_most": 3,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    },
+    {
+     "description": "New construction first receiving occupancy permits after April 10, 1979 (Charter \u00a71801(c)(5)), if exempted by the Board",
+     "if_units_at_most": null,
+     "if_built_after": "1979-04-10",
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    }
+   ],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": true,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.45,
+   "span_match_score": 100,
+   "source_doc_id": "X-santa-monica-ca-12-20exemptions-20and-20coverage",
+   "source_url": "https://www.santamonica.gov/media/Document%20Library/Detail/Rent%20Control%20Charter%20Amendment%20&%20Regulations/12,%20Exemptions%20and%20Coverage.pdf",
+   "source_type": "official",
+   "source_origin": "extra",
+   "retrieved_at": "2026-10-03 22:51 UTC"
+  }
+ ],
+ "dropped": [],
+ "notes": "The document is Chapter 12 (Exemptions and Coverage) of the Santa Monica Rent Control Board Regulations, effective 12/15/16. It mostly covers exemption procedure: applications, hearings, lapse of exemptions and dismissal. It only refers to the substantive rent-ceiling sections (Charter \u00a7\u00a71805, 1809) and the good cause eviction section (\u00a71806) without describing their content, so both records rest on indirect support. Confidence in the just-cause record is lower because it applies the rent-control exemptions to eviction protection, which the document does not state. The April 10, 1979 cutoff for new construction and for the three-unit owner-occupied test comes from references to \u00a71801(c)(4)-(5); the charter's own effective date is not stated. Exemptions apply only after a Board determination, so year built alone does not settle coverage (needs_unknown_fact set to true). Quoted spans were taken from single lines to avoid line-break mismatches; the source PDF text contains stray spaces (e.g., 'ca use')."
+}

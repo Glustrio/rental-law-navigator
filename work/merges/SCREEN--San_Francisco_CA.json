@@ -1,5 +1,5 @@
 {
- "digest": "a5992c0a5fedf48c",
+ "digest": "cb91db7ce624e1ec",
  "rules": [
   {
    "member_indices": [
@@ -8,9 +8,9 @@
    "quote_index": 0,
    "status": "in_force",
    "title": "Fair Chance Ordinance: limits on using arrest and conviction history in affordable housing",
-   "requirement": "In San Francisco affordable housing, landlords and housing providers are limited in how they can use an applicant's arrest or conviction history when deciding on an application. If you think your record was used improperly, you can contact the San Francisco Human Rights Commission.",
+   "requirement": "In San Francisco affordable housing, housing providers are limited in how they can use an applicant's arrest or conviction history when deciding on an application. If you think your record was used improperly, you can contact the San Francisco Human Rights Commission.",
    "key_value": null,
-   "coverage_conditions": "Applicants and residents of affordable housing in San Francisco who have an arrest or conviction history. The source limits the rule to affordable housing, and an assessor record cannot show whether a building is affordable housing.",
+   "coverage_conditions": "Applicants for and residents of affordable housing in San Francisco who have an arrest or conviction history. The rule applies only to affordable housing, not to all rentals.",
    "exemptions": null,
    "effective_date": null,
    "citation": "S.F. Police Code art. 49 (Fair Chance Ordinance)",
@@ -31,7 +31,7 @@
    "conflict_type": "none",
    "conflict_note": null,
    "confidence": 0.55,
-   "reason": "There was only one candidate, an official page summarizing the Fair Chance Ordinance's housing provisions, so it stays as its own record. The short summary gives no effective date or penalty."
+   "reason": "Single official-source candidate describing San Francisco's Fair Chance Ordinance as applied to affordable housing; kept as its own record with the affordable-housing limit as an unresolvable coverage condition."
   }
  ]
 }

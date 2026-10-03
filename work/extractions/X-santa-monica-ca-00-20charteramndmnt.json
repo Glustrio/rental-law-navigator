@@ -1,0 +1,145 @@
+{
+ "doc_id": "X-santa-monica-ca-00-20charteramndmnt",
+ "doc_sha256": "7e68cdd3da77bc96be54c08464ddef7de4129b286f169e166d63fdee7593f13a",
+ "model": "claude-opus-5-5",
+ "extracted_at": "2026-10-03T22:52:13+00:00",
+ "rules": [
+  {
+   "jurisdiction": "Santa Monica, CA",
+   "level": "city",
+   "category": "rent_increase_limits",
+   "status": "in_force",
+   "title": "Santa Monica Rent Control Charter Amendment \u2013 maximum allowable rent and annual general adjustment",
+   "requirement": "Rent on a controlled unit may not exceed the maximum allowable rent set by the Rent Control Board. Each September 1 it rises by 75% of the local CPI increase, never below 0% or above 3% (the Board may also set a dollar cap). Landlords who have not registered the unit or who have uncorrected code violations may not raise rent. Rent resets to the initial rent at a new tenancy where state law allows vacancy increases. Tenants can petition the Board for a rent reduction.",
+   "key_value": "75% of CPI-U (LA area), floor 0%, cap 3% per year",
+   "coverage_conditions": "All residential rental units in Santa Monica, including mobile homes and spaces, unless exempted by the Board.",
+   "exemptions": "Units built after adoption of the Article (April 10, 1979), except units created by conversion. Owner-occupied dwellings with no more than three units, where a natural person with a 50% interest lives on site. Single-family homes not used as rentals on July 1, 1984, or later exempted after two years of owner occupancy. Transient hotels and motels. Hospitals, care facilities and university dormitories. Government-owned or subsidized units where federal or state law exempts them. Nonprofit child care or social service units. State park and tidelands property. Exemptions must be granted by the Board on application.",
+   "effective_date": "2022-12-06",
+   "citation": "Santa Monica City Charter Art. XVIII, \u00a7\u00a7 1804\u20131805",
+   "quoted_span": "Subparagraph 1 of this subsection notwithstanding, in no event shall the general \nadjustment be less than zero percent or greater than three (3) percent",
+   "penalty": "Civil liability for the excess rent plus attorney's fees. Treble civil penalty for willful conduct. In an administrative proceeding, up to $500 additional. Misdemeanor punishable by a fine of up to $500 and/or up to 6 months in jail.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": "1979-04-10",
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [
+    {
+     "description": "Owner-occupied dwelling with no more than three units (natural-person owner with 50% interest residing on site)",
+     "if_units_at_most": 3,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    },
+    {
+     "description": "Single-family home not used for residential rental on July 1, 1984, or exempted after two years of owner occupancy",
+     "if_units_at_most": 1,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    }
+   ],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": true,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.9,
+   "span_match_score": 100,
+   "source_doc_id": "X-santa-monica-ca-00-20charteramndmnt",
+   "source_url": "https://www.santamonica.gov/media/Document%20Library/Detail/Rent%20Control%20Charter%20Amendment%20&%20Regulations/00,%20CharterAmndmnt.pdf",
+   "source_type": "official",
+   "source_origin": "extra",
+   "retrieved_at": "2026-10-03 22:51 UTC"
+  },
+  {
+   "jurisdiction": "Santa Monica, CA",
+   "level": "city",
+   "category": "just_cause_eviction",
+   "status": "in_force",
+   "title": "Santa Monica Rent Control Charter Amendment \u2013 just cause eviction",
+   "requirement": "A landlord may not terminate a tenancy in a controlled unit except for one of the listed causes. These include nonpayment of rent, an uncured material lease breach, nuisance, illegal use, refusal to renew on the same terms, refusal of access, an unapproved subtenant, good-faith owner or relative move-in, demolition with permits, or an Ellis Act withdrawal. The cause must be stated in the notice, and the notice must be filed with the Rent Control Board within 3 days. Owner move-in evictions are barred for tenants of 5+ years who are 62 or older or disabled, and for terminally ill tenants. The landlord must move in within 60 days and stay at least two years.",
+   "key_value": null,
+   "coverage_conditions": "Controlled rental units in Santa Monica (all residential rental units except Board-granted exemptions).",
+   "exemptions": "Same exemptions as controlled rental units: post-April 10, 1979 new construction; owner-occupied buildings of 3 or fewer units; exempt single-family homes; transient hotels, institutions, dormitories, certain government or subsidized units, and state park property.",
+   "effective_date": "1979-04-10",
+   "citation": "Santa Monica City Charter Art. XVIII, \u00a7 1806",
+   "quoted_span": "No landlord shall take action to terminate any tenancy including but not limited, to making a demand \nfor possession of a rental unit, threatening to terminate a tenancy, serving any notice to quit or \nother eviction notice",
+   "penalty": "Affirmative defense to eviction. Actual and punitive damages (including emotional distress) for wrongful eviction, injunctive relief, and prevailing-party attorney's fees. Misdemeanor up to $500 and/or 6 months in jail.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": "1979-04-10",
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [
+    {
+     "description": "Owner-occupied dwelling with no more than three units",
+     "if_units_at_most": 3,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    },
+    {
+     "description": "Exempt single-family home",
+     "if_units_at_most": 1,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    }
+   ],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": true,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.85,
+   "span_match_score": 100,
+   "source_doc_id": "X-santa-monica-ca-00-20charteramndmnt",
+   "source_url": "https://www.santamonica.gov/media/Document%20Library/Detail/Rent%20Control%20Charter%20Amendment%20&%20Regulations/00,%20CharterAmndmnt.pdf",
+   "source_type": "official",
+   "source_origin": "extra",
+   "retrieved_at": "2026-10-03 22:51 UTC"
+  },
+  {
+   "jurisdiction": "Santa Monica, CA",
+   "level": "city",
+   "category": "security_deposits",
+   "status": "in_force",
+   "title": "Santa Monica Rent Control Charter Amendment \u2013 security deposits held in interest-bearing account",
+   "requirement": "Security deposits, including advance rent, must be kept in an interest-bearing account at a federally insured institution until returned or applied. The landlord either pays the interest to the tenant or uses it to offset operating expenses, which counts in rent adjustments.",
+   "key_value": "Deposit must earn interest in federally insured account",
+   "coverage_conditions": "Rental units subject to Santa Monica's Rent Control Charter Amendment.",
+   "exemptions": "Units exempt from Article XVIII (see rent control exemptions), to the extent the provision is limited to controlled units.",
+   "effective_date": "1979-04-10",
+   "citation": "Santa Monica City Charter Art. XVIII, \u00a7 1803(s)",
+   "quoted_span": "shall be placed in an interest bearing account at a federally insured financial \ninstitution until such time as it is returned to the tenant or entitled to be used by the landlord.",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.7,
+   "span_match_score": 100,
+   "source_doc_id": "X-santa-monica-ca-00-20charteramndmnt",
+   "source_url": "https://www.santamonica.gov/media/Document%20Library/Detail/Rent%20Control%20Charter%20Amendment%20&%20Regulations/00,%20CharterAmndmnt.pdf",
+   "source_type": "official",
+   "source_origin": "extra",
+   "retrieved_at": "2026-10-03 22:51 UTC"
+  }
+ ],
+ "dropped": [],
+ "notes": "Source is the Santa Monica Charter Article XVIII as amended through 12/6/22. Article adopted 4/10/79; rent rule effective date uses the 2022 amendment that set the 0\u20133% cap. The new-construction exemption ties to the adoption date (April 10, 1979), so it is encoded as built_on_or_before 1979-04-10; converted units remain covered even if newer. Section 1803(s) on deposits does not expressly limit itself to controlled units, so building coverage was left open; the Board's deposit regulations are not in this document. The 2022-23 transition general adjustment (0.8%, $19 cap; 3%/$70 recalculation) is a historical provision. Relocation payments and the tenant harassment ordinance are in the Municipal Code and not extractable here. The document references state vacancy-increase law (Costa-Hawkins) without citing it."
+}

@@ -1,5 +1,5 @@
 {
- "digest": "5f8d2498e691dfbb",
+ "digest": "253bd3533101198c",
  "rules": [
   {
    "member_indices": [
@@ -8,9 +8,9 @@
    "quote_index": 0,
    "status": "in_force",
    "title": "San Francisco security deposit interest requirement (4.2% for 3/1/2026\u20132/28/2027)",
-   "requirement": "San Francisco landlords must pay tenants interest on security deposits. For March 1, 2026 through February 28, 2027 the rate is 4.2%; it was 5.0% for 2025\u201326 and 5.2% for 2024\u201325.",
+   "requirement": "San Francisco landlords must pay tenants interest on security deposits. The rate is 4.2% for March 1, 2026 through February 28, 2027 (5.0% for 2025\u201326 and 5.2% for 2024\u201325).",
    "key_value": "4.2% annual interest (March 1, 2026 \u2013 February 28, 2027)",
-   "coverage_conditions": "Security deposits on San Francisco residential rentals. The source page does not describe which units are covered or exempt.",
+   "coverage_conditions": "Security deposits on San Francisco residential rentals. The source does not describe any building-level coverage limits.",
    "exemptions": null,
    "effective_date": null,
    "citation": "S.F. Admin. Code ch. 49",
@@ -29,7 +29,7 @@
    "conflict_type": "none",
    "conflict_note": null,
    "confidence": 0.7,
-   "reason": "There was only one candidate, an official page with the current deposit interest rate under Chapter 49. Effective_date is left blank because 2026-03-01 is when the yearly rate changes, not when the interest requirement started, and no source gives that start date."
+   "reason": "There is only one candidate, the official rate page for Admin. Code ch. 49. The effective date is left null because 2026-03-01 is an annual rate adjustment, not the date the interest requirement began."
   }
  ]
 }
