@@ -1,0 +1,45 @@
+{
+ "doc_id": "D087",
+ "doc_sha256": "b567c21e8b9b9ca5a4a7ca86a51155f67b5948c0b869b421403348ff70417b49",
+ "model": "claude-opus-5-5",
+ "extracted_at": "2026-10-03T21:25:04+00:00",
+ "rules": [
+  {
+   "jurisdiction": "Santa Ana, CA",
+   "level": "city",
+   "category": "algorithmic_rent_setting",
+   "status": "pending",
+   "title": "Ban on algorithmic rent-setting software using nonpublic competitor data",
+   "requirement": "Landlords of residential rental property in Santa Ana may not use, and vendors may not sell, license or provide, rent-setting software that relies on nonpublic competitor data such as real-time rents, lease renewals and occupancy levels. An affected tenant can sue for an injunction, damages, civil penalties of up to $1,000 per violation, and attorney's fees.",
+   "key_value": "Prohibits sale, licensing, provision and use of algorithmic rent-setting software; civil penalties up to $1,000 per violation",
+   "coverage_conditions": "Residential rental property within Santa Ana city limits.",
+   "exemptions": "Does not apply to pricing software that relies only on publicly available data or aggregate historical data, or to tools used to comply with affordable housing program requirements.",
+   "effective_date": null,
+   "citation": "Santa Ana algorithmic rent-setting ordinance (ordinance number not stated; first reading Feb. 17, 2026)",
+   "quoted_span": "The ordinance, approved on Tuesday, Feb. 17, for a first reading and set for a final vote on March 3, prohibits the sale, licensing, provision and use of certain algorithmic rent-setting software for residential rental properties.",
+   "penalty": "Tenant private right of action: injunctive relief, damages, or civil penalties up to $1,000 per violation, plus attorney's fees. Tenant only needs to prove the landlord used the prohibited technology, not intentional collusion.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "other",
+   "conflict_note": "The source is dated Feb. 24, 2026. It reports only the first reading (Feb. 17) and a final vote scheduled for March 3, 2026. It does not confirm final adoption or give an effective date. If the ordinance was adopted March 3, it would normally take effect about 30 days later and would be in force by 2026-10-01. Check the adoption and ordinance number against official city records. The article says the ordinance is meant to work alongside existing and proposed California antitrust laws. Review possible overlap with state Cartwright Act changes on common pricing algorithms.",
+   "confidence": 0.55,
+   "span_match_score": 100,
+   "source_doc_id": "D087",
+   "source_url": "https://www.publicceo.com/2026/02/santa-ana-city-council-continues-to-strengthen-tenant-protections-by-banning-anticompetitive-rent-setting-software/",
+   "source_type": "secondary (law firm / news / mirror)",
+   "source_origin": "supplement",
+   "retrieved_at": "2026-10-03 21:04 UTC"
+  }
+ ],
+ "dropped": [],
+ "notes": "This is a secondary news/press-release mirror, not official text. Its status is set to pending because the document only confirms the first reading. The final vote was scheduled for 2026-03-03, and adoption is unconfirmed here. The article also mentions Santa Ana's existing rent stabilization ordinance (rent increase limits and eviction protections) but gives no details, citation, or effective date, so it was not extracted. The article also mentions 'existing and proposed state antitrust laws' without naming them, so those were not extracted either."
+}

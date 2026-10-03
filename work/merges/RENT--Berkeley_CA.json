@@ -1,0 +1,67 @@
+{
+ "digest": "85798f23e50d3226",
+ "rules": [
+  {
+   "member_indices": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "quote_index": 2,
+   "status": "in_force",
+   "title": "Berkeley rent ceilings: annual increases limited to the Annual General Adjustment (1.0% for 2026, never more than 5%)",
+   "requirement": "If your Berkeley unit is fully covered by rent control (mostly multifamily units with a certificate of occupancy on or before June 1980), your landlord may raise the rent each year only by the Annual General Adjustment (AGA) set by the Rent Board. For 2026 the AGA is 1.0%, applied to the 2025 rent ceiling no earlier than January 1, 2026. Under Measure BB the AGA can never be more than 5%, although a landlord with unused (banked) adjustments may go above 5% up to the rent ceiling. Landlords may petition for capital-improvement increases only after the work is finished.",
+   "key_value": "2026 AGA 1.0% (65% of the 1.5% Bay Area CPI change); AGA capped at 5% per year",
+   "coverage_conditions": "Fully covered units: most units in multifamily properties built before 1980 (certificate of occupancy on or before June 1980, per D009). Also covers single-family homes with tenancies that began before 1996 and rooming houses with 5 or more rooms rented on separate leases. Units with Section 8 vouchers, Shelter Plus Care, VASH, LIHTC, HOME, City Housing Trust Fund or similar subsidies are fully covered when the unit type is covered and no federal or state law bars rent control (Measure BB). The landlord must meet the eligibility conditions in Rent Board Regulation 1148 to take the AGA.",
+   "exemptions": "Partially covered, with no rent ceiling: new construction with a certificate of occupancy after June 1980; single-family homes with tenancies that began on or after Jan 1, 1996; most condominiums; Section 202/811 units; and Rental Supplement, Section 8 LMSA or project-based Section 8 units in projects with HUD-insured or HUD-held mortgages. Fully exempt: Golden Duplex (owner-occupied on 12/31/1979 and still owner-occupied); units where the tenant shares a kitchen or bath with an owner who lived on the property when the tenancy began; tenancies that began after Nov 7, 2018 on properties where one unit is an ADU and either unit is owner-occupied; dormitories; nonprofit cooperatives. The 2026 AGA does not apply to tenancies that began on or after Jan 1, 2025 with rents set under Costa-Hawkins.",
+   "effective_date": null,
+   "citation": "Berkeley Mun. Code ch. 13.76 (incl. \u00a7 13.76.110A), as amended by Measure BB (Nov. 2024); Berkeley Rent Board Reg. 1148",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": "1980-06-30",
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [
+    {
+     "description": "New construction with a certificate of occupancy after June 1980 is only partially covered (no rent ceiling)",
+     "if_units_at_most": null,
+     "if_built_after": "1980-06-30",
+     "if_younger_than_years": null,
+     "needs_unknown_fact": false
+    },
+    {
+     "description": "Single-family home with a tenancy that began on or after Jan 1, 1996 is not rent controlled",
+     "if_units_at_most": 1,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    },
+    {
+     "description": "Golden Duplex: duplex that was owner-occupied on Dec 31, 1979 and is still owner-occupied",
+     "if_units_at_most": 2,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    },
+    {
+     "description": "Tenancies that began after Nov 7, 2018 on properties where one unit is an ADU and either unit is owner-occupied",
+     "if_units_at_most": 2,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    }
+   ],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": true,
+   "conflict_type": "none",
+   "conflict_note": "Costa-Hawkins sets the limits on what Berkeley may cover, and in fully covered units Berkeley rent control governs instead of the state cap (Civ. Code \u00a7 1947.12). This is ordinary precedence, not an unsettled conflict. Members give no original effective date for the ordinance. The 2026-01-01 date is the annual AGA date, not the ordinance's start date.",
+   "confidence": 0.8,
+   "reason": "All four official candidates describe the same Berkeley Rent Stabilization Ordinance (B.M.C. ch. 13.76): the Measure BB 5% AGA cap, the rule that capital-improvement petitions must cover completed work, the 2026 AGA, and the coverage table. They are merged into one record, using D009's June 1980 certificate-of-occupancy cutoff."
+  }
+ ]
+}

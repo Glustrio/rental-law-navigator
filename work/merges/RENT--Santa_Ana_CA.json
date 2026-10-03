@@ -1,0 +1,44 @@
+{
+ "digest": "a066942bc111e59e",
+ "rules": [
+  {
+   "member_indices": [
+    0,
+    1
+   ],
+   "quote_index": 1,
+   "status": "in_force",
+   "title": "Santa Ana annual rent increase cap (Rent Stabilization and Just Cause Eviction Ordinance)",
+   "requirement": "In covered Santa Ana rentals, your landlord can raise rent only once a year, by no more than the lower of 3% or 80% of the 12-month CPI change, and not at all if CPI is negative. The cap is 2.87% for September 1, 2026 through August 31, 2027; if your increase is higher, you can file a Tenant Petition with the Rent Stabilization Office.",
+   "key_value": "Lower of 3% or 80% of CPI change (0% if CPI negative); 2.87% for 2026-09-01 to 2027-08-31",
+   "coverage_conditions": "Residential rental units in Santa Ana in buildings built on or before February 1, 1995, and mobile home spaces first offered for rent on or before January 1, 1990. The City publishes the allowed increase by June 30 each year, and it takes effect September 1.",
+   "exemptions": "Residential buildings built after February 1, 1995, and mobile home spaces first offered for rent after January 1, 1990. Owners may petition for a fair-return increase above the cap. State Costa-Hawkins limits on local rent control, such as exempting single-family homes and condos, also apply.",
+   "effective_date": "2021-11-19",
+   "citation": "Santa Ana Rent Stabilization and Just Cause Eviction Ordinance",
+   "penalty": "Tenants may petition the Rent Stabilization Office to review increases above the maximum allowed increase.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": "1995-02-01",
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [
+    {
+     "description": "Residential buildings built after February 1, 1995 are exempt from the rent cap.",
+     "if_units_at_most": null,
+     "if_built_after": "1995-02-01",
+     "if_younger_than_years": null,
+     "needs_unknown_fact": false
+    }
+   ],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": true,
+   "conflict_type": "none",
+   "conflict_note": "Where this local cap applies, it governs instead of the state cap in Cal. Civ. Code \u00a7 1947.12. That is ordinary precedence, not a conflict. Costa-Hawkins limits are settled state law.",
+   "confidence": 0.85,
+   "reason": "Both official city pages describe the same Santa Ana rent cap ordinance, so they are merged into one record. The coverage cutoff and effective date come from D085."
+  }
+ ]
+}

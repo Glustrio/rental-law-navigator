@@ -1,0 +1,45 @@
+{
+ "doc_id": "D080",
+ "doc_sha256": "924783981b92aabf2a5200517290879d008fd1e8c579969bdddaa28ff6f9fd7d",
+ "model": "claude-opus-5-5",
+ "extracted_at": "2026-10-03T21:24:21+00:00",
+ "rules": [
+  {
+   "jurisdiction": "San Francisco, CA",
+   "level": "city",
+   "category": "rent_increase_limits",
+   "status": "in_force",
+   "title": "San Francisco annual allowable rent increase of 1.6% (March 1, 2026 \u2013 February 28, 2027)",
+   "requirement": "For a rent-controlled unit in San Francisco, the landlord's annual rent increase between March 1, 2026 and February 28, 2027 may not be more than 1.6% of the tenant's base rent. For example, a $2,000 base rent can go up by no more than $32.",
+   "key_value": "1.6% (effective 2026-03-01 through 2027-02-28); prior period 2025-03-01 to 2026-02-28 was 1.4%",
+   "coverage_conditions": "Rent-controlled units under the San Francisco Rent Ordinance. This document does not define which units are rent-controlled.",
+   "exemptions": null,
+   "effective_date": "2026-03-01",
+   "citation": "S.F. Admin. Code \u00a7 37.3(a)(1)",
+   "quoted_span": "For rent-controlled units, the annual allowable increase amount effective March 1, 2026 through February 28, 2027 is 1.6%.",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": true,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.85,
+   "span_match_score": 100,
+   "source_doc_id": "D080",
+   "source_url": "https://www.sf.gov/news--annual-rent-increase-3126-22827-announced",
+   "source_type": "official",
+   "source_origin": "corpus",
+   "retrieved_at": "2026-10-01T22:37Z"
+  }
+ ],
+ "dropped": [],
+ "notes": "The document is an official Rent Board announcement. It does not cite the ordinance section. The citation S.F. Admin. Code \u00a7 37.3(a)(1) is the usual source of the annual allowable increase, but this document does not confirm it, so a reviewer should check it. The document also does not say which units are covered. Rent control in San Francisco generally applies to units first occupied on or before June 13, 1979, but that comes from outside this document, so coverage fields are left null. The earlier 1.4% rate (3/1/25\u20132/28/26) had expired by 2026-10-01. It is listed only in key_value, not as its own rule."
+}

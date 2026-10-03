@@ -1,0 +1,102 @@
+{
+ "doc_id": "D055",
+ "doc_sha256": "2884598bd8acd7f027c2614645595395823b5aa282af80719f63106ebb82ac22",
+ "model": "claude-opus-5-5",
+ "extracted_at": "2026-10-03T21:23:33+00:00",
+ "rules": [
+  {
+   "jurisdiction": "MA",
+   "level": "state",
+   "category": "rent_increase_limits",
+   "status": "in_force",
+   "title": "Massachusetts statutory ban on rent control (G.L. c. 40P)",
+   "requirement": "Massachusetts law bans rent control, so cities and towns cannot cap rent increases. Renters in Massachusetts generally have no statewide or local legal cap on how much rent can go up.",
+   "key_value": "Rent control prohibited statewide",
+   "coverage_conditions": "Statewide; prohibits rent control in Massachusetts municipalities.",
+   "exemptions": null,
+   "effective_date": null,
+   "citation": "M.G.L. c. 40P",
+   "quoted_span": "The petition would have repealed the Commonwealth\u2019s existing statutory ban on rent control, G.L. c. 40P, and replaced it with a statewide cap on annual rent increases for most residential rental units.",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "preemption",
+   "conflict_note": "State ban on rent control preempts local rent control ordinances (e.g., Boston, Cambridge). A 2026 ballot initiative to repeal it was blocked by the SJC on June 23, 2026, so the ban stays in force. Advocates have said they may refile.",
+   "confidence": 0.75,
+   "span_match_score": 100,
+   "source_doc_id": "D055",
+   "source_url": "https://massrealestatelawblog.com/tag/cella-v-attorney-general/",
+   "source_type": "secondary (law firm / news / mirror)",
+   "source_origin": "supplement",
+   "retrieved_at": "2026-10-03 21:04 UTC"
+  },
+  {
+   "jurisdiction": "MA",
+   "level": "state",
+   "category": "rent_increase_limits",
+   "status": "failed",
+   "title": "Initiative Petition 25-21: statewide cap on rent increases (blocked from November 2026 ballot)",
+   "requirement": "This proposal would have limited yearly rent increases to the lower of CPI or 5%. It is not law: the SJC ruled on June 23, 2026 that it cannot appear on the November 2026 ballot.",
+   "key_value": "Lesser of CPI or 5% annually (proposed; not enacted)",
+   "coverage_conditions": "Would have applied to most residential rental units statewide and repealed G.L. c. 40P.",
+   "exemptions": "Owner-occupied buildings with four or fewer units; newly built units less than 10 years old; certain publicly regulated units; short-term rentals; units in facilities run only for educational, religious, or nonprofit purposes.",
+   "effective_date": null,
+   "citation": "Initiative Petition 25-21; Cella v. Attorney General, SJC-13893",
+   "quoted_span": "Under the proposed law, annual rent increases would have been limited to the lesser of the annual increase in the Consumer Price Index or 5%.",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [
+    {
+     "description": "Owner-occupied buildings with four or fewer units",
+     "if_units_at_most": 4,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    },
+    {
+     "description": "Newly constructed units less than 10 years old",
+     "if_units_at_most": null,
+     "if_built_after": null,
+     "if_younger_than_years": 10,
+     "needs_unknown_fact": false
+    },
+    {
+     "description": "Certain publicly regulated units",
+     "if_units_at_most": null,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    }
+   ],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.85,
+   "span_match_score": 100,
+   "source_doc_id": "D055",
+   "source_url": "https://massrealestatelawblog.com/tag/cella-v-attorney-general/",
+   "source_type": "secondary (law firm / news / mirror)",
+   "source_origin": "supplement",
+   "retrieved_at": "2026-10-03 21:04 UTC"
+  }
+ ],
+ "dropped": [],
+ "notes": "Secondary source (law firm blog). The SJC decision in Cella v. Attorney General (SJC-13893, June 23, 2026) kept Initiative Petition 25-21 off the November 2026 ballot because of its religious exemption. It is recorded as failed. Advocates said they may refile, but the document reports no refiled petition. The blog says voters passed the rent control ban in 1994, but it gives no exact effective date for G.L. c. 40P, so effective_date is left null. The document mentions no other rules in scope."
+}

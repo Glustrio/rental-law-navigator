@@ -1,0 +1,173 @@
+{
+ "doc_id": "D077",
+ "doc_sha256": "b69a374528df26689810c707fa88a5ec1632be9a0f2ffd539992e59fd7651a40",
+ "model": "claude-opus-5-5",
+ "extracted_at": "2026-10-03T21:24:37+00:00",
+ "rules": [
+  {
+   "jurisdiction": "San Diego, CA",
+   "level": "city",
+   "category": "just_cause_eviction",
+   "status": "in_force",
+   "title": "San Diego Residential Tenant Protection Ordinance \u2013 just cause for termination",
+   "requirement": "A landlord in San Diego may end a covered tenancy only for a listed at-fault reason (such as nonpayment, a material lease breach, nuisance or criminal activity) or a good-faith no-fault reason (owner move-in, withdrawal from the rental market, a government order, or a substantial remodel or demolition). The landlord must state the cause in the notice. Before ending a tenancy for a curable violation, the landlord must give written notice and a chance to fix it.",
+   "key_value": "Just cause required; at-fault and no-fault grounds enumerated",
+   "coverage_conditions": "Residential rental properties in the City of San Diego, including rented dwellings in mobilehome parks, where the tenant has lawfully occupied for more than 30 days. Fixed-term leases of 3 months or less are not covered.",
+   "exemptions": "Transient hotels; occupancies of 30 days or less; deed- or agreement-restricted affordable housing (Section 8 voucher holders remain covered); mobilehomes subject to the MRL; nonprofit hospital, religious, care and transitional housing; school dormitories; tenant shares a bath or kitchen with an owner who lives there; owner-occupied single-family home renting no more than 2 units or bedrooms; owner-occupied duplex (neither unit an ADU or JADU); separately alienable units (such as condos or single-family homes) not owned by a REIT, a corporation or an LLC with a corporate member, if the tenant got written notice of the exemption; certificate of occupancy issued within the previous 15 years (except mobilehomes).",
+   "effective_date": "2023-06-24",
+   "citation": "San Diego Mun. Code ch. 9, art. 8, div. 7 (\u00a7 98.0701 et seq.)",
+   "quoted_span": "The purpose of the Ordinance is to require Just Cause for termination of residential tenancies consistent with California Civil Code section 1946.2, to limit the reasons for termination of a residential tenancy, to require greater tenant relocation assistance in specified circumstances and to provide additional tenant protections.",
+   "penalty": "Tenant may sue for injunctive or equitable relief and damages, including punitive damages. Wrongful eviction makes the landlord liable for at least 3x actual economic damages. Tenant may recover attorney's fees in civil actions other than unlawful detainer. A violation can be raised as an affirmative defense in unlawful detainer.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": 15,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [
+    {
+     "description": "Certificate of occupancy issued within the previous 15 years (does not apply to mobilehomes)",
+     "if_units_at_most": null,
+     "if_built_after": null,
+     "if_younger_than_years": 15,
+     "needs_unknown_fact": false
+    },
+    {
+     "description": "Owner-occupied duplex where the owner lives in one unit and neither unit is an ADU or JADU",
+     "if_units_at_most": 2,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    },
+    {
+     "description": "Owner-occupied single-family home where the owner rents no more than 2 units or bedrooms",
+     "if_units_at_most": 1,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    },
+    {
+     "description": "Separately alienable unit (such as a condo or single-family home) whose owner is not a REIT, a corporation or an LLC with a corporate member, where the tenant got written notice of the exemption",
+     "if_units_at_most": null,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    },
+    {
+     "description": "Housing restricted as affordable by deed, regulatory agreement or subsidy agreement (does not exempt Section 8 voucher tenants)",
+     "if_units_at_most": null,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    },
+    {
+     "description": "Tenant shares a bathroom or kitchen with an owner who lives in the unit",
+     "if_units_at_most": null,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    }
+   ],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": true,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.75,
+   "span_match_score": 100,
+   "source_doc_id": "D077",
+   "source_url": "https://www.lassd.org/resource/city-of-san-diego-tenant-protection-ordinance/",
+   "source_type": "secondary (law firm / news / mirror)",
+   "source_origin": "supplement",
+   "retrieved_at": "2026-10-03 21:04 UTC"
+  },
+  {
+   "jurisdiction": "San Diego, CA",
+   "level": "city",
+   "category": "just_cause_eviction",
+   "status": "in_force",
+   "title": "San Diego no-fault eviction relocation assistance and right of first offer",
+   "requirement": "For a no-fault termination, the landlord must give 2 months of actual rent as relocation assistance, either as a direct payment within 15 days of the notice or by waiving the final months' rent. Seniors (62 or older) and disabled tenants get 3 months. The tenant has the right to be offered the unit first if it is re-rented within 5 years (except after a withdrawal from the rental market).",
+   "key_value": "2 months' rent; 3 months for seniors or disabled tenants",
+   "coverage_conditions": "Tenancies covered by the San Diego Tenant Protection Ordinance that are ended for no-fault just cause, regardless of tenant income or length of tenancy.",
+   "exemptions": "Same exemptions as the Ordinance. A tenant found at fault for a condition that triggered a government vacate order is not entitled to relocation.",
+   "effective_date": "2023-06-24",
+   "citation": "San Diego Mun. Code \u00a7 98.0706(c)",
+   "quoted_span": "Regardless of tenant\u2019s income or length of tenancy, Landlord must provide relocation assistance to the tenant by (1)",
+   "penalty": "A landlord who fails to pay relocation assistance is liable for at least 3x the required relocation assistance plus actual economic damages.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": 15,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [
+    {
+     "description": "Certificate of occupancy issued within the previous 15 years (does not apply to mobilehomes)",
+     "if_units_at_most": null,
+     "if_built_after": null,
+     "if_younger_than_years": 15,
+     "needs_unknown_fact": false
+    },
+    {
+     "description": "Owner-occupied duplex where the owner lives in one unit",
+     "if_units_at_most": 2,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    }
+   ],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": true,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.7,
+   "span_match_score": 100,
+   "source_doc_id": "D077",
+   "source_url": "https://www.lassd.org/resource/city-of-san-diego-tenant-protection-ordinance/",
+   "source_type": "secondary (law firm / news / mirror)",
+   "source_origin": "supplement",
+   "retrieved_at": "2026-10-03 21:04 UTC"
+  },
+  {
+   "jurisdiction": "CA",
+   "level": "state",
+   "category": "rent_increase_limits",
+   "status": "in_force",
+   "title": "California statewide rent increase cap (referenced in San Diego notice)",
+   "requirement": "California law limits how much rent can be increased. See Civil Code \u00a7 1947.12 for the cap and its exemptions.",
+   "key_value": null,
+   "coverage_conditions": "Not detailed in this document; only mentioned in the required tenant notice.",
+   "exemptions": null,
+   "effective_date": null,
+   "citation": "Cal. Civ. Code \u00a7 1947.12",
+   "quoted_span": "California law limits the amount your rent can be increased. See California Civil Code section 1947.12 for more information.",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": true,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.4,
+   "span_match_score": 100,
+   "source_doc_id": "D077",
+   "source_url": "https://www.lassd.org/resource/city-of-san-diego-tenant-protection-ordinance/",
+   "source_type": "secondary (law firm / news / mirror)",
+   "source_origin": "supplement",
+   "retrieved_at": "2026-10-03 21:04 UTC"
+  }
+ ],
+ "dropped": [],
+ "notes": "I pulled 3 rules from this document. The source is a Legal Aid Society of San Diego fact sheet, a secondary source last updated September 21, 2023. It was retrieved after the status date (October 1, 2026), and nothing in it shows whether the ordinance was amended after 2023.\n\n1. **Just cause rule:** cited to SDMC ch. 9, art. 8, div. 7 (\u00a7 98.0701 et seq.). The document names only some sections (98.0705, 98.0706); the division citation comes from the required tenant notice text.\n2. **Relocation rule:** a separate record. The document cites \u00a7 98.0706(c) only in its remedies section.\n3. **California rent cap:** low confidence. The document only mentions Civil Code \u00a7 1947.12 in the required notice text and gives no cap amount, coverage or effective date. Setting it to yield to local rules reflects how the statute works generally, not anything in this document. San Diego has no local rent control.\n\nThings a reviewer should know:\n- **SDHC notice requirement:** landlords must give the San Diego Housing Commission written notice of terminations through an online portal. The document said this was not yet in effect, with an estimated portal launch of July 2024. Current status is unknown, and it is procedural, so I left it out.\n- **Left out as out of scope:** buyout agreement disclosure rules, and the tenant notice and Tenant Protection Guide requirement (both procedural).\n- **Owner move-in limit:** for leases signed on or after June 24, 2023, owner move-in is a valid reason only if the tenant agrees in writing or the lease allows it. I folded this into the just cause rule as part of the no-fault grounds rather than giving it its own record.\n- **15-year exemption:** buildings with a certificate of occupancy issued within the previous 15 years are exempt. I recorded this as a rolling age test (15 years), not a fixed date cutoff."
+}

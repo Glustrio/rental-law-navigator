@@ -1,0 +1,35 @@
+{
+ "digest": "c53b2eed277c9b12",
+ "rules": [
+  {
+   "member_indices": [
+    0
+   ],
+   "quote_index": 0,
+   "status": "in_force",
+   "title": "Massachusetts ban on source-of-income discrimination (public assistance and housing subsidies)",
+   "requirement": "A Massachusetts landlord may not refuse to rent to you or treat you differently because you receive public assistance or a housing subsidy such as a rental voucher. They also cannot do it because of the subsidy program's requirements.",
+   "key_value": "Source of income (public assistance, housing subsidies, rental assistance) is a protected class in rentals",
+   "coverage_conditions": "Any person furnishing rental accommodations in Massachusetts. The statute does not limit this to certain buildings.",
+   "exemptions": null,
+   "effective_date": null,
+   "citation": "M.G.L. c. 151B, \u00a7 4(10)",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.88,
+   "reason": "There was only one candidate, taken from the official statute text, so it stands as its own record."
+  }
+ ]
+}

@@ -1,0 +1,53 @@
+{
+ "doc_id": "D036",
+ "doc_sha256": "f444bed30ede0905ce671ac4b9addf27feaa31c9a74ba6ba537b7f8d77e81dce",
+ "model": "claude-opus-5-5",
+ "extracted_at": "2026-10-03T21:22:32+00:00",
+ "rules": [
+  {
+   "jurisdiction": "Jersey City, NJ",
+   "level": "city",
+   "category": "rent_increase_limits",
+   "status": "in_force",
+   "title": "Jersey City Rent Control Ordinance (Chapter 260)",
+   "requirement": "In Jersey City buildings with 5 or more units, rent increases are regulated under the city's Rent Control Ordinance. Landlords must apply for increases above the allowed amount, such as capital improvement or hardship increases. Tenants who think their rent is illegal can file an Illegal Rent Petition with the Office of Landlord/Tenant Relations.",
+   "key_value": null,
+   "coverage_conditions": "Rental properties in Jersey City with 5 or more units, unless the property qualifies for another exemption in the ordinance.",
+   "exemptions": "All 1-4 unit properties are exempt. The ordinance has other exemptions, but this page does not list them. Owners apply for those through a Rent Control Exemption Request.",
+   "effective_date": null,
+   "citation": "Jersey City Mun. Code ch. 260",
+   "quoted_span": "(Please Note: All 1-4 Unit Properties are exempt from rent control)",
+   "penalty": null,
+   "coverage": {
+    "min_units": 5,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [
+    {
+     "description": "All 1-4 unit properties are exempt from rent control.",
+     "if_units_at_most": 4,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": false
+    }
+   ],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.6,
+   "span_match_score": 100,
+   "source_doc_id": "D036",
+   "source_url": "https://www.jerseycitynj.gov/landlordtenant",
+   "source_type": "official",
+   "source_origin": "corpus",
+   "retrieved_at": "2026-10-01T22:36Z"
+  }
+ ],
+ "dropped": [],
+ "notes": "The page is an overview from the city's Office of Landlord/Tenant Relations. It refers to Rent Control Ordinance Chapter 260 but does not give the increase formula. It mentions a CPI chart, but no CPI percentage or cap appears on the page. It also says the ordinance has other exemptions, available through a 'Rent Control Exemption Request', but does not list them, so the only exemption captured is the 1-4 unit one. The liability insurance requirement (N.J.S.A. 40A:10A-1) and landlord registration are outside the six categories, so they were left out. The meeting notice is inconsistent (the heading says September 16, 2026, but the text refers to June 18, 2026), but it does not affect the rule."
+}

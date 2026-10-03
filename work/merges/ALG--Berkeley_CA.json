@@ -1,0 +1,37 @@
+{
+ "digest": "15ce17d776bd2371",
+ "rules": [
+  {
+   "member_indices": [
+    0,
+    1,
+    2
+   ],
+   "quote_index": 0,
+   "status": "in_force",
+   "title": "Ban on sale or use of coordinated rent-pricing algorithms",
+   "requirement": "Berkeley landlords may not use a coordinated pricing algorithm (software that uses nonpublic competitor data less than 90 days old to recommend rents, fees or occupancy) to set rents or occupancy levels, and vendors may not sell or license these tools to Berkeley landlords. A tenant harmed by a landlord's use can sue for an injunction, damages, civil penalties of up to $1,000 per violation, and attorney's fees.",
+   "key_value": "Prohibited; civil penalties up to $1,000 per violation (each unit and each month is a separate violation)",
+   "coverage_conditions": "All residential dwelling units in the City of Berkeley. Applies to landlords and to anyone selling, licensing or providing coordinated pricing algorithms to Berkeley landlords.",
+   "exemptions": "Does not cover products that publish aggregated, anonymous rental data without recommending rents; products for setting affordable-housing rent or income limits; or information used for project-financing market research, appraisals, or software research, testing or training (as long as competitor data is not an input when a recommendation is produced).",
+   "effective_date": "2026-01",
+   "citation": "Berkeley Mun. Code ch. 13.63 (\u00a7\u00a7 13.63.020\u201313.63.040; Ord. No. 7,992-N.S.)",
+   "penalty": "The City Attorney can sue for damages, injunctive relief, restitution and civil penalties up to $1,000 per violation. Tenants can sue for injunctive relief, damages and civil penalties up to $1,000 per violation. A prevailing City Attorney or tenant gets attorney's fees. Each month and each unit counts as a separate violation.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": "The official text gives no effective date; it shows passage to print on 2025-11-18 and a 2025-12-02 adoption item. The 2026-01 date comes only from secondary sources. Secondary sources also say RealPage, Inc. v. City of Berkeley (N.D. Cal.), the challenge to the ordinance, was voluntarily dismissed with prejudice on Jan. 14, 2026. The ordinance amends an existing BMC Chapter 13.63, so an earlier version of the ban may have taken effect before this date.",
+   "confidence": 0.7,
+   "reason": "Merged the official ordinance text with two secondary summaries because all three describe the same ban in Berkeley Mun. Code ch. 13.63."
+  }
+ ]
+}

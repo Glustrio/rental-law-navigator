@@ -1,0 +1,44 @@
+{
+ "digest": "469f81d25f276205",
+ "rules": [
+  {
+   "member_indices": [
+    0,
+    1
+   ],
+   "quote_index": 1,
+   "status": "in_force",
+   "title": "Santa Ana just cause eviction and relocation assistance",
+   "requirement": "Once you have lived in your unit for 30 days, your landlord can end your tenancy only for a listed just cause, stated in a written notice. For at-fault causes you must first get a chance to fix the problem. For no-fault evictions the landlord must pay 3 months of relocation assistance or waive your last 3 months of rent.",
+   "key_value": "Just cause required after 30 days of occupancy; 3 months relocation assistance or rent waiver for no-fault evictions",
+   "coverage_conditions": "Residential tenancies in Santa Ana after 30 days of occupancy, except housing produced in the last 15 years.",
+   "exemptions": "Housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; other shared living quarters.",
+   "effective_date": "2021-11-19",
+   "citation": "Santa Ana Rent Stabilization and Just Cause Eviction Ordinance (Santa Ana Mun. Code)",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [
+    {
+     "description": "Housing produced in the last 15 years is exempt.",
+     "if_units_at_most": null,
+     "if_built_after": null,
+     "if_younger_than_years": 15,
+     "needs_unknown_fact": false
+    }
+   ],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": true,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.85,
+   "reason": "Two official city pages describe the just-cause provisions of the same Santa Ana Rent Stabilization and Just Cause Eviction Ordinance, so I merged them. The detailed D085 text supplies the quote, the date and the exemptions."
+  }
+ ]
+}

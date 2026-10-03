@@ -1,0 +1,43 @@
+{
+ "digest": "cfb45221f416a4dc",
+ "rules": [
+  {
+   "member_indices": [
+    0
+   ],
+   "quote_index": 0,
+   "status": "in_force",
+   "title": "Residential rental application fee capped at $50 (CPI-adjusted)",
+   "requirement": "A New Jersey landlord or their agent cannot charge more than $50 as an application or similar fee to rent or sublease a home; starting January 1, 2027 the cap is adjusted each year for inflation. If you are overcharged, you can report it to the Division of Consumer Affairs, and the overcharge is refunded to you from the penalty collected.",
+   "key_value": "$50 maximum application fee; adjusted annually by CPI starting January 1, 2027 (increases only)",
+   "coverage_conditions": "Landlords and their agents renting or subleasing residential rental property for dwelling purposes in New Jersey.",
+   "exemptions": "Dwelling units in one-family or two-family dwellings; New Jersey Real Estate Commission licensees unless the licensee is the landlord.",
+   "effective_date": "2026-05-01",
+   "citation": "N.J.S.A. 46:8-18.1 (P.L. 2025, c.405)",
+   "penalty": "Up to $500 for a first offense, $750 for a second, and $1,000 for each later offense, through summary proceedings under the Penalty Enforcement Law; the amount wrongfully charged is refunded to the applicant from the penalty.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [
+    {
+     "description": "Dwelling unit in a one-family or two-family dwelling",
+     "if_units_at_most": 2,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": false
+    }
+   ],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.88,
+   "reason": "There was only one candidate, the official text of the state application-fee cap, so it stays as its own record."
+  }
+ ]
+}

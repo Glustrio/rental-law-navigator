@@ -1,0 +1,45 @@
+{
+ "doc_id": "D057",
+ "doc_sha256": "c678b42f8fc6ecfc7c7a6b1bdf6c68aec877daa80a53d62d5d2ca8176c967d7b",
+ "model": "claude-opus-5-5",
+ "extracted_at": "2026-10-03T21:23:35+00:00",
+ "rules": [
+  {
+   "jurisdiction": "MA",
+   "level": "state",
+   "category": "application_screening_fees",
+   "status": "in_force",
+   "title": "Broker fee paid only by the party that hired the broker",
+   "requirement": "In Massachusetts, a rental broker's fee may be charged only to the party (landlord or tenant) who first hired the broker under a contract. If the landlord or the landlord's agent hired the broker, the tenant cannot be made to pay the broker fee.",
+   "key_value": "Broker fee paid only by the party that engaged the broker",
+   "coverage_conditions": "Residential rentals in Massachusetts where a licensed real estate broker or salesperson is used to find a tenant or a rental unit.",
+   "exemptions": null,
+   "effective_date": "2025-08-01",
+   "citation": "M.G.L. c. 112, \u00a7 87DDD1/2 (as amended by St. 2025, c. 9, \u00a7 43)",
+   "quoted_span": "Any fee shall only be paid by the party, lessor or tenant who originally engaged and entered into a contract with the licensed broker or salesperson.",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.9,
+   "span_match_score": 100,
+   "source_doc_id": "D057",
+   "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXVI/Chapter112/Section87DDD%201~2",
+   "source_type": "official",
+   "source_origin": "corpus",
+   "retrieved_at": "2026-10-01T22:56Z"
+  }
+ ],
+ "dropped": [],
+ "notes": "The document contains two versions of the section: the text in effect until 2025-08-01 and the text amended by St. 2025, c. 9, \u00a7 43, in effect from 2025-08-01. I made one record from the amended version, the broker-fee payment rule. I did not make a separate record for the licensing requirement (\"no person shall engage in the business of finding dwelling accommodations for a fee unless licensed\") because it sets no limit on fees and none of the six categories covers it. The amended text also says a broker may contract with only one side, either the tenant or the landlord. I treated that as part of the same rule. The document does not state any penalty or exemptions."
+}

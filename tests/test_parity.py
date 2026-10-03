@@ -9,7 +9,7 @@ from pathlib import Path
 import pytest
 
 from navigator.engine import load_addresses, lookup
-from navigator.paths import GEOCODED, WORK
+from navigator.paths import ADDRESSES, GEOCODED, WORK
 from tests.test_engine import SF_RENT, STATE_CAP, rule
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -30,7 +30,8 @@ def fixture_rules():
     ]
 
 
-@pytest.mark.skipif(not shutil.which("node") or not GEOCODED.exists(), reason="needs node and geocoded addresses")
+@pytest.mark.skipif(not shutil.which("node") or not GEOCODED.exists() or not ADDRESSES.exists(),
+                    reason="needs node, the starter pack and geocoded addresses")
 @pytest.mark.parametrize("source", ["fixture", "extracted"])
 def test_js_engine_matches_python(tmp_path, source):
     if source == "fixture":

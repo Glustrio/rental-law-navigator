@@ -1,0 +1,39 @@
+{
+ "digest": "da98b07a7e6d591b",
+ "rules": [
+  {
+   "member_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "quote_index": 3,
+   "status": "in_force",
+   "title": "Application screening fee cap and refund rules (Civil Code \u00a7 1950.6)",
+   "requirement": "A landlord can charge a screening fee only up to its actual costs. The fee can never be more than $30 per applicant, adjusted each year for inflation since 1998 (Berkeley lists $68.96 for 2026). The landlord can't charge a fee if it knows no unit is or soon will be available. It must give you an itemized receipt, refund any part it doesn't use, and give you a copy of your credit report within 7 days. It must also either consider applications in the order received and charge only the applicants it actually considers, or refund the whole fee to every applicant it doesn't pick, within 7 days of choosing a tenant or 30 days after you applied, whichever comes first.",
+   "key_value": "$30 per applicant, CPI-adjusted annually from 1998 ($68.96 for 2026 per Berkeley)",
+   "coverage_conditions": "Owners of residential rental property in California and their agents who charge applicants a fee to screen an application. Guarantors and cosigners count as applicants. No building limits.",
+   "exemptions": "Does not override deposit and fee rules under federal or state housing assistance programs. Under the first-come process, no refund is owed to an applicant who was considered and denied for failing the landlord's written screening criteria.",
+   "effective_date": null,
+   "citation": "Cal. Civ. Code \u00a7 1950.6",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.88,
+   "reason": "All five candidates describe provisions of Civil Code \u00a7 1950.6 (the fee cap, receipt and credit-report rules, the ban when no unit is available, and the first-come-or-refund rule), so they were merged into one record. Effective date left null: the 2026-01-01 date in one candidate looks like an amendment or yearly adjustment date, not when the cap began."
+  }
+ ]
+}

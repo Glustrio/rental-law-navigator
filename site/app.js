@@ -103,7 +103,7 @@ function ruleCard(rule, r) {
     <article class="card rule">
       <div class="rule-head">
         <h4>${esc(rule.title)}</h4>
-        <div>${r ? badge(r.result) : badge(rule.status)} ${r && r.conflict_flag ? '<span class="badge flag">Conflict</span>' : ""}</div>
+        <div>${r ? badge(r.result) : badge(rule.status)} ${r && r.conflict_flag ? '<span class="badge flag">Conflict</span>' : ""} ${r && r.needs_review ? '<span class="badge unknown">Needs review</span>' : ""}</div>
       </div>
       <p class="req">${esc(rule.requirement)}</p>
       ${r ? `<p class="why">${esc(r.explanation)}</p>` : ""}
@@ -115,6 +115,7 @@ function ruleCard(rule, r) {
         <span>Confidence ${Math.round((rule.confidence ?? 0) * 100)}%</span>
       </div>
       ${conflict}
+      ${r && r.needs_review ? `<div class="flagbox"><strong>Needs human review.</strong> ${rule.source_origin === "supplement" ? "The official text is not in the corpus; this rule comes from a secondary source." : "The extraction is low-confidence."}</div>` : ""}
       <details>
         <summary>Source text and coverage</summary>
         <blockquote>${esc(rule.quoted_span)}</blockquote>

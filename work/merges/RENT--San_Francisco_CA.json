@@ -1,0 +1,36 @@
+{
+ "digest": "2f28efbbb82b7388",
+ "rules": [
+  {
+   "member_indices": [
+    0,
+    1
+   ],
+   "quote_index": 0,
+   "status": "in_force",
+   "title": "San Francisco Rent Ordinance annual allowable rent increase (1.6% for March 1, 2026 \u2013 February 28, 2027)",
+   "requirement": "If you live in a rent-controlled unit in San Francisco, your landlord's annual rent increase from March 1, 2026 through February 28, 2027 cannot be more than 1.6% of your base rent. For example, a $2,000 base rent can go up by no more than $32.",
+   "key_value": "1.6% (2026-03-01 through 2027-02-28); earlier periods 1.4% (2025\u201326) and 1.7% (2024\u201325)",
+   "coverage_conditions": "Rent-controlled units under the San Francisco Rent Ordinance. Neither member says which units are covered. The city's just-cause page (D079, another category) says the rent increase limits do not apply to new units that first got a certificate of occupancy after June 13, 1979, to tenancies where Costa-Hawkins allows rent increases, or to some units whose rent another government agency regulates.",
+   "exemptions": "Units first certificated for occupancy after June 13, 1979; tenancies where Costa-Hawkins allows rent increases; some units whose rent another government agency regulates (from D079 context).",
+   "effective_date": null,
+   "citation": "S.F. Admin. Code \u00a7 37.3(a)(1)",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": "1979-06-13",
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": true,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.8,
+   "reason": "Two official Rent Board pages give the same 1.6% allowable increase under S.F. Admin. Code \u00a7 37.3(a)(1), so they are merged. The effective date is left null because March 1, 2026 is only this year's adjustment date, and neither member gives the ordinance's original start date."
+  }
+ ]
+}

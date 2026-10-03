@@ -1,0 +1,91 @@
+{
+ "digest": "4239cce127260539",
+ "rules": [
+  {
+   "member_indices": [
+    0,
+    1,
+    2
+   ],
+   "quote_index": 0,
+   "status": "in_force",
+   "title": "Fair Chance in Housing Act: limits on criminal history screening and drug testing of rental applicants",
+   "requirement": "A landlord may not ask about your criminal record, orally or in writing, until after it has made you a conditional offer. After the offer it may consider only certain convictions within set lookback periods, and it must do an individualized assessment before withdrawing the offer. A landlord also may not require a drug or alcohol test or ask for your consent to get records from a drug treatment facility.",
+   "key_value": "No criminal record inquiry before conditional offer; lookback limits of 6 years (1st degree), 4 years (2nd/3rd degree), 1 year (4th degree)",
+   "coverage_conditions": "Housing providers offering rental dwelling units in New Jersey, except units in owner-occupied premises of not more than four dwelling units.",
+   "exemptions": "Dwelling units in owner-occupied premises of not more than four units. Before a conditional offer, a provider may still ask about a methamphetamine-production conviction on federally assisted housing premises and about lifetime sex offender registration. Arrests without conviction, expunged, pardoned, vacated or sealed records, and juvenile adjudications may never be considered.",
+   "effective_date": "2022-01-01",
+   "citation": "N.J.S.A. 46:8-52 et seq. (Fair Chance in Housing Act, P.L. 2021, c.110), incl. \u00a7\u00a7 46:8-55, 46:8-56, 46:8-60",
+   "penalty": "Civil penalty through a Division on Civil Rights complaint: up to $1,000 for a first violation, up to $5,000 for a second within 5 years, and up to $10,000 for a third or later within 7 years. The Director may also order the application fee returned and up to $1,000 paid to the applicant.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [
+    {
+     "description": "Unit in owner-occupied premises of not more than four dwelling units",
+     "if_units_at_most": 4,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    }
+   ],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.85,
+   "reason": "Merged three partial records (\u00a7\u00a7 4, 5 and 9) from the official text of the same Fair Chance in Housing Act."
+  },
+  {
+   "member_indices": [
+    3,
+    4
+   ],
+   "quote_index": 4,
+   "status": "in_force",
+   "title": "Law Against Discrimination: no refusal to rent based on source of lawful income",
+   "requirement": "A New Jersey landlord may not refuse to rent to you, or treat you differently, because of where your lawful income or rent money comes from (for example, a Section 8 voucher) or because of other protected traits. You can file a free complaint with the Division on Civil Rights within 180 days, or sue in Superior Court within two years.",
+   "key_value": "Source of lawful income or rent payment (e.g., Section 8 vouchers) may not be a basis for denial",
+   "coverage_conditions": "Applies statewide to rentals of residential real property, except where an exemption applies.",
+   "exemptions": "Rental of one apartment in a two-family dwelling where the owner lives in the other unit; rental of rooms in a one-family dwelling occupied by the owner or occupant; single-sex residences; religious organizations preferring persons of the same religion.",
+   "effective_date": null,
+   "citation": "N.J.S.A. 10:5-12(g)-(h)",
+   "penalty": "Fines up to $10,000 for a first offense (N.J.S.A. 10:5-14.1a), plus damages. Remedies come through a Division on Civil Rights complaint (within 180 days) or a Superior Court action (within two years).",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [
+    {
+     "description": "Rental of one apartment in a two-family dwelling when the owner lives in the other unit",
+     "if_units_at_most": 2,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    },
+    {
+     "description": "Rental of rooms in a one-family dwelling occupied by the owner or occupant",
+     "if_units_at_most": 1,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    }
+   ],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.8,
+   "reason": "Merged two official descriptions of the same NJ Law Against Discrimination ban on source-of-income discrimination in rentals."
+  }
+ ]
+}

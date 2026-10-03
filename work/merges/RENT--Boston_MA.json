@@ -1,0 +1,35 @@
+{
+ "digest": "782563a4827b5931",
+ "rules": [
+  {
+   "member_indices": [
+    0
+   ],
+   "quote_index": 0,
+   "status": "failed",
+   "title": "Boston rent stabilization home rule petition (H.3744, 193rd session)",
+   "requirement": "This proposal never became law. A 2023\u20132024 home rule petition would have let Boston adopt rent stabilization, but it was sent to a study order and died when the session ended. It does not limit rent increases in Boston.",
+   "key_value": null,
+   "coverage_conditions": "Would have authorized the City of Boston to implement rent stabilization. The bill text is not in the source document, so coverage details are unknown.",
+   "exemptions": null,
+   "effective_date": null,
+   "citation": "Mass. H.3744 (193rd Gen. Court, 2023-2024)",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": "Boston needed a special act because Massachusetts state law bars local rent control. The source document says this but does not cover the state ban itself. On 9/9/2024 the bill was sent to a study order (H5035) and died at the end of the 193rd session. Because the bill failed and Boston has no rent control ordinance in force, no live conflict between state and city law remains.",
+   "confidence": 0.85,
+   "reason": "There was only one candidate, an official record of a failed home rule petition, so it stays its own record. I changed the conflict type from preemption to none because a failed bill creates no unsettled conflict between state and local law."
+  }
+ ]
+}

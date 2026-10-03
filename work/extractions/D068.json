@@ -1,0 +1,60 @@
+{
+ "doc_id": "D068",
+ "doc_sha256": "857cb50fde16e0027346c44f502b2f0d854aad4bca7cf0926a31cd54adad8159",
+ "model": "claude-opus-5-5",
+ "extracted_at": "2026-10-03T21:23:58+00:00",
+ "rules": [
+  {
+   "jurisdiction": "NJ",
+   "level": "state",
+   "category": "screening_restrictions",
+   "status": "in_force",
+   "title": "Source of lawful income discrimination ban (NJ Law Against Discrimination)",
+   "requirement": "A New Jersey landlord may not refuse to rent to you, or treat you differently, because of where your lawful income or rent money comes from, such as a Section 8 housing voucher. You can file a free complaint with the Division on Civil Rights within 180 days, or sue in Superior Court within two years.",
+   "key_value": "Source of lawful income or rent payment (e.g., Section 8 vouchers) may not be a basis for denial",
+   "coverage_conditions": "Applies statewide to the sale or rental of all real property, including residential rentals, except where an exemption listed below applies.",
+   "exemptions": "Rental of one apartment in a two-family dwelling where the owner lives in the other unit; rental of rooms in a one-family dwelling occupied by the owner or occupant as a residence; religious organization preference for persons of the same religion.",
+   "effective_date": null,
+   "citation": "N.J.S.A. 10:5-1 et seq. (New Jersey Law Against Discrimination)",
+   "quoted_span": "This\nmeans, for example, that a landlord cannot deny the\nlawful recipient of a Section 8 HUD voucher the right to\nrent an apartment based solely on that source of lawful\nincome.",
+   "penalty": "Complaint to the NJ Division on Civil Rights within 180 days, or an action in NJ Superior Court within two years; remedies through an administrative hearing or court.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [
+    {
+     "description": "Rental of a single apartment in a two-family dwelling when the owner lives in the other unit at the time of rental",
+     "if_units_at_most": 2,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    },
+    {
+     "description": "Rental of rooms by the owner or occupant of a one-family dwelling they live in",
+     "if_units_at_most": 1,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    }
+   ],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.8,
+   "span_match_score": 100,
+   "source_doc_id": "D068",
+   "source_url": "https://www.nj.gov/oag/dcr/downloads/kyrhousing02.pdf",
+   "source_type": "official",
+   "source_origin": "corpus",
+   "retrieved_at": "2026-10-01T22:37Z"
+  }
+ ],
+ "dropped": [],
+ "notes": "The document is a Division on Civil Rights brochure (revised 06.18.15), so it may be out of date. It gives no specific statute section for the source-of-income rule. It names only the LAD and N.J.S.A. 10:5-5mm (the housing-for-older-persons definition). That's why the citation is the general LAD cite (N.J.S.A. 10:5-1 et seq.), not a specific section. Effective date is null because the document doesn't give one. The rest of the document is out of scope and was not extracted: discrimination by protected class, disability modifications, service animals, advertising, and complaint procedure. The quoted_span keeps the document's line breaks."
+}

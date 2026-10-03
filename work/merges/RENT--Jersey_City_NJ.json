@@ -1,0 +1,43 @@
+{
+ "digest": "e4f4b379ddf6b27d",
+ "rules": [
+  {
+   "member_indices": [
+    0
+   ],
+   "quote_index": 0,
+   "status": "in_force",
+   "title": "Jersey City Rent Control Ordinance (Chapter 260)",
+   "requirement": "In Jersey City buildings with 5 or more units, rent increases are limited by the city's Rent Control Ordinance, and landlords must apply for any increase above the allowed amount, such as a capital improvement or hardship increase. If you think your rent is illegal, you can file an Illegal Rent Petition with the Office of Landlord/Tenant Relations.",
+   "key_value": null,
+   "coverage_conditions": "Rental properties in Jersey City with 5 or more units, unless the property qualifies for another exemption in the ordinance.",
+   "exemptions": "All 1-4 unit properties are exempt. The ordinance has other exemptions, but the source does not list them. Owners request those through a Rent Control Exemption Request.",
+   "effective_date": null,
+   "citation": "Jersey City Mun. Code ch. 260",
+   "penalty": null,
+   "coverage": {
+    "min_units": 5,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [
+    {
+     "description": "All 1-4 unit properties are exempt from rent control.",
+     "if_units_at_most": 4,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": false
+    }
+   ],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.6,
+   "reason": "There was only one candidate, an official city page on the Chapter 260 rent control ordinance, so it became its own record without changes."
+  }
+ ]
+}

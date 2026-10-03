@@ -1,0 +1,45 @@
+{
+ "doc_id": "D081",
+ "doc_sha256": "e3437f99eae3882641b5052fd7006f2a0304abd2033e1b721a8c32324be2afab",
+ "model": "claude-opus-5-5",
+ "extracted_at": "2026-10-03T21:20:36+00:00",
+ "rules": [
+  {
+   "jurisdiction": "San Francisco, CA",
+   "level": "city",
+   "category": "algorithmic_rent_setting",
+   "status": "in_force",
+   "title": "Ban on algorithmic devices to set rents or manage occupancy",
+   "requirement": "Landlords in San Francisco may not use, and vendors may not sell, software that analyzes nonpublic competitor rental data to recommend rents or manage occupancy for residential units. Tenants or the City Attorney can sue violators.",
+   "key_value": "Sale or use of algorithmic rent-setting devices prohibited",
+   "coverage_conditions": "Residential units in San Francisco; applies to sellers and users of algorithmic devices that analyze nonpublic competitor rental data to recommend rents for vacant units.",
+   "exemptions": null,
+   "effective_date": "2024-10-14",
+   "citation": "S.F. Admin. Code \u00a7 37.10C",
+   "quoted_span": "The law prohibits the sale or use of algorithmic devices to set rents or manage occupancy levels for residential units in San Francisco.",
+   "penalty": "Civil action by a tenant or the City Attorney.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.9,
+   "span_match_score": 100,
+   "source_doc_id": "D081",
+   "source_url": "https://www.sf.gov/news/new-law-prohibits-algorithmic-devices-used-set-rents-san-francisco",
+   "source_type": "official",
+   "source_origin": "corpus",
+   "retrieved_at": "2026-10-01T22:37Z"
+  }
+ ],
+ "dropped": [],
+ "notes": "The document is an official SF Rent Board news item and gives only a summary. It does not describe remedies or exemptions beyond the right of a tenant or the City Attorney to bring a civil action. The citation is given as Section 37.10C of the Rent Ordinance, which is Chapter 37 of the S.F. Administrative Code. The page also mentions occupancy management, which is included in the same rule."
+}

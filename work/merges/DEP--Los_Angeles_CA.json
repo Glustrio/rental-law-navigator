@@ -1,0 +1,36 @@
+{
+ "digest": "2e18e51db963cf38",
+ "rules": [
+  {
+   "member_indices": [
+    0,
+    1
+   ],
+   "quote_index": 1,
+   "status": "in_force",
+   "title": "RSO interest on security deposits",
+   "requirement": "If your Los Angeles unit is covered by the Rent Stabilization Ordinance, your landlord must pay you interest on your security deposit at the rate the City sets each year. The landlord pays it either directly or as a credit against your rent, and must tell you in writing which method they chose.",
+   "key_value": "Interest at the City's annual rate (2025: 4.320%), accruing monthly since November 1, 1990",
+   "coverage_conditions": "Rental units in the City of Los Angeles subject to the Rent Stabilization Ordinance (RSO). Per the city's RSO pages in the rent-increase and just-cause records, these are units first built on or before October 1, 1978, plus replacement units under LAMC 151.28. Interest has accrued since November 1, 1990.",
+   "exemptions": "Units not covered by the RSO, including buildings first built after October 1, 1978.",
+   "effective_date": "1990-11-01",
+   "citation": "L.A. Mun. Code \u00a7 151.06.02",
+   "penalty": "Neither source gives a penalty. The secondary source says tenants have successfully used a landlord's failure to pay as a defense in eviction cases.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": "1978-10-01",
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.75,
+   "reason": "Merged the official RSO page's mention of security deposit interest with the secondary source quoting LAMC \u00a7 151.06.02, because both describe the same RSO provision. The 1978 coverage cutoff comes from the city's RSO records in other categories, and the effective date comes only from the secondary source."
+  }
+ ]
+}

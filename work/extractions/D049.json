@@ -1,0 +1,45 @@
+{
+ "doc_id": "D049",
+ "doc_sha256": "ac42593c79533c25223582de77eb5411d2f8ef501a0d027d2a61042b7e81d7ef",
+ "model": "claude-opus-5-5",
+ "extracted_at": "2026-10-03T21:23:13+00:00",
+ "rules": [
+  {
+   "jurisdiction": "MA",
+   "level": "state",
+   "category": "screening_restrictions",
+   "status": "in_force",
+   "title": "Massachusetts ban on source-of-income discrimination (public assistance and housing subsidies)",
+   "requirement": "A Massachusetts landlord may not refuse you or treat you differently because you receive public assistance or a housing subsidy such as a rental voucher. They also cannot do it because of that subsidy program's requirements. Ads for rentals cannot show a preference against people who receive public assistance.",
+   "key_value": "Source of income (public assistance, housing subsidies, rental assistance) is a protected class in rentals",
+   "coverage_conditions": "Any person furnishing rental accommodations in Massachusetts.",
+   "exemptions": null,
+   "effective_date": null,
+   "citation": "M.G.L. c. 151B, \u00a7 4(10)",
+   "quoted_span": "For any person furnishing credit, services or rental accommodations to discriminate against any individual who is a recipient of federal, state, or local public assistance, including medical assistance, or who is a tenant receiving federal, state, or local housing subsidies, including rental assistance or rental supplements",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.9,
+   "span_match_score": 100,
+   "source_doc_id": "D049",
+   "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter151B/Section4",
+   "source_type": "official",
+   "source_origin": "corpus",
+   "retrieved_at": "2026-10-01T22:37Z"
+  }
+ ],
+ "dropped": [],
+ "notes": "The source is the official statute text (M.G.L. c. 151B, \u00a7 4), as published on 2026-10-01. Only one in-scope rule was extracted: subsection 10, the ban on discriminating against renters who receive public assistance or housing subsidies (screening_restrictions). Subsection 7B also bans rental ads that show a preference based on 'public assistance recipiency'. It supports the same rule and is mentioned in the requirement, but it is not quoted. The document does not give an effective date, so that field is null. Penalties and remedies are in other sections of chapter 151B (e.g., \u00a7 5, \u00a7 9) that are not in this document, so penalty is null. Not extracted because they are discrimination rules outside tenant screening: subsections 6 and 7 (race, sex, disability and other protected classes in housing, plus the owner-occupied two-family exemption), 7A (disability modifications and accommodations), 11 (families with children), 13 (blockbusting) and 18 (sexual harassment of tenants). The employment criminal-history limits in subsections 9 and 9\u00bd cover hiring, not housing, so they are out of scope."
+}

@@ -1,0 +1,67 @@
+{
+ "digest": "a299ef2d44895c26",
+ "rules": [
+  {
+   "member_indices": [
+    2,
+    3,
+    0
+   ],
+   "quote_index": 2,
+   "status": "pending",
+   "title": "S.2983 \u2013 An Act prohibiting algorithmic rent setting (194th General Court)",
+   "requirement": "This is a proposed Massachusetts bill to ban algorithmic rent setting. It is not law, so renters have no state protection against algorithmic rent setting under it yet.",
+   "key_value": null,
+   "coverage_conditions": "Residential rental housing in Massachusetts. The sources do not include the bill text, so its scope is unknown.",
+   "exemptions": null,
+   "effective_date": null,
+   "citation": "Mass. S.2983 (194th Gen. Court)",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "other",
+   "conflict_note": "On March 12, 2026 the Joint Committee on Housing reported the bill favorably (it was originally filed as S.994 by Senators Friedman and Cyr) and sent it to Senate Ways and Means. The sources show no later action. Formal sessions of the 194th General Court usually end July 31, 2026, so the bill is likely stalled. It stays technically alive until the session ends in early January 2027. Check again then and mark it failed if it was not enacted.",
+   "confidence": 0.7,
+   "reason": "I merged the two official legislative pages for S.2983 with a news story that mentions pending Massachusetts House and Senate bills on algorithmic rent pricing without bill numbers. That story fits best with this Senate bill."
+  },
+  {
+   "member_indices": [
+    1
+   ],
+   "quote_index": 1,
+   "status": "pending",
+   "title": "H.5222 \u2013 An Act relative to preventing algorithmic rent fixing in the rental housing market",
+   "requirement": "This is a proposed Massachusetts House bill to prevent algorithmic rent fixing in the rental housing market. It is not law.",
+   "key_value": null,
+   "coverage_conditions": "Rental housing market in Massachusetts. The source does not include the bill text, so its scope is unknown.",
+   "exemptions": null,
+   "effective_date": null,
+   "citation": "Mass. H.5222 (194th Gen. Court)",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "other",
+   "conflict_note": "The bill was referred to House Ways and Means on 3/12/2026, and the source shows no later action. Formal sessions of the 194th General Court usually end July 31, 2026, so the bill is likely stalled. It stays technically alive until early January 2027. Check again then and mark it failed if it was not enacted.",
+   "confidence": 0.6,
+   "reason": "This House bill gets its own record because it is a different bill from S.2983."
+  }
+ ]
+}

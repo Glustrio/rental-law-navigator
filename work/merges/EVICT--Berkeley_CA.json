@@ -1,0 +1,87 @@
+{
+ "digest": "0a1cccef7eac9991",
+ "rules": [
+  {
+   "member_indices": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "quote_index": 2,
+   "status": "in_force",
+   "title": "Berkeley just cause for eviction (Rent Stabilization and Eviction for Just Cause Ordinance)",
+   "requirement": "If your Berkeley unit is fully or partially covered by the Rent Ordinance, your landlord can evict you only for one of the just causes the ordinance lists. Landlords also face limits on evictions for unpaid rent and lease violations, must file eviction notices with the Rent Board, and must pay relocation assistance for owner move-in evictions.",
+   "key_value": "Just cause required; nonpayment eviction only if rent owed is at least 1 month of HUD Fair Market Rent (Oakland-Fremont); notices filed with Rent Board within 3 business days; owner move-in relocation $19,413 plus $6,471 for qualifying households (2026, adjusted for inflation every year)",
+   "coverage_conditions": "All fully and partially covered units: pre-1980 multifamily units, new construction with a certificate of occupancy after June 1980, single-family homes no matter when the tenancy began, most condominiums, rooming houses, and government-owned or subsidized units (including Section 202/811 and HUD-mortgage project-based Section 8 units, added under Measure BB, Nov. 2024). Nonpayment evictions require rent debt of at least one month of HUD Fair Market Rent for a unit of the same size in the Oakland-Fremont metro area. Landlords cannot evict for refusing to sign a substantially similar lease when a fixed term ends. Lease-violation evictions require a prior notice to stop that names the lease term, the violation and the substantial harm. Termination notices must refer tenants to the Rent Board. Owner move-in relocation assistance is indexed to CPI-U every year.",
+   "exemptions": "Fully exempt units: Golden Duplex (owner-occupied on 12/31/1979 and still owner-occupied); units where the tenant shares a kitchen or bath with a landlord who lived on the property when the tenancy began; tenancies that began after Nov 7, 2018 on properties with an ADU where either unit is owner-occupied; university dormitories; nonprofit cooperatives.",
+   "effective_date": null,
+   "citation": "Berkeley Mun. Code ch. 13.76 (\u00a7 13.76.130)",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [
+    {
+     "description": "Golden Duplex: a duplex that was owner-occupied on Dec 31, 1979 and is owner-occupied now",
+     "if_units_at_most": 2,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    },
+    {
+     "description": "Tenancies that began after Nov 7, 2018 on a property with an ADU where either unit is owner-occupied",
+     "if_units_at_most": 2,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    }
+   ],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": true,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.8,
+   "reason": "All candidates that describe provisions of BMC ch. 13.76 (just cause coverage, nonpayment threshold, lease-renewal and lease-violation limits, notice filing, owner move-in relocation and its inflation indexing) were merged into one record for the ordinance."
+  },
+  {
+   "member_indices": [
+    1
+   ],
+   "quote_index": 1,
+   "status": "in_force",
+   "title": "Ellis Act withdrawal relocation assistance (Ellis Implementation Ordinance)",
+   "requirement": "If your Berkeley landlord evicts you to take the property off the rental market under the Ellis Act, they must pay relocation assistance. From January 1, 2026, the standard payment is $19,413, plus an extra $6,471 for qualifying households.",
+   "key_value": "$19,413 standard; additional $6,471 for qualifying households (2026 amounts, adjusted for inflation every year)",
+   "coverage_conditions": "Berkeley tenants evicted because the owner is removing the property from the rental housing market under the Ellis Act.",
+   "exemptions": null,
+   "effective_date": null,
+   "citation": "Berkeley Mun. Code ch. 13.77",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.75,
+   "reason": "Kept as its own record because the Ellis Implementation Ordinance (ch. 13.77) is a separate ordinance from the Rent Stabilization Ordinance; the 2026 date was dropped as the effective date because it is only an annual adjustment."
+  }
+ ]
+}

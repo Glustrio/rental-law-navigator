@@ -1,0 +1,76 @@
+{
+ "digest": "6128115233ecad9a",
+ "rules": [
+  {
+   "member_indices": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "quote_index": 0,
+   "status": "in_force",
+   "title": "Security Deposit Law: 1.5-month cap, interest-bearing account, 30-day return",
+   "requirement": "A landlord may not collect a security deposit of more than 1.5 times one month's rent, and any yearly increase in the deposit may not exceed 10% of the current deposit. The landlord must keep the deposit in an insured, interest-bearing New Jersey account, pay the interest to you each year, and return the deposit plus interest, minus itemized deductions, within 30 days after the tenancy ends. If you are displaced by fire, flood, condemnation or evacuation, the deadline is 5 business days.",
+   "key_value": "Cap of 1.5x monthly rent; yearly increase no more than 10% of current deposit; written notice of account within 30 days; return within 30 days (5 business days after displacement); double damages",
+   "coverage_conditions": "Most residential rentals, including mobile homes. Prepaid rent, including last month's rent, counts toward the cap. Landlords holding deposits for 10 or more units may also use insured money market funds. If the tenant breaks the lease, the 30 days start when the unit is re-rented or the lease expires, whichever comes first. The 5-business-day return applies when an official posts a no-occupancy notice or certifies that the displacement will last more than 7 days.",
+   "exemptions": "Owner-occupied two- or three-family dwellings are exempt unless the tenant sends a written request to apply the law; the law then applies 30 days later. Seasonal rentals of 125 consecutive days or less are exempt from the investment section only.",
+   "effective_date": null,
+   "citation": "N.J.S.A. 46:8-19 to 46:8-26",
+   "penalty": "Double the amount wrongfully withheld, plus court costs and attorney's fees. If the tenant received government rental assistance, willful withholding carries a civil penalty of $500 to $2,000 per offense. If the landlord fails to give notice or pay interest, the tenant may give written notice and apply the deposit plus 7% annual interest to rent. Misusing deposit money is a disorderly persons offense (fine of at least $200 and/or up to 30 days in jail, N.J.S.A. 46:8-25).",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [
+    {
+     "description": "Owner-occupied two- or three-family dwelling (the tenant can opt in by written request)",
+     "if_units_at_most": 3,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    }
+   ],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.85,
+   "reason": "Merged the cap, interest/notice, 30-day return and displacement-return records because all four are provisions of New Jersey's Security Deposit Law (N.J.S.A. 46:8-19 et seq.)."
+  },
+  {
+   "member_indices": [
+    4
+   ],
+   "quote_index": 4,
+   "status": "in_force",
+   "title": "Safe Housing Act: deposit return after lease termination for domestic violence",
+   "requirement": "If you end your lease early under the Safe Housing Act because of domestic violence, the landlord must make your deposit plus interest available within 15 business days. Within 3 business days, the landlord must tell you in writing when and where to collect it, with an itemized list of interest and deductions.",
+   "key_value": "15 business days; written notice within 3 business days",
+   "coverage_conditions": "Domestic violence victims who end their lease under the Safe Housing Act.",
+   "exemptions": "Transient or seasonal rentals.",
+   "effective_date": null,
+   "citation": "N.J.S.A. 46:8-9.6",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.75,
+   "reason": "Kept separate because this is the Safe Housing Act's deposit-return rule, not part of the Security Deposit Law."
+  }
+ ]
+}

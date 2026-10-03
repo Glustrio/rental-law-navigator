@@ -1,0 +1,68 @@
+{
+ "digest": "cca90cf825629b0c",
+ "rules": [
+  {
+   "member_indices": [
+    0,
+    1
+   ],
+   "quote_index": 0,
+   "status": "in_force",
+   "title": "Boston Fair Chance Tenant Selection Policy (criminal history and credit screening limits)",
+   "requirement": "If you apply for a DND-funded unit or a BPDA Inclusionary Development income-restricted unit in Boston, the landlord can't use a blanket ban on people with records. They can't consider arrests that didn't lead to a conviction, sealed, expunged or juvenile records, or convictions more than 5 years old. They also can't approve or deny you based on your credit score, and may look at your credit history only if you have no rental history.",
+   "key_value": "No blanket criminal-record bans; 5-year lookback on convictions; no use of credit score",
+   "coverage_conditions": "Only housing providers that receive Boston Department of Neighborhood Development (DND) funding or land, or that have income-restricted units created under the BPDA Inclusionary Development Policy. The policy also applies to the Office of Fair Housing and Equity Affirmative Marketing Program. The criminal-history limits apply to both admission and eviction decisions.",
+   "exemptions": "Landlords may still consider a conviction that is directly related to the housing sought or that poses an unreasonable risk of substantial harm to others' safety, and current criminal behavior. Where federal or state law sets a conflicting criminal-history requirement, that requirement governs. Having no credit history is not a valid reason to reject an applicant, and landlords must consider mitigating circumstances such as a third-party payer or a disability.",
+   "effective_date": "2017-02",
+   "citation": "Boston DND Fair Chance Tenant Selection Policy (Feb. 2017)",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": [
+     "Property receives DND funding or land, or the unit is an income-restricted unit under the BPDA Inclusionary Development Policy"
+    ]
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": "The policy itself says conflicting federal or state criminal-history requirements (for example, federal subsidized-housing bans) take precedence. That is ordinary precedence, not an unsettled preemption conflict.",
+   "confidence": 0.75,
+   "reason": "Merged the criminal-history and credit sections of the same 2017 DND Fair Chance Tenant Selection Policy into one record. Changed the preemption flag to none because the policy's own precedence clause is not an unsettled conflict."
+  },
+  {
+   "member_indices": [
+    2
+   ],
+   "quote_index": 2,
+   "status": "in_force",
+   "title": "Boston ban on source-of-income (rental assistance) discrimination",
+   "requirement": "In Boston, a landlord may not refuse to rent to you or treat you differently because you pay with rental assistance, such as Section 8, social security disability, or a veterans voucher. If this happens, you can file a complaint with the Boston Fair Housing Commission.",
+   "key_value": "Rental assistance (e.g., Section 8 vouchers) is a protected class",
+   "coverage_conditions": "All housing rentals in the City of Boston; enforced by the Boston Fair Housing Commission.",
+   "exemptions": null,
+   "effective_date": null,
+   "citation": "Boston Fair Housing Regulations (Boston Fair Housing Commission)",
+   "penalty": "The Commission investigates complaints and tries to resolve them; specific penalties are not stated.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.65,
+   "reason": "This is a separate citywide fair housing protection, distinct from the funded-housing Fair Chance policy, so it stays its own record."
+  }
+ ]
+}

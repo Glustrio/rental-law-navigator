@@ -1,0 +1,36 @@
+{
+ "digest": "0f5d8aa18706c6aa",
+ "rules": [
+  {
+   "member_indices": [
+    0,
+    1
+   ],
+   "quote_index": 0,
+   "status": "in_force",
+   "title": "Berkeley tenant screening fee disclosures and ban on non-refundable renewal and roommate fees",
+   "requirement": "Before a Berkeley landlord or agent takes a screening or application fee, they must give you a clear and conspicuous tenant screening fee rights statement and the maximum fee allowed under Civil Code \u00a7 1950.6(b). They can put these in the application or in a separate disclosure. A landlord also can't charge a current tenant a non-refundable fee to renew a tenancy, including fees for a roommate leaving or for adding or replacing a roommate.",
+   "key_value": "Fee rights statement and fee cap disclosure required; no non-refundable renewal or roommate fees",
+   "coverage_conditions": "All residential rental property and rental agreements in Berkeley. The disclosure rule applies whenever an owner or agent charges an applicant a fee for a credit report or to process an application. The source states no limits by building type, size or age.",
+   "exemptions": null,
+   "effective_date": null,
+   "citation": "Berkeley Mun. Code ch. 13.78",
+   "penalty": "Lease terms that violate the chapter can't be enforced (BMC 13.78.018).",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.85,
+   "reason": "Both candidates are provisions of the same ordinance, Berkeley Municipal Code chapter 13.78 (\u00a7 13.78.010 screening fee disclosures and \u00a7 13.78.016 renewal and roommate fees), so they were merged into one record."
+  }
+ ]
+}

@@ -1,0 +1,36 @@
+{
+ "digest": "0d0fe0e31e74583f",
+ "rules": [
+  {
+   "member_indices": [
+    0,
+    1
+   ],
+   "quote_index": 1,
+   "status": "not_yet_effective",
+   "title": "FAIR Act: ban on algorithmic rent-setting software that uses competitors' nonpublic data",
+   "requirement": "Starting July 1, 2027, New Jersey landlords may not pay for or use a 'coordinator': software or an algorithmic device that sets or recommends rents, lease terms or occupancy levels using competitors' nonpublic data. No one may perform a coordinating function or take part in parallel pricing coordination. Tenants can report violations through the Attorney General's complaint portal.",
+   "key_value": "Use of algorithmic rent-setting coordinators that use competitors' nonpublic data is banned from 2027-07-01; violations count as violations of the NJ Antitrust Act",
+   "coverage_conditions": "Applies to all owners of residential rental units in New Jersey and their agents, representatives and subcontractors, and also to software providers, coordinators and anyone else. Covers any house, apartment, accessory unit or other unit used as a primary residence. Building size and age do not limit coverage.",
+   "exemptions": "These are not coordinating functions: research or statistical use that is not used to set prices, free public rent estimates, real estate brokerage or listing databases that do not set or recommend prices, and government affordability controls. Simple non-AI spreadsheets that need human analysis and query-only databases are not algorithmic devices. Inpatient medical care, long-term care and detention facilities are excluded.",
+   "effective_date": "2027-07-01",
+   "citation": "P.L. 2026, c. 43 (N.J.S.A. 56:9-20 to 56:9-26)",
+   "penalty": "A violation counts as a violation of the New Jersey Antitrust Act (P.L.1970, c.73), and the remedies of N.J.S.A. 56:9-6 through 56:9-17 apply. Complaints can be filed with the Attorney General.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "preemption",
+   "conflict_note": "Section 6(b) of the act bars municipalities from adopting ordinances that conflict with it. One member says local algorithmic-pricing ordinances in Jersey City, Hoboken or Newark could be preempted. The records here do not confirm what those ordinances say. Both sources give the same effective date, 2027-07-01, which comes from the July 20, 2026 approval date.",
+   "confidence": 0.88,
+   "reason": "Merged the official enacted text of P.L. 2026, c. 43 and a secondary summary of it because both describe the same FAIR Act ban on algorithmic rent-setting."
+  }
+ ]
+}

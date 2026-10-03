@@ -1,0 +1,43 @@
+{
+ "digest": "7f83f84466c4524b",
+ "rules": [
+  {
+   "member_indices": [
+    0
+   ],
+   "quote_index": 0,
+   "status": "in_force",
+   "title": "Cambridge Fair Housing Ordinance: no source-of-income discrimination in tenant selection",
+   "requirement": "Cambridge landlords and rental agents may not refuse to rent to you or treat you differently because of your source of income, including a Section 8 voucher or public benefits. They may screen on ability to pay rent and care for the apartment only if they apply the same standard to every applicant.",
+   "key_value": "Source of income (incl. Section 8 and public benefits) is a protected category",
+   "coverage_conditions": "Real estate transactions in Cambridge, including viewing or renting an apartment and the terms and conditions of a tenancy.",
+   "exemptions": "Two-family dwellings where the owner lives in the building.",
+   "effective_date": null,
+   "citation": "Cambridge Mun. Code ch. 14.04",
+   "penalty": "After a hearing, the Commission may file a criminal complaint, impose civil fines of up to $300 per violation, seek an injunction in Superior Court, and seek damages. After a probable cause finding, either party may move the case to Superior Court or the Attorney General.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [
+    {
+     "description": "Two-family dwelling occupied by the owner",
+     "if_units_at_most": 2,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    }
+   ],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.8,
+   "reason": "There was only one candidate, an official source describing Cambridge's Fair Housing Ordinance, so it stays as its own record."
+  }
+ ]
+}

@@ -289,19 +289,35 @@ def lookup(addr, rules, as_of=None):
             "result": result,
             "explanation": explain(rule, addr, result, reasons + flag_reasons),
             "conflict_flag": flag,
+            "needs_review": needs_review(rule),
         })
     return results
+
+
+REVIEW_CONFIDENCE = 0.7
+
+
+def needs_review(rule):
+    """Low-confidence rules and rules resting only on a secondary source go to a human."""
+    return (rule.get("confidence") or 0) < REVIEW_CONFIDENCE or rule.get("source_origin") == "supplement"
+
+
+def is_precedence(a, b):
+    """A state rule that yields to a local rule that displaces it is settled precedence, not a conflict."""
+    state, local = (a, b) if a["level"] == "state" else (b, a)
+    return bool(state.get("yields_to_local_rule") and local.get("displaces_state_rule"))
 
 
 def conflict_for(rule, addr, raw, by_id):
     """Preemption conflicts flag only where both sides reach the address; source conflicts flag everywhere."""
     if rule.get("conflict_type") == "inconsistent_sources":
         return True, [f"review: {rule.get('conflict_note')}"]
-    if rule.get("conflict_type") != "preemption":
-        return False, []
+    if rule.get("conflict_type") != "preemption" or rule.get("yields_to_local_rule"):
+        return False, []  # a state rule that says how it yields to local law has settled precedence
     other_level = "city" if rule["level"] == "state" else "state"
     peers = [rid for rid, (res, _) in raw.items()
-             if res and by_id[rid]["category"] == rule["category"] and by_id[rid]["level"] == other_level]
+             if res and by_id[rid]["category"] == rule["category"] and by_id[rid]["level"] == other_level
+             and not is_precedence(rule, by_id[rid])]
     if peers:
         return True, [f"possible conflict with {', '.join(peers)}: {rule.get('conflict_note')}"]
     return False, []

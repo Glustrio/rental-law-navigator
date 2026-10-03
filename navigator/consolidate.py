@@ -1,18 +1,21 @@
-"""Module A, step 2: merge duplicate candidates into the final rule set (out/rules.json).
+"""Module A, step 2: merge candidates into the final rule set (out/rules.json).
 
-Several documents describe the same law (a statute and a city page explaining it). For
-each (jurisdiction, category) bucket with more than one candidate, Claude groups the
-candidates that describe the same rule and picks the best-supported one; the canonical
-record keeps its own verbatim quote, so no text is ever rewritten. Precedence links
-between state and local rules are then filled in deterministically.
+Documents overlap: a statute and three city pages may all describe one law, and a long
+page can yield several partial records for it. For each (jurisdiction, category) bucket,
+Claude groups the candidates that come from the same law and writes one clean record per
+law, choosing which candidate's verbatim quote and source to cite. Quotes are never
+rewritten: the quote, source URL and retrieval date always come from a real candidate.
+Precedence links between state and local rules are then filled in deterministically.
 """
 
+import argparse
+import hashlib
 import json
 import sys
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor
 
-from navigator.extract import log_call
+from navigator.extract import COVERAGE_GUIDE, COVERAGE_SCHEMA, EXEMPTION_SCHEMA, log_call
 from navigator.llm import call_json, client
 from navigator.paths import EXTRACTIONS, OUT, RULES_OUT, WORK
 
@@ -26,46 +29,80 @@ CATEGORY_CODE = {
     "rent_increase_limits": "RENT", "just_cause_eviction": "EVICT", "security_deposits": "DEP",
     "application_screening_fees": "FEE", "screening_restrictions": "SCREEN", "algorithmic_rent_setting": "ALG",
 }
+NULLABLE_STRING = {"type": ["string", "null"]}
 
-GROUP_SCHEMA = {
+MERGED_RULE_SCHEMA = {
     "type": "object",
     "properties": {
-        "groups": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "properties": {
-                    "member_indices": {"type": "array", "items": {"type": "integer"}},
-                    "canonical_index": {"type": "integer"},
-                    "effective_date": {"type": ["string", "null"]},
-                    "conflict_type": {"type": "string", "enum": ["none", "preemption", "inconsistent_sources", "other"]},
-                    "conflict_note": {"type": ["string", "null"]},
-                    "reason": {"type": "string"},
-                },
-                "required": ["member_indices", "canonical_index", "effective_date", "conflict_type", "conflict_note", "reason"],
-                "additionalProperties": False,
-            },
-        }
+        "member_indices": {"type": "array", "items": {"type": "integer"}},
+        "quote_index": {"type": "integer", "description": "Candidate whose quoted_span and source to cite."},
+        "status": {"type": "string", "enum": ["in_force", "not_yet_effective", "pending", "failed"]},
+        "title": {"type": "string"},
+        "requirement": {"type": "string"},
+        "key_value": NULLABLE_STRING,
+        "coverage_conditions": {"type": "string"},
+        "exemptions": NULLABLE_STRING,
+        "effective_date": NULLABLE_STRING,
+        "citation": {"type": "string"},
+        "penalty": NULLABLE_STRING,
+        "coverage": COVERAGE_SCHEMA,
+        "exemption_tests": {"type": "array", "items": EXEMPTION_SCHEMA},
+        "yields_to_local_rule": {"type": "boolean"},
+        "displaces_state_rule": {"type": "boolean"},
+        "conflict_type": {"type": "string", "enum": ["none", "preemption", "inconsistent_sources", "other"]},
+        "conflict_note": NULLABLE_STRING,
+        "confidence": {"type": "number"},
+        "reason": {"type": "string"},
     },
-    "required": ["groups"],
+    "required": ["member_indices", "quote_index", "status", "title", "requirement", "key_value",
+                 "coverage_conditions", "exemptions", "effective_date", "citation", "penalty", "coverage",
+                 "exemption_tests", "yields_to_local_rule", "displaces_state_rule", "conflict_type",
+                 "conflict_note", "confidence", "reason"],
     "additionalProperties": False,
 }
 
-GROUP_SYSTEM = """You deduplicate rental housing rule records extracted from different documents.
+MERGE_SCHEMA = {
+    "type": "object",
+    "properties": {"rules": {"type": "array", "items": MERGED_RULE_SCHEMA}},
+    "required": ["rules"],
+    "additionalProperties": False,
+}
 
-You get numbered candidate records that share one jurisdiction and one category. Group the
-candidates that describe the same legal rule (the same law, ordinance or bill, even when the
-citation is written differently). Candidates for genuinely different rules stay in separate groups.
-Every candidate index must appear in exactly one group.
+MERGE_SYSTEM = f"""You consolidate rental housing rule records extracted from different documents.
 
-For each group:
-- canonical_index: the candidate whose quote and citation best support the rule. Prefer official
-  statute or ordinance text over agency summaries, and agency pages over news or law-firm pages.
-- effective_date: the best-supported effective date (YYYY-MM-DD when known). If sources give
-  different dates, keep the date in the official enacted text and set conflict_type to
-  inconsistent_sources with a note naming both dates and their sources.
-- conflict_type / conflict_note: carry forward any preemption or source conflict the members raise.
-- reason: one sentence on why these belong together and why the canonical one was chosen.
+You get numbered candidate records that share one jurisdiction and one category. Several
+candidates often describe the same law (the statute, an agency page explaining it, a news story),
+or one long page produced several partial records for one law.
+
+Produce one record per law: all candidates from the same statute, ordinance or code chapter in
+this category merge into one record, even when they describe different provisions of it. Keep
+separate records only for genuinely different laws, and for each bill or ballot question
+(pending or failed proposals are never merged into enacted law). Every candidate index must
+appear in exactly one record's member_indices. Drop nothing: a candidate that is out of place
+still goes into the closest record.
+
+For each record:
+- quote_index: the member whose quoted_span best supports the headline requirement. Prefer official
+  statute or ordinance text, then official agency pages, then news or law-firm pages.
+- title, requirement (one or two plain sentences a renter could act on), key_value, coverage_conditions,
+  exemptions, penalty: write them from what the members say. Do not add facts no member states.
+- citation: the clean official cite, e.g. "Cal. Civ. Code § 1950.5", "S.F. Admin. Code ch. 37",
+  "Berkeley Mun. Code ch. 13.76", "M.G.L. c. 186, § 15B", "N.J.S.A. 46:8-21.2", "Mass. S.2983 (194th Gen. Court)".
+- status and effective_date: effective_date is when the rule's headline requirement first took effect
+  (YYYY-MM-DD when known). For a long-standing law that was later amended, use the date the headline
+  requirement started, not the amendment's operative date, and never an annual adjustment date (a yearly
+  allowable-increase percentage starting March 1 is not the ordinance's effective date). If only a
+  secondary source gives a date, use it and lower confidence. Set conflict_type to inconsistent_sources
+  only when sources give different dates or values for the same thing (two published effective dates for
+  one ordinance); an original date versus a later amendment date is not a conflict.
+- confidence: 0 to 1; lower when the only support is a secondary source.
+- Context: you also get short summaries of this jurisdiction's records in other categories. Use them only
+  to fill coverage facts the members leave out (a rent ordinance's certificate-of-occupancy cutoff stated
+  on the city's just-cause page, for example), and mention that source in coverage_conditions.
+- reason: one sentence on what was merged and why.
+
+Coverage, exemptions and precedence must follow these rules exactly; fix any member that breaks them:
+{COVERAGE_GUIDE}
 """
 
 
@@ -77,53 +114,76 @@ def load_candidates():
 
 
 def summarize(i, rule):
-    return {
-        "index": i,
-        "title": rule["title"],
-        "citation": rule["citation"],
-        "status": rule["status"],
-        "effective_date": rule["effective_date"],
-        "requirement": rule["requirement"],
-        "key_value": rule["key_value"],
-        "source": f'{rule["source_doc_id"]} ({rule["source_type"]})',
-        "quoted_span": rule["quoted_span"][:300],
-        "conflict_type": rule["conflict_type"],
-        "conflict_note": rule["conflict_note"],
-    }
+    keep = ["title", "citation", "status", "effective_date", "requirement", "key_value", "coverage_conditions",
+            "exemptions", "penalty", "coverage", "exemption_tests", "yields_to_local_rule", "displaces_state_rule",
+            "conflict_type", "conflict_note", "confidence"]
+    return {"index": i, "source": f'{rule["source_doc_id"]} ({rule["source_type"]}, {rule["source_origin"]})',
+            "quoted_span": rule["quoted_span"], **{k: rule[k] for k in keep}}
 
 
-def group_bucket(llm, key, rules):
-    if len(rules) == 1:
-        r = rules[0]
-        return [{"member_indices": [0], "canonical_index": 0, "effective_date": r["effective_date"],
-                 "conflict_type": r["conflict_type"], "conflict_note": r["conflict_note"], "reason": "single candidate"}]
+def context_for(key, buckets):
+    """Coverage-relevant summaries of the same jurisdiction's candidates in other categories."""
+    return [{"category": c["category"], "source": c["source_doc_id"], "title": c["title"],
+             "coverage_conditions": c["coverage_conditions"], "exemptions": c["exemptions"]}
+            for (j, cat), cands in buckets.items() if j == key[0] and cat != key[1] for c in cands]
+
+
+MERGES = WORK / "merges"
+
+
+def merge_bucket(llm, key, rules, context, refresh=False):
+    """Merged records for one bucket, cached by bucket and by the exact candidate list."""
+    payload = json.dumps([rules, context], sort_keys=True)
+    digest = hashlib.sha256(payload.encode()).hexdigest()[:16]
+    cache = MERGES / f"{CATEGORY_CODE[key[1]]}--{key[0].replace(', ', '_').replace(' ', '_')}.json"
+    if cache.exists() and not refresh:
+        cached = json.loads(cache.read_text())
+        if cached["digest"] == digest:
+            return cached["rules"]
+    merged = _merge_bucket(llm, key, rules, context)
+    MERGES.mkdir(parents=True, exist_ok=True)
+    cache.write_text(json.dumps({"digest": digest, "rules": merged}, indent=1))
+    return merged
+
+
+def _merge_bucket(llm, key, rules, context):
     prompt = (f"Jurisdiction: {key[0]}\nCategory: {key[1]}\n\nCandidates:\n"
-              + json.dumps([summarize(i, r) for i, r in enumerate(rules)], indent=1))
-    result, meta = call_json(llm, GROUP_SYSTEM, prompt, GROUP_SCHEMA, max_tokens=16000, effort="medium")
-    log_call({"step": "consolidate", "bucket": list(key), "candidates": len(rules), **meta,
-              "groups": result["groups"]})
-    groups = [g for g in result["groups"] if g["member_indices"]]
-    seen = {i for g in groups for i in g["member_indices"]}
-    for i, r in enumerate(rules):  # anything the model left out becomes its own rule
-        if i not in seen:
-            groups.append({"member_indices": [i], "canonical_index": i, "effective_date": r["effective_date"],
-                           "conflict_type": r["conflict_type"], "conflict_note": r["conflict_note"],
-                           "reason": "not grouped by model"})
-    for g in groups:
-        if g["canonical_index"] not in g["member_indices"]:
-            g["canonical_index"] = g["member_indices"][0]
-    return groups
+              + json.dumps([summarize(i, r) for i, r in enumerate(rules)], indent=1)
+              + "\n\nContext (same jurisdiction, other categories; not candidates):\n"
+              + json.dumps(context, indent=1))
+    result, meta = call_json(llm, MERGE_SYSTEM, prompt, MERGE_SCHEMA, max_tokens=32000)
+    merged = result["rules"]
+    log_call({"step": "consolidate", "bucket": list(key), "candidates": len(rules), "rules_out": len(merged),
+              **meta, "groups": [{"members": m["member_indices"], "quote": m["quote_index"], "reason": m["reason"]}
+                                 for m in merged]})
+    for m in merged:
+        m["member_indices"] = [i for i in m["member_indices"] if 0 <= i < len(rules)]
+        if not 0 <= m["quote_index"] < len(rules):
+            m["quote_index"] = m["member_indices"][0] if m["member_indices"] else 0
+    return merged
 
 
-def build_rule(rule_id, canonical, members, group):
-    rule = dict(canonical)
-    rule["team_rule_id"] = rule_id
-    rule["effective_date"] = group["effective_date"]
-    rule["conflict_type"] = group["conflict_type"]
-    rule["conflict_note"] = group["conflict_note"]
-    rule["conflict_flag"] = group["conflict_type"] != "none"
-    rule["also_supported_by"] = sorted({m["source_doc_id"] for m in members} - {canonical["source_doc_id"]})
-    rule["merge_reason"] = group["reason"]
+def build_rule(rule_id, jurisdiction, level, category, merged, bucket):
+    quoted = bucket[merged["quote_index"]]
+    rule = {k: v for k, v in merged.items() if k not in ("member_indices", "quote_index", "reason")}
+    rule.update({
+        "team_rule_id": rule_id,
+        "jurisdiction": jurisdiction,
+        "level": level,
+        "category": category,
+        "quoted_span": quoted["quoted_span"],
+        "source_doc_id": quoted["source_doc_id"],
+        "source_url": quoted["source_url"],
+        "source_type": quoted["source_type"],
+        "source_origin": quoted["source_origin"],
+        "retrieved_at": quoted["retrieved_at"],
+        "conflict_flag": merged["conflict_type"] != "none",
+        "also_supported_by": sorted({bucket[i]["source_doc_id"] for i in merged["member_indices"]}
+                                    - {quoted["source_doc_id"]}),
+        "merge_reason": merged["reason"],
+    })
+    if rule["conflict_type"] == "none":
+        rule["conflict_note"] = None
     return rule
 
 
@@ -131,7 +191,8 @@ def link_precedence(rules):
     """Fill overrides/interaction between state rules that yield and local rules that displace them."""
     by_state_cat = defaultdict(list)
     for r in rules:
-        by_state_cat[(r["jurisdiction"][-2:], r["category"])].append(r)
+        if r["status"] not in ("pending", "failed"):
+            by_state_cat[(r["jurisdiction"][-2:], r["category"])].append(r)
     for r in rules:
         r["overrides"], r["interaction"] = [], None
         peers = by_state_cat[(r["jurisdiction"][-2:], r["category"])]
@@ -147,36 +208,6 @@ def link_precedence(rules):
                 r["interaction"] = f"Supersedes {', '.join(state)} for units it covers."
 
 
-def main():
-    candidates = load_candidates()
-    buckets = defaultdict(list)
-    for c in candidates:
-        buckets[(c["jurisdiction"], c["category"])].append(c)
-    print(f"{len(candidates)} candidates in {len(buckets)} buckets", file=sys.stderr)
-
-    llm = client()
-    keys = sorted(buckets)
-    with ThreadPoolExecutor(max_workers=6) as pool:
-        grouped = dict(zip(keys, pool.map(lambda k: group_bucket(llm, k, buckets[k]), keys), strict=True))
-
-    rules = []
-    status_order = {"in_force": 0, "not_yet_effective": 1, "pending": 2, "failed": 3}
-    for key in sorted(keys, key=lambda k: (len(k[0]) > 2, k[0], k[1])):
-        bucket = buckets[key]
-        groups = sorted(grouped[key], key=lambda g: (status_order[bucket[g["canonical_index"]]["status"]],
-                                                      bucket[g["canonical_index"]]["citation"]))
-        for n, g in enumerate(groups, 1):
-            rule_id = f"{JURIS_CODE[key[0]]}-{CATEGORY_CODE[key[1]]}-{n:02d}"
-            members = [bucket[i] for i in g["member_indices"]]
-            rules.append(build_rule(rule_id, bucket[g["canonical_index"]], members, g))
-    link_precedence(rules)
-
-    OUT.mkdir(exist_ok=True)
-    (WORK / "rules_full.json").write_text(json.dumps(rules, indent=1))
-    RULES_OUT.write_text(json.dumps({"rules": [submission_record(r) for r in rules]}, indent=1))
-    print(f"wrote {len(rules)} rules to {RULES_OUT}", file=sys.stderr)
-
-
 SUBMISSION_FIELDS = ["team_rule_id", "jurisdiction", "level", "category", "status", "title", "requirement",
                      "key_value", "coverage_conditions", "exemptions", "overrides", "interaction", "effective_date",
                      "citation", "source_doc_id", "source_url", "quoted_span", "confidence", "conflict_flag",
@@ -190,6 +221,47 @@ def submission_record(rule):
     if rule.get("source_origin") == "supplement":
         record["source_note"] = "Secondary source fetched from the corpus link list; official text not in corpus."
     return record
+
+
+def wants_refresh(key, codes):
+    if codes is None:
+        return False
+    name = f"{CATEGORY_CODE[key[1]]}--{key[0].replace(', ', '_').replace(' ', '_')}"
+    return not codes or any(c in name for c in codes)
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--refresh", nargs="*", default=None, metavar="CODE",
+                        help="re-merge buckets whose cache name contains CODE (e.g. ALG--NJ); no CODE = all")
+    args = parser.parse_args()
+
+    candidates = load_candidates()
+    buckets = defaultdict(list)
+    for c in candidates:
+        buckets[(c["jurisdiction"], c["category"])].append(c)
+    print(f"{len(candidates)} candidates in {len(buckets)} buckets", file=sys.stderr)
+
+    llm = client()
+    keys = sorted(buckets)
+    with ThreadPoolExecutor(max_workers=6) as pool:
+        merged = dict(zip(keys, pool.map(lambda k: merge_bucket(llm, k, buckets[k], context_for(k, buckets), wants_refresh(k, args.refresh)), keys), strict=True))
+
+    rules = []
+    status_order = {"in_force": 0, "not_yet_effective": 1, "pending": 2, "failed": 3}
+    for key in sorted(keys, key=lambda k: (len(k[0]) > 2, k[0], k[1])):
+        jurisdiction, category = key
+        level = "state" if len(jurisdiction) == 2 else "city"
+        records = sorted(merged[key], key=lambda m: (status_order[m["status"]], m["citation"]))
+        for n, m in enumerate(records, 1):
+            rule_id = f"{JURIS_CODE[jurisdiction]}-{CATEGORY_CODE[category]}-{n:02d}"
+            rules.append(build_rule(rule_id, jurisdiction, level, category, m, buckets[key]))
+    link_precedence(rules)
+
+    OUT.mkdir(exist_ok=True)
+    (WORK / "rules_full.json").write_text(json.dumps(rules, indent=1))
+    RULES_OUT.write_text(json.dumps({"rules": [submission_record(r) for r in rules]}, indent=1))
+    print(f"wrote {len(rules)} rules to {RULES_OUT}", file=sys.stderr)
 
 
 if __name__ == "__main__":

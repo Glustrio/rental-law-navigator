@@ -1,0 +1,9 @@
+{
+ "doc_id": "D031",
+ "doc_sha256": "65ffa9dca5815b925debf63d1ff0974f710aed6614723f28d722209094a36b20",
+ "model": "claude-opus-5-5",
+ "extracted_at": "2026-10-03T21:22:21+00:00",
+ "rules": [],
+ "dropped": [],
+ "notes": "Document D031 describes the Cambridge Tenants Rights and Resources Notification Ordinance (Cambridge Municipal Code Chapter 8.71). It is a disclosure and notice rule only. Landlords must hand tenants a rights and resources guide when a tenancy starts and when they take legal steps to end it (a notice to quit or summary process). The penalty is up to $300 per day of violation (\u00a7 8.71.070). This is not a just-cause eviction rule. The FAQ says plainly: \"This Ordinance does not prevent a landlord from initiating an eviction action if otherwise allowed by law.\" It also sets no rent cap, deposit rule, fee cap, screening limit or rule on rent-setting software. So nothing in this document fits the six categories, and no records were extracted. A reviewer may want to confirm that notification-only ordinances should stay out of scope."
+}

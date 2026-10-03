@@ -1,0 +1,39 @@
+{
+ "digest": "334a33a1ca25dc03",
+ "rules": [
+  {
+   "member_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "quote_index": 0,
+   "status": "in_force",
+   "title": "Los Angeles Rent Stabilization Ordinance: annual allowable rent increase",
+   "requirement": "If your unit is covered by the Los Angeles RSO, your landlord can raise the rent only once every 12 months, and only by the percentage LAHD publishes for that year (3% for July 1, 2025 \u2013 June 30, 2026). Since February 2, 2026, landlords cannot add an extra percentage for utilities or charge a 10% increase when a dependent joins the household. A 10% increase is still allowed for an added tenant who is not a dependent, but only within 60 days of the landlord learning about that tenant.",
+   "key_value": "Once every 12 months by the LAHD-published allowable percentage (3% for 7/1/2025\u20136/30/2026); no utility add-on and no dependent add-on since 2026-02-02",
+   "coverage_conditions": "Rental properties in the City of Los Angeles first built on or before October 1, 1978, plus replacement units under LAMC 151.28. This includes apartments, duplexes, two or more single-family dwellings on one parcel, condos and townhomes, ADUs/JADUs, and units attached to commercial buildings. Tenants can check coverage at zimas.lacity.org.",
+   "exemptions": "Condos and townhomes: the rent amount is not regulated for tenancies that began after December 31, 1995. A luxury exemption is available on application, based on rent charged on or before May 31, 1978. Rent can be reset to market rate after a voluntary move-out, certain evictions, or a buyout. RSO and SCEP registration surcharges ($1.61 and $2.83 a month) may be passed through only after the landlord registers the unit and gives written notice.",
+   "effective_date": null,
+   "citation": "L.A. Mun. Code ch. XV, art. 1 (Rent Stabilization Ordinance)",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": "1978-10-01",
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": true,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.8,
+   "reason": "All five candidates describe provisions of the same LA Rent Stabilization Ordinance, taken from two official LAHD pages: the annual cap, the 2025-26 percentage, the end of the utility add-on, and the dependent add-on rule. They were merged into one record. The 3% figure covers a period that has ended, and the members give no 2026-27 percentage."
+  }
+ ]
+}

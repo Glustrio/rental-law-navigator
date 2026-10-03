@@ -1,0 +1,45 @@
+{
+ "doc_id": "D044",
+ "doc_sha256": "8a7df129cb574372f5469c3021fe8fb0bc63000810b9c5065e5eb83bcbcd992f",
+ "model": "claude-opus-5-5",
+ "extracted_at": "2026-10-03T21:22:56+00:00",
+ "rules": [
+  {
+   "jurisdiction": "Los Angeles, CA",
+   "level": "city",
+   "category": "security_deposits",
+   "status": "in_force",
+   "title": "Interest on security deposits for RSO units",
+   "requirement": "If your unit is covered by the Los Angeles Rent Stabilization Ordinance, your landlord must pay you interest on your security deposit at the rate the City sets each year. The landlord pays it monthly or yearly, either directly or as a credit against rent, and must tell you in writing which payment method they chose. Waiting until move-out to pay all the interest at once does not meet the rule.",
+   "key_value": "Interest at the City's annual rate (2025: 4.320%), paid monthly or yearly",
+   "coverage_conditions": "Rental units in the City of Los Angeles subject to the Los Angeles Rent Stabilization Ordinance (LARSO). Interest has accrued since November 1, 1990.",
+   "exemptions": null,
+   "effective_date": "1990-11-01",
+   "citation": "L.A. Mun. Code \u00a7 151.06.02",
+   "quoted_span": "Interest shall begin accruing on November 1, 1990, on a monthly basis. A tenant shall be given the unpaid accrued interest in the form of either a direct payment or a credit against the tenant\u2019s rent. The landlord shall choose between these two methods of payment and notify the tenant in writing of his or her choice.",
+   "penalty": "Not stated in the code text. The source says noncompliance is used successfully as a defense in eviction cases.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.8,
+   "span_match_score": 100,
+   "source_doc_id": "D044",
+   "source_url": "https://members.aagla.org/news/city-of-la-security-deposit-interest-requirement",
+   "source_type": "secondary (law firm / news / mirror)",
+   "source_origin": "supplement",
+   "retrieved_at": "2026-10-03 21:04 UTC"
+  }
+ ],
+ "dropped": [],
+ "notes": "I found one rule in scope. The source is a secondary page (an Apartment Association of Greater Los Angeles article, posted May 2025, rates table updated 5/21/25), but it quotes LAMC \u00a7 151.06.02 directly.\n\nWhat to check:\n- **Coverage dates:** The article says the rule covers units subject to the Rent Stabilization Ordinance (RSO). It doesn't give the RSO's own coverage limits, such as the certificate-of-occupancy cutoff, so I left the coverage date fields null. Fill them in from the RSO record.\n- **Interest rate:** The rates table stops at calendar year 2025 (4.320%). The 2026 rate isn't in the document.\n- **Out of scope:** Other items on the page (the 82-degree mandate, the Claremont rental registry) are only headlines and fall outside the six categories."
+}

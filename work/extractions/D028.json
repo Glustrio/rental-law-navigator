@@ -1,0 +1,47 @@
+{
+ "doc_id": "D028",
+ "doc_sha256": "2cb86a33b39289765ec9a534404fde7dc1677f0a2ec180272e6e53d49795fb01",
+ "model": "claude-opus-5-5",
+ "extracted_at": "2026-10-03T21:22:12+00:00",
+ "rules": [
+  {
+   "jurisdiction": "CA",
+   "level": "state",
+   "category": "algorithmic_rent_setting",
+   "status": "in_force",
+   "title": "Cartwright Act ban on common pricing algorithms used to collude or coerce (AB 325)",
+   "requirement": "Landlords and other businesses in California may not use or distribute a shared (\"common\") pricing algorithm that draws on competitor data as part of an agreement to restrain trade. They also may not use or offer one while pressuring users to adopt its price or lease-term recommendations. Renters harmed by algorithmic rent-fixing may sue under the Cartwright Act.",
+   "key_value": "Prohibits use/distribution of common pricing algorithms (2+ users, competitor data) in restraint of trade, and coercing adoption of their recommendations",
+   "coverage_conditions": "Applies to any business, including apartment rental companies, that uses or distributes a common pricing algorithm, meaning one with two or more users that uses competitor data to recommend or influence prices or commercial terms in California.",
+   "exemptions": "Single-firm algorithms that use only the business's own data are not covered.",
+   "effective_date": "2026-01-01",
+   "citation": "Cal. Bus. & Prof. Code \u00a7 16729 (A.B. 325, 2025-2026 Reg. Sess.)",
+   "quoted_span": "Businesses are expressly prohibited from using or distributing common pricing algorithms as part of an agreement to restrain trade.",
+   "penalty": "Under SB 763 (Cal. Bus. & Prof. Code \u00a7\u00a7 16755, 16755.1): criminal fines up to the greater of $6 million or twice the gain or loss for corporations, and up to the greater of $1 million or twice the gain or loss for individuals. Civil penalties up to $1 million in actions brought by the AG or a district attorney. Treble damages, injunctive relief and attorneys' fees are available in private suits.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": [
+     "Whether the landlord uses a common pricing algorithm that relies on competitor data (not a single-firm tool using only its own data)"
+    ]
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.8,
+   "span_match_score": 100,
+   "source_doc_id": "D028",
+   "source_url": "https://www.clearygottlieb.com/news-and-insights/publication-listing/californias-antitrust-law-amendments-kick-in-targeting-algorithmic-pricing",
+   "source_type": "secondary (law firm / news / mirror)",
+   "source_origin": "supplement",
+   "retrieved_at": "2026-10-03 21:04 UTC"
+  }
+ ],
+ "dropped": [],
+ "notes": "The source is a secondary law-firm summary (Cleary Gottlieb), not the official statute text. AB 325's two prohibitions (collusion through common algorithms, and coercing users to adopt recommendations) are recorded as one rule because both sit in \u00a7 16729. They could be split into two records if a reviewer prefers. Several parts of the document are not separate rules in scope: the new pleading standard (\u00a7 16756.1) is procedure, and the SB 763 penalty increases are recorded only in the penalty field. The document does not name housing specifically. Rental use is inferred from the general scope of the law and the mention of apartment rental companies."
+}

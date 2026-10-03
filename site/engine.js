@@ -120,12 +120,27 @@ function evaluate(rule, a, asOf) {
   return ["applies", reasons];
 }
 
+const REVIEW_CONFIDENCE = 0.7;
+
+// Low-confidence rules and rules resting only on a secondary source go to a human.
+function needsReview(rule) {
+  return (rule.confidence || 0) < REVIEW_CONFIDENCE || rule.source_origin === "supplement";
+}
+
+// A state rule that yields to a local rule that displaces it is settled precedence, not a conflict.
+function isPrecedence(a, b) {
+  const [state, local] = a.level === "state" ? [a, b] : [b, a];
+  return Boolean(state.yields_to_local_rule && local.displaces_state_rule);
+}
+
 function conflictFor(rule, raw, byId) {
   if (rule.conflict_type === "inconsistent_sources") return [true, [`review: ${rule.conflict_note}`]];
-  if (rule.conflict_type !== "preemption") return [false, []];
+  // A state rule that says how it yields to local law has settled precedence.
+  if (rule.conflict_type !== "preemption" || rule.yields_to_local_rule) return [false, []];
   const other = rule.level === "state" ? "city" : "state";
   const peers = Object.entries(raw)
-    .filter(([id, [res]]) => res && byId[id].category === rule.category && byId[id].level === other)
+    .filter(([id, [res]]) => res && byId[id].category === rule.category && byId[id].level === other
+      && !isPrecedence(rule, byId[id]))
     .map(([id]) => id);
   if (peers.length) return [true, [`possible conflict with ${peers.join(", ")}: ${rule.conflict_note}`]];
   return [false, []];
@@ -167,7 +182,13 @@ export function lookup(a, rules, asOf) {
       }
     }
     const [flag, flagReasons] = conflictFor(rule, raw, byId);
-    out.push({ team_rule_id: id, result, explanation: explain(rule, a, result, reasons.concat(flagReasons)), conflict_flag: flag });
+    out.push({
+      team_rule_id: id,
+      result,
+      explanation: explain(rule, a, result, reasons.concat(flagReasons)),
+      conflict_flag: flag,
+      needs_review: needsReview(rule),
+    });
   }
   return out;
 }

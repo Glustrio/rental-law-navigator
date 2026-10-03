@@ -1,0 +1,37 @@
+{
+ "digest": "b4de3b8981a24b58",
+ "rules": [
+  {
+   "member_indices": [
+    0,
+    1,
+    2
+   ],
+   "quote_index": 2,
+   "status": "in_force",
+   "title": "Ban on algorithmic rent-setting devices using nonpublic competitor data (Prohibition of Anti-Competitive Automated Rent Price-Fixing Ordinance)",
+   "requirement": "San Diego landlords may not use software that analyzes nonpublic competitor data to set rents or occupancy levels, and no one may sell or license that software to landlords. If your landlord does, you can sue for an injunction, damages, or civil penalties of up to $1,000 per violation, plus attorney's fees.",
+   "key_value": "Civil penalty up to $1,000 per violation; each month and each affected property is a separate violation",
+   "coverage_conditions": "All residential rental property in the City of San Diego (as defined in SDMC \u00a7 98.0702). The ban applies to landlords who use algorithmic devices and to anyone who sells, licenses or provides them to landlords.",
+   "exemptions": "Software that publishes reports from public information or from aggregated nonpublic competitor data more than 90 days old, as long as it does not recommend rents or occupancy levels for future leases or renewals. Software used to set rents or income limits under local, state or federal affordable housing program guidelines.",
+   "effective_date": "2025-06",
+   "citation": "San Diego Mun. Code \u00a7\u00a7 98.1101\u201398.1104",
+   "penalty": "Tenants can bring a civil action for injunctive relief, damages, or civil penalties of up to $1,000 per violation, with each month and each property counted as a separate violation. A tenant who wins is awarded costs and reasonable attorney's fees. Remedies are cumulative, and SDMC Ch. 1, Art. 2 enforcement also applies.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": "The official source (D076) is the staff report and draft ordinance O-2025-107, with the passage date left blank; its own effective date is 30 days after final passage. Only secondary sources (D002, D037) report that it was enacted and in force as of June 2025. Check adoption against the City Clerk record.",
+   "confidence": 0.65,
+   "reason": "I merged the two secondary summaries and the official draft ordinance into one record because all three describe the same ordinance (SDMC \u00a7\u00a7 98.1101\u201398.1104). The secondary sources say the draft was adopted, so the draft is the text of the enacted law, not a separate proposal."
+  }
+ ]
+}

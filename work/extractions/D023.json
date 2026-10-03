@@ -1,0 +1,90 @@
+{
+ "doc_id": "D023",
+ "doc_sha256": "fdd8d7fca42103cf630c3a9a4ed217150eb17a6e180edd80c1d845ca5e8aa1fe",
+ "model": "claude-opus-5-5",
+ "extracted_at": "2026-10-03T21:22:10+00:00",
+ "rules": [
+  {
+   "jurisdiction": "CA",
+   "level": "state",
+   "category": "just_cause_eviction",
+   "status": "in_force",
+   "title": "Tenant Protection Act just cause for eviction and no-fault relocation assistance",
+   "requirement": "Once you have lived in your unit lawfully for 12 months, your landlord can end your tenancy only for a just cause listed in the law, and the written notice must state that cause. If the cause is no-fault (for example the owner moving in, taking the unit off the rental market, or demolition or a major remodel), the landlord must pay you one month's rent as relocation assistance within 15 days or waive your last month's rent.",
+   "key_value": "Just cause required after 12 months of tenancy; no-fault relocation = 1 month's rent",
+   "coverage_conditions": "Residential real property in California, including mobilehome park units, once the tenant has continuously and lawfully occupied the unit for 12 months. If an adult tenant is added before 24 months, it applies only when all tenants have occupied 12+ months or at least one has occupied 24+ months. Does not apply where a qualifying local just cause ordinance covers the unit.",
+   "exemptions": "Transient or tourist hotels; nonprofit hospitals, religious facilities, extended care and residential care facilities; school dormitories; units where the tenant shares a bathroom or kitchen with an owner who lives there; owner-occupied single-family homes renting no more than two units or bedrooms (including ADUs and JADUs); owner-occupied duplexes where the owner lived in one unit at the start of the tenancy (neither unit an ADU); housing with a certificate of occupancy issued within the last 15 years (except mobilehomes); separately alienable units (such as single-family homes or condos) not owned by a REIT, a corporation, or an LLC with a corporate member, if the tenant got the required exemption notice; deed-restricted or subsidized affordable housing; mobilehome homeowners.",
+   "effective_date": "2024-04-01",
+   "citation": "Cal. Civ. Code \u00a7 1946.2",
+   "quoted_span": "Notwithstanding any other law, after a tenant has continuously and lawfully occupied a residential real property for 12 months, the owner of the residential real property shall not terminate a tenancy without just cause, which shall be stated in the written notice to terminate tenancy.",
+   "penalty": "A termination notice that does not comply is void. An owner who tries to recover possession in material violation is liable for actual damages, attorney's fees and costs at the court's discretion, and up to three times actual damages plus punitive damages for willful conduct, oppression, fraud or malice. The Attorney General and the city attorney or county counsel may seek an injunction.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": 15,
+    "unresolvable_conditions": [
+     "Tenant must have continuously and lawfully occupied the unit for 12 months (or 24 months for at least one tenant if adult tenants were added)"
+    ]
+   },
+   "exemption_tests": [
+    {
+     "description": "Housing issued a certificate of occupancy within the previous 15 years (except mobilehomes)",
+     "if_units_at_most": null,
+     "if_built_after": null,
+     "if_younger_than_years": 15,
+     "needs_unknown_fact": false
+    },
+    {
+     "description": "Two units in a single structure where the owner lived in one unit as their principal residence at the start of the tenancy and still lives there; neither unit is an ADU or JADU",
+     "if_units_at_most": 2,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    },
+    {
+     "description": "Separately alienable unit (such as a single-family home or condo) whose owner is not a REIT, a corporation, or an LLC with a corporate member, and the tenant received the statutory exemption notice",
+     "if_units_at_most": null,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    },
+    {
+     "description": "Housing restricted as affordable for very low, low or moderate income households by deed, regulatory agreement or recorded document, or subject to a housing subsidy agreement",
+     "if_units_at_most": null,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    },
+    {
+     "description": "Tenant shares a bathroom or kitchen with an owner who lives at the property as their principal residence",
+     "if_units_at_most": null,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    },
+    {
+     "description": "Owner-occupied single-family residence where the owner rents no more than two units or bedrooms, including an ADU or JADU",
+     "if_units_at_most": null,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    }
+   ],
+   "yields_to_local_rule": true,
+   "displaces_state_rule": false,
+   "conflict_type": "preemption",
+   "conflict_note": "Under subdivision (i), this section does not apply where a local just cause ordinance adopted on or before September 1, 2019 covers the unit, or where a local ordinance adopted or amended after that date is more protective and the city has made a binding finding saying so. A local ordinance adopted after September 1, 2019 that is less protective cannot be enforced. A unit cannot be covered by both. The section sunsets on January 1, 2030. The current text was amended by AB 1529 (Stats. 2025, Ch. 203), effective January 1, 2026; the section's operative date is April 1, 2024.",
+   "confidence": 0.92,
+   "span_match_score": 100,
+   "source_doc_id": "D023",
+   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1946.2",
+   "source_type": "official",
+   "source_origin": "corpus",
+   "retrieved_at": "2026-10-01T22:35Z"
+  }
+ ],
+ "dropped": [],
+ "notes": "I used 2024-04-01 as the effective date because that is the operative date stated in subdivision (m). The current text, amended by AB 1529 (Stats. 2025, Ch. 203), took effect January 1, 2026, and the section repeals itself on January 1, 2030. The original Tenant Protection Act just cause rule dates to 2020, but this document does not state that date. The rule references the statewide rent cap (Civ. Code \u00a7 1947.12) only in the required notice text. I did not create a separate rent-cap record because its terms are not in this document. I treated the no-fault relocation assistance rule (subdivision (d)) as part of the single just cause record."
+}

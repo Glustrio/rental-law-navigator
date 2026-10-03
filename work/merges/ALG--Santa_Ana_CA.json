@@ -1,0 +1,38 @@
+{
+ "digest": "1f4cead4db71a39f",
+ "rules": [
+  {
+   "member_indices": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "quote_index": 0,
+   "status": "in_force",
+   "title": "Santa Ana ban on algorithmic rent-setting software (Ordinance NS-3090)",
+   "requirement": "Santa Ana landlords may not use rent-setting software that relies on nonpublic competitor data, and vendors may not sell, license or provide it for residential rentals in the city. A tenant whose landlord used such software can sue for an injunction, damages, or civil penalties of up to $1,000 per violation per month, plus attorney's fees.",
+   "key_value": "Civil penalties up to $1,000 per violation, per month",
+   "coverage_conditions": "All residential rental property within Santa Ana city limits. The members state no limits by building age or unit count.",
+   "exemptions": "Does not apply to pricing software that uses only publicly available data or aggregate historical data, or to tools used to comply with affordable housing program requirements.",
+   "effective_date": "2026-04-02",
+   "citation": "Santa Ana Ordinance No. NS-3090",
+   "penalty": "Tenant private right of action for injunctive relief, damages, or civil penalties up to $1,000 per violation and per month, plus attorney's fees. The tenant only has to prove the landlord used the banned technology, not intentional collusion. The city's code enforcement system also enforces the ordinance and can impose a $1,000 fine.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": "The Apartment Association of Orange County argued that state law should handle this issue. No source shows that state law preempts the ordinance, and one article says the ordinance is meant to work alongside California antitrust law. Only secondary sources support the effective date; the ordinance was finally adopted around March 3, 2026.",
+   "confidence": 0.65,
+   "reason": "All four candidates describe the same Santa Ana ordinance (NS-3090): first reading Feb. 17, 2026, final adoption in March 2026, so they are merged into one in-force record."
+  }
+ ]
+}

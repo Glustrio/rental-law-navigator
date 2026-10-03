@@ -1,0 +1,9 @@
+{
+ "doc_id": "D050",
+ "doc_sha256": "cdc077701a5c63533240e370c77ce86546bd2c8372d771433c52a98fadc48f19",
+ "model": "claude-opus-5-5",
+ "extracted_at": "2026-10-03T21:23:14+00:00",
+ "rules": [],
+ "dropped": [],
+ "notes": "D050 is M.G.L. c. 186, \u00a7 11, \"Determination of lease for nonpayment of rent\". It covers the 14-day written notice to quit for nonpayment under a written lease. It also lets the tenant stop the termination by paying all rent due, with interest and costs, by the day the answer is due. The court must continue the hearing at least 7 days when a government payment was delayed. All of this is notice-to-quit and eviction procedure, which the instructions exclude. The section does not limit the reasons a landlord may end a tenancy, so it is not a just-cause eviction rule. It also says nothing about rent increase limits, security deposits, application or broker fees, screening restrictions, or algorithmic rent setting. No in-scope rules were extracted. The rest of the page is website navigation and login text."
+}

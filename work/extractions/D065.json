@@ -1,0 +1,139 @@
+{
+ "doc_id": "D065",
+ "doc_sha256": "c7d281ddae183438fd360bfa0b4824d6541c532efe6ae8123dad37e0f4d53e1e",
+ "model": "claude-opus-5-5",
+ "extracted_at": "2026-10-03T21:24:00+00:00",
+ "rules": [
+  {
+   "jurisdiction": "NJ",
+   "level": "state",
+   "category": "screening_restrictions",
+   "status": "in_force",
+   "title": "Fair Chance in Housing Act: no criminal history inquiry before conditional offer",
+   "requirement": "A landlord may not ask about your criminal record, orally or on an application, until after it has made you a conditional offer. The only exceptions are a methamphetamine-production conviction on federally assisted housing premises and lifetime sex offender registration. Before taking any application fee, the landlord must tell you in writing whether it reviews criminal history and that you may submit evidence of inaccuracies or rehabilitation.",
+   "key_value": "No criminal record inquiry before conditional offer",
+   "coverage_conditions": "Housing providers offering rental dwelling units in New Jersey, except units in owner-occupied premises of not more than four dwelling units.",
+   "exemptions": "Dwelling units in owner-occupied premises of not more than four units. A provider may still ask about a methamphetamine-production conviction on federally assisted housing premises and about lifetime sex offender registration.",
+   "effective_date": "2022-01-01",
+   "citation": "N.J.S.A. 46:8-55 (P.L. 2021, c.110, \u00a7 4)",
+   "quoted_span": "shall not make any oral or written inquiry\nregarding an applicant\u2019s criminal record prior to making a conditional offer.",
+   "penalty": "Civil penalty through a Division on Civil Rights complaint: up to $1,000 for a first violation, up to $5,000 for a second within 5 years, up to $10,000 for a third or later within 7 years. The Director may also order the application fee returned and up to $1,000 paid to the applicant.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [
+    {
+     "description": "Unit in owner-occupied premises of not more than four dwelling units",
+     "if_units_at_most": 4,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    }
+   ],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.85,
+   "span_match_score": 100,
+   "source_doc_id": "D065",
+   "source_url": "https://pub.njleg.gov/bills/2020/PL21/110_.HTM",
+   "source_type": "official",
+   "source_origin": "corpus",
+   "retrieved_at": "2026-10-01T22:37Z"
+  },
+  {
+   "jurisdiction": "NJ",
+   "level": "state",
+   "category": "screening_restrictions",
+   "status": "in_force",
+   "title": "Fair Chance in Housing Act: limits on criminal records considered after conditional offer",
+   "requirement": "A landlord may never consider arrests without conviction, expunged, pardoned, vacated or sealed records, or juvenile adjudications. After a conditional offer, it may consider only certain serious convictions and first-degree (6 years), second/third-degree (4 years) or fourth-degree (1 year) offenses within the lookback periods. To withdraw an offer, the landlord must do an individualized assessment and show the withdrawal is necessary for a substantial, legitimate, nondiscriminatory interest. It must give written reasons and a chance to appeal, and on request within 30 days must give you, free, within 10 days, the records it relied on.",
+   "key_value": "Lookback: 6 years (1st degree), 4 years (2nd/3rd degree), 1 year (4th degree)",
+   "coverage_conditions": "Housing providers offering rental dwelling units in New Jersey, except units in owner-occupied premises of not more than four dwelling units.",
+   "exemptions": "Dwelling units in owner-occupied premises of not more than four units.",
+   "effective_date": "2022-01-01",
+   "citation": "N.J.S.A. 46:8-56 (P.L. 2021, c.110, \u00a7 5)",
+   "quoted_span": "b.\u00a0\u00a0\u00a0 After the issuance of a conditional offer to an\napplicant, a housing provider may only consider a criminal record in the\napplicant\u2019s history that:",
+   "penalty": "Civil penalty through a Division on Civil Rights complaint: up to $1,000 for a first violation, up to $5,000 for a second within 5 years, up to $10,000 for a third or later within 7 years.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [
+    {
+     "description": "Unit in owner-occupied premises of not more than four dwelling units",
+     "if_units_at_most": 4,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    }
+   ],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.85,
+   "span_match_score": 100,
+   "source_doc_id": "D065",
+   "source_url": "https://pub.njleg.gov/bills/2020/PL21/110_.HTM",
+   "source_type": "official",
+   "source_origin": "corpus",
+   "retrieved_at": "2026-10-01T22:37Z"
+  },
+  {
+   "jurisdiction": "NJ",
+   "level": "state",
+   "category": "screening_restrictions",
+   "status": "in_force",
+   "title": "Fair Chance in Housing Act: no drug or alcohol testing of applicants",
+   "requirement": "A landlord may not require you to take a drug or alcohol test. It also may not ask for your consent to get information from a drug abuse treatment facility.",
+   "key_value": "Drug/alcohol testing of applicants prohibited",
+   "coverage_conditions": "Housing providers offering rental dwelling units in New Jersey, except units in owner-occupied premises of not more than four dwelling units.",
+   "exemptions": "Dwelling units in owner-occupied premises of not more than four units.",
+   "effective_date": "2022-01-01",
+   "citation": "N.J.S.A. 46:8-60 (P.L. 2021, c.110, \u00a7 9)",
+   "quoted_span": "9.\u00a0\u00a0\u00a0 A housing provider shall not require an applicant\nto submit to a drug or alcohol test, or request the applicant\u2019s consent to\nobtain information from a drug abuse treatment facility.",
+   "penalty": "Civil penalty through a Division on Civil Rights complaint: up to $1,000 / $5,000 / $10,000 depending on prior violations.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [
+    {
+     "description": "Unit in owner-occupied premises of not more than four dwelling units",
+     "if_units_at_most": 4,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    }
+   ],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.8,
+   "span_match_score": 100,
+   "source_doc_id": "D065",
+   "source_url": "https://pub.njleg.gov/bills/2020/PL21/110_.HTM",
+   "source_type": "official",
+   "source_origin": "corpus",
+   "retrieved_at": "2026-10-01T22:37Z"
+  }
+ ],
+ "dropped": [],
+ "notes": "The effective date was worked out, not stated. The act was approved June 18, 2021 and takes effect \"on the first day of the seventh month next following the date of enactment,\" which gives 2022-01-01. Also not split out as separate records: the advertising ban (\u00a7 7), the anti-retaliation provision (\u00a7 10) and the enforcement provisions. Their content is folded into the three records as supporting or penalty detail. The owner-occupied exemption for buildings of 4 or fewer units depends on owner occupancy, which the assessor record can't confirm, so needs_unknown_fact is true. Section 12(d)(2) lets a landlord evict, with 45 days' notice, a tenant placed by a Director's order that was later overturned on appeal. It is a narrow eviction ground tied to this act, not a general just-cause rule, so it was not extracted."
+}

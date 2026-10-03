@@ -1,0 +1,44 @@
+{
+ "digest": "c472f14b5f0fd267",
+ "rules": [
+  {
+   "member_indices": [
+    0,
+    1
+   ],
+   "quote_index": 0,
+   "status": "in_force",
+   "title": "Anti-Eviction Act: good cause required to evict or refuse to renew",
+   "requirement": "Your landlord cannot evict you or refuse to renew your lease, written or oral, without one of the good causes listed in the law, such as nonpayment, disorderly conduct, damage, or breaking lease rules after a notice to stop. Each cause requires its own notice to quit, and lockouts or other self-help evictions are illegal. If you are evicted so the landlord can fix an illegal occupancy, the landlord must pay you relocation assistance equal to six months' rent.",
+   "key_value": "Listed good causes (N.J.S.A. 2A:18-61.1(a)-(r)), each with its own notice period from 3 days to 3 years; relocation assistance of 6 months' rent for evictions to correct illegal occupancy",
+   "coverage_conditions": "Most residential rentals, including apartment buildings, single-family homes, mobile homes and rooming houses. The relocation assistance covers tenants evicted under N.J.S.A. 2A:18-61.1(g)(3) to correct an illegal occupancy.",
+   "exemptions": "Owner-occupied premises with two or fewer rental units; transient or seasonal hotel and motel guests; units held in trust for a developmentally disabled family member.",
+   "effective_date": null,
+   "citation": "N.J.S.A. 2A:18-61.1 to 61.12; N.J.A.C. 5:11-8.5(c)",
+   "penalty": "Treble damages plus attorney fees for false owner-occupancy claims or improper re-rental. Civil penalty of up to $10,000 per violation for illegal residential use after a removal-from-market eviction (N.J.S.A. 2A:18-61.6). Unpaid relocation payments may be paid from a municipal relocation fund; where no fund exists, they accrue 18% annual interest and become a lien on the property.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [
+    {
+     "description": "Owner-occupied premises with two or fewer rental units (owner's unit plus up to two rentals)",
+     "if_units_at_most": 3,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    }
+   ],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.85,
+   "reason": "Merged the main good-cause record with the relocation-assistance record because both come from the same statute, the NJ Anti-Eviction Act (N.J.S.A. 2A:18-61.1(g) is part of it)."
+  }
+ ]
+}

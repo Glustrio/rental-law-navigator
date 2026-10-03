@@ -1,0 +1,65 @@
+{
+ "digest": "cb71c0931504d71e",
+ "rules": [
+  {
+   "member_indices": [
+    0
+   ],
+   "quote_index": 0,
+   "status": "failed",
+   "title": "Boston tenant eviction protections home rule petition (H.3744, 193rd session)",
+   "requirement": "This proposal never became law. It would have let Boston adopt its own tenant eviction protections, but it was sent to a study order and died when the 2023\u20132024 session ended.",
+   "key_value": null,
+   "coverage_conditions": "Would have authorized the City of Boston to adopt tenant eviction protections. The bill text is not in the source, so the details are unknown.",
+   "exemptions": null,
+   "effective_date": null,
+   "citation": "Mass. H.3744 (193rd Gen. Court)",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.8,
+   "reason": "This is a single failed home rule petition. It stays separate from the enacted law because failed proposals are never merged into enacted law."
+  },
+  {
+   "member_indices": [
+    1
+   ],
+   "quote_index": 1,
+   "status": "in_force",
+   "title": "Boston Housing Stability Notification Act: tenant rights notice required with a notice to quit or lease non-renewal",
+   "requirement": "If your Boston landlord, or an owner after foreclosure, gives you a Notice to Quit or a notice that your lease won't be renewed, they must give you a Notice of Tenants' Rights and Resources at the same time. They must also send a copy to the City's Office of Housing Stability. If you don't get the notice, report it to the Office of Fair Housing and Equity (617-635-2500 or 311).",
+   "key_value": "Rights notice must come with the Notice to Quit or non-renewal notice; $300/day fines for second and later offenses",
+   "coverage_conditions": "Covers all landlords and foreclosing owners ending a tenancy or post-foreclosure occupancy of a unit in the City of Boston, whether by eviction, lease non-renewal, or asking occupants to leave after foreclosure. Tenants cannot waive these rights.",
+   "exemptions": "Residences in hospitals, skilled nursing or health facilities, and non-profit short-term substance abuse treatment facilities.",
+   "effective_date": "2020-11-06",
+   "citation": "Boston City Ordinances \u00a7 10-11.7 (Housing Stability Notification Act)",
+   "penalty": "Enforced by the Inspectional Services Department: a warning for a first offense, then $300 per day for second and later offenses. A violation does not stop the eviction.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.6,
+   "reason": "This is a single candidate describing Boston's enacted Housing Stability Notification Act. It is a different law from the failed home rule petition."
+  }
+ ]
+}

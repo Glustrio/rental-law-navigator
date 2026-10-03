@@ -1,0 +1,60 @@
+{
+ "digest": "3f2e168a3a5ceb90",
+ "rules": [
+  {
+   "member_indices": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "quote_index": 0,
+   "status": "in_force",
+   "title": "San Diego Residential Tenant Protection Ordinance \u2013 just cause for eviction and no-fault relocation assistance",
+   "requirement": "A San Diego landlord may end a tenancy only for a listed at-fault cause (such as nonpayment, a lease breach not fixed after written notice, nuisance or criminal activity) or a listed no-fault cause (owner or close-relative move-in, withdrawal from the rental market, a government order, demolition or substantial remodel). The termination notice must state the cause. For a no-fault termination, the landlord must pay relocation assistance of two months' actual rent (three months if the tenant is 62 or older or disabled), either paid directly within 15 days of the notice or by waiving that much rent.",
+   "key_value": "Just cause required; no-fault relocation of 2 months' rent (3 months for seniors 62+ or disabled tenants); 5-year right of first refusal after a no-fault eviction",
+   "coverage_conditions": "Residential rental property in the City of San Diego, including rented dwellings in mobilehome parks, where the tenant has lawfully lived for more than 30 days. Fixed-term leases of 3 months or less are not covered. Housing whose certificate of occupancy was issued within the previous 15 years is exempt (this does not apply to mobilehomes). Relocation assistance is owed regardless of the tenant's income or length of tenancy.",
+   "exemptions": "Transient hotels and occupancies of 30 days or less; housing restricted as affordable by deed, regulatory agreement or subsidy agreement (Section 8 voucher tenants are still covered); mobilehomes subject to the Mobilehome Residency Law; nonprofit hospital, religious, care and transitional housing; school dormitories; tenants who share a bathroom or kitchen with an owner who lives there; owner-occupied single-family homes renting no more than 2 units or bedrooms; owner-occupied duplexes (neither unit an ADU or JADU); separately alienable units (such as condos or single-family homes) not owned by a REIT, a corporation or an LLC with a corporate member, if the tenant got written notice of the exemption; housing with a certificate of occupancy issued within the previous 15 years. No relocation assistance is owed if a government agency or court finds the tenant at fault for the condition behind a vacate order.",
+   "effective_date": "2023-06-24",
+   "citation": "San Diego Mun. Code ch. 9, art. 8, div. 7 (\u00a7 98.0701 et seq.)",
+   "penalty": "Wrongful eviction makes the landlord liable for at least 3 times actual economic damages, plus injunctive relief, punitive damages and discretionary attorney's fees. Failing to pay relocation makes the landlord liable for at least 3 times the required assistance plus actual damages (\u00a7 98.0709(e)). Noncompliant termination notices are void, and a violation can be raised as an affirmative defense in an unlawful detainer case. The City may also bring civil and criminal enforcement.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": 15,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [
+    {
+     "description": "Certificate of occupancy issued within the previous 15 years (except mobilehomes)",
+     "if_units_at_most": null,
+     "if_built_after": null,
+     "if_younger_than_years": 15,
+     "needs_unknown_fact": false
+    },
+    {
+     "description": "Owner-occupied duplex where the owner lives in one unit and neither unit is an ADU or JADU",
+     "if_units_at_most": 2,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    },
+    {
+     "description": "Owner-occupied single-family home where the owner rents no more than 2 units or bedrooms",
+     "if_units_at_most": 1,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    }
+   ],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": true,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.9,
+   "reason": "All four candidates (two from the official code text and two from a secondary summary) describe the same ordinance, San Diego Mun. Code ch. 9, art. 8, div. 7, covering its just-cause and relocation provisions, so they were merged into one record."
+  }
+ ]
+}

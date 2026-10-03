@@ -1,0 +1,36 @@
+{
+ "digest": "bb435fc8aef779f3",
+ "rules": [
+  {
+   "member_indices": [
+    0,
+    1
+   ],
+   "quote_index": 0,
+   "status": "in_force",
+   "title": "Ban on algorithmic or software-based coordination of rents",
+   "requirement": "Hoboken landlords may not use software, algorithms or data-sharing platforms to coordinate or recommend rents, lease terms or occupancy. If you think your landlord set your rent this way, you can raise it with the city.",
+   "key_value": null,
+   "coverage_conditions": "All residential rental units in Hoboken. The sources state no limits based on building size or age.",
+   "exemptions": null,
+   "effective_date": "2025-07",
+   "citation": "Hoboken City Code ch. 158-2",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.5,
+   "reason": "Both candidates are secondary sources describing the same Hoboken ordinance (ch. 158-2) with the same text and date, so they were merged."
+  }
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "T1": {
+  "test_id": "T1",
+  "our_rule_ids": [
+   "CA-ALG-01"
+  ],
+  "conflict_rule_ids": [],
+  "reason": "CA-ALG-01 is the AB 325 common pricing algorithm ban (Bus. & Prof. Code \u00a7 16729), effective 2026-01-01. That date falls between the test's before and after dates. SB 763 is named in the title but we have no separate record for it, so only CA-ALG-01 is mapped."
+ },
+ "T2": {
+  "test_id": "T2",
+  "our_rule_ids": [
+   "HOB-ALG-01",
+   "JC-ALG-01"
+  ],
+  "conflict_rule_ids": [],
+  "reason": "HOB-ALG-01 is Hoboken's algorithmic rent coordination ban (City Code ch. 158-2). JC-ALG-01 is Jersey City's algorithmic rent-setting ban (Code \u00a7 218-12). Both are in force before 2026-10-01. Listed in the test's order."
+ },
+ "T3": {
+  "test_id": "T3",
+  "our_rule_ids": [
+   "NJ-ALG-01"
+  ],
+  "conflict_rule_ids": [
+   "JC-ALG-01",
+   "HOB-ALG-01"
+  ],
+  "reason": "NJ-ALG-01 is the NJ FAIR Act (P.L. 2026, c. 43). It is marked not yet effective, with an effective date of 2027-07-01, which falls between the test's before and after dates. The rules to check for conflicts are the Jersey City and Hoboken local bans, in the test's order."
+ },
+ "T4": {
+  "test_id": "T4",
+  "our_rule_ids": [
+   "MA-ALG-02",
+   "MA-ALG-01"
+  ],
+  "conflict_rule_ids": [],
+  "reason": "Both are pending Massachusetts bills. The order is a guess: the test's ids don't name the bills, so I assumed MA-ALG-P1 is S.2983 and MA-ALG-P2 is H.5222, following the title's order. That gives MA-ALG-02 (S.2983) then MA-ALG-01 (H.5222). Please confirm against the source."
+ },
+ "T5": {
+  "test_id": "T5",
+  "our_rule_ids": [
+   "MA-RENT-02"
+  ],
+  "conflict_rule_ids": [],
+  "reason": "MA-RENT-02 is Initiative Petition 25-21, the statewide cap on rent increases. It is marked failed because it was blocked from the November 2026 ballot (Cella v. Attorney General, SJC-13893). This matches the struck rent-control ballot question."
+ }
+}

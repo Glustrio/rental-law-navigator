@@ -1,0 +1,84 @@
+{
+ "doc_id": "D010",
+ "doc_sha256": "61380f45cb66d87065eb029b6f5ee54dc704a0d059acc6136477337ce5f0cb73",
+ "model": "claude-opus-5-5",
+ "extracted_at": "2026-10-03T21:21:27+00:00",
+ "rules": [
+  {
+   "jurisdiction": "Boston, MA",
+   "level": "city",
+   "category": "screening_restrictions",
+   "status": "in_force",
+   "title": "Boston Fair Chance Tenant Selection Policy \u2013 criminal history limits",
+   "requirement": "If you apply for a DND-funded unit or a BPDA Inclusionary Development income-restricted unit in Boston, the landlord can't use a blanket ban on people with records and must review you case by case. The landlord can't consider arrests that didn't end in conviction, sealed or expunged records, juvenile records, or convictions more than 5 years old. These limits apply to both admission and eviction decisions.",
+   "key_value": "No blanket criminal-record bans; 5-year lookback on convictions",
+   "coverage_conditions": "Housing providers that receive Boston Department of Neighborhood Development funding or land, or have income-restricted units created under the BPDA Inclusionary Development Policy. Also applied to the Office of Fair Housing and Equity Affirmative Marketing Program.",
+   "exemptions": "Does not apply where a conviction is directly related to the housing sought or poses an unreasonable risk of substantial harm to others' safety, or to current criminal behavior. A conflicting federal or state criminal history requirement preempts the policy.",
+   "effective_date": "2017-02",
+   "citation": "Boston DND Fair Chance Tenant Selection Policy (Feb. 2017)",
+   "quoted_span": "1. The Developer/Agent (Agent) agrees to not consider any of the following categories when",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": [
+     "Property receives DND funding or land, or the unit is an income-restricted unit under the BPDA Inclusionary Development Policy"
+    ]
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "preemption",
+   "conflict_note": "The policy says that a conflicting federal or state criminal history requirement (for example, federal subsidized-housing bans) preempts it.",
+   "confidence": 0.75,
+   "span_match_score": 100,
+   "source_doc_id": "D010",
+   "source_url": "https://drive.google.com/file/d/1j4U3fDtmnYuwcUWhx5BMUcXc1bnKT8Ku/view?usp=sharing",
+   "source_type": "official city-linked policy",
+   "source_origin": "corpus",
+   "retrieved_at": "2026-10-01T22:44Z"
+  },
+  {
+   "jurisdiction": "Boston, MA",
+   "level": "city",
+   "category": "screening_restrictions",
+   "status": "in_force",
+   "title": "Boston Fair Chance Tenant Selection Policy \u2013 credit score and credit history limits",
+   "requirement": "Covered Boston landlords can't approve or deny you based on your credit score. They may look at credit history only when you have no rental history. Having no credit history is not enough reason to reject you, and they must consider mitigating circumstances such as a third-party payer or a disability.",
+   "key_value": "No use of credit score; credit history only in lieu of rental history",
+   "coverage_conditions": "Housing providers that receive Boston DND funding or land, or have BPDA Inclusionary Development Policy income-restricted units.",
+   "exemptions": null,
+   "effective_date": "2017-02",
+   "citation": "Boston DND Fair Chance Tenant Selection Policy (Feb. 2017), Credit \u00a7 5",
+   "quoted_span": "a) The agent agrees not to use the applicant credit score to approve or deny housing",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": [
+     "Property receives DND funding or land, or the unit is an income-restricted unit under the BPDA Inclusionary Development Policy"
+    ]
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.7,
+   "span_match_score": 100,
+   "source_doc_id": "D010",
+   "source_url": "https://drive.google.com/file/d/1j4U3fDtmnYuwcUWhx5BMUcXc1bnKT8Ku/view?usp=sharing",
+   "source_type": "official city-linked policy",
+   "source_origin": "corpus",
+   "retrieved_at": "2026-10-01T22:44Z"
+  }
+ ],
+ "dropped": [],
+ "notes": "This is an administrative policy, not an ordinance. It binds housing providers through their funding or land agreements, so no municipal code citation exists. The document gives no enforcement or penalty terms. It is dated February 2017 and its status as of 2026 is assumed, not confirmed. It covers only subsidized or inclusionary units, which an assessor record can't identify. Some points are recommendations rather than requirements and were not extracted: the appeals process, using DCJIS to verify records, and assigning the same staff to review records consistently."
+}

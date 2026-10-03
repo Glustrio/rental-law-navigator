@@ -1,0 +1,47 @@
+{
+ "doc_id": "D078",
+ "doc_sha256": "448b85d4e40d5f17d12acf18db20aab4b9337b2e196099fee46c65f46dae91cc",
+ "model": "claude-opus-5-5",
+ "extracted_at": "2026-10-03T21:24:10+00:00",
+ "rules": [
+  {
+   "jurisdiction": "San Francisco, CA",
+   "level": "city",
+   "category": "screening_restrictions",
+   "status": "in_force",
+   "title": "Fair Chance Ordinance: arrest and conviction history in affordable housing",
+   "requirement": "In San Francisco affordable housing, landlords and housing providers are limited in how they can use an applicant's arrest or conviction history when deciding on the application. If you think your record was used improperly, you can contact the Human Rights Commission.",
+   "key_value": null,
+   "coverage_conditions": "Applicants and residents of affordable housing in San Francisco who have an arrest or conviction history.",
+   "exemptions": null,
+   "effective_date": null,
+   "citation": "San Francisco Fair Chance Ordinance",
+   "quoted_span": "San Francisco's Fair Chance Ordinance protects residents with arrest or conviction history in affordable housing decisions.",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": [
+     "Housing must be affordable housing (subsidized or income-restricted), which an assessor record does not show"
+    ]
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.55,
+   "span_match_score": 100,
+   "source_doc_id": "D078",
+   "source_url": "https://sf-hrc.org/fair-chance-ordinance",
+   "source_type": "official",
+   "source_origin": "corpus",
+   "retrieved_at": "2026-10-01T22:37Z"
+  }
+ ],
+ "dropped": [],
+ "notes": "The document is mostly the Human Rights Commission's landing page. It mentions only one in-scope rule, in a single sentence: the Fair Chance Ordinance covers arrest and conviction history in affordable housing decisions. The page gives no municipal code section, effective date, details of the limits, or exemptions. The citation is left as the ordinance's name. A reviewer may want to confirm the official code section (believed to be S.F. Police Code Article 49) and the effective date from the ordinance text. The general link about housing discrimination doesn't state any specific screening rule (for example, source of income), so I didn't extract one."
+}

@@ -1,0 +1,9 @@
+{
+ "doc_id": "D013",
+ "doc_sha256": "49b8ad77c47ac7a12afc5a1451cc38e8d908b45f83c922cbd2ee2eb320b715f0",
+ "model": "claude-opus-5-5",
+ "extracted_at": "2026-10-03T21:21:38+00:00",
+ "rules": [],
+ "dropped": [],
+ "notes": "The document covers only Boston's Housing Stability Notification Act (City of Boston Ordinances Sec. 10-11.7). It requires landlords ending a tenancy to give tenants a Notice of Tenants' Rights and Resources along with the notice to quit or notice of non-renewal, and to file a copy with the City through an online portal. The penalty is a warning for a first offense, then up to $300 per day, enforced by Inspectional Services; a violation does not halt the eviction. This is a notice-to-quit procedure, which is excluded from scope. It does not limit the reasons a landlord may end a tenancy and has no relocation rules, so it is not recorded as just_cause_eviction. A reviewer who treats notice requirements as part of just_cause_eviction could add it as one Boston city rule, in force, effective date not stated in the document. No rules on rent caps, deposits, fees, screening or algorithmic rent-setting appear in the document."
+}

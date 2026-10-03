@@ -1,0 +1,82 @@
+{
+ "digest": "1b12787e9fdb207e",
+ "rules": [
+  {
+   "member_indices": [
+    0,
+    1
+   ],
+   "quote_index": 0,
+   "status": "in_force",
+   "title": "Statewide prohibition on local rent control (M.G.L. c. 40P)",
+   "requirement": "Massachusetts cities and towns may not pass, keep or enforce rent control, so there is no state or local legal cap on rent increases in Massachusetts. A city or town that accepts Chapter 40P may adopt only a narrow, voluntary program in which the city pays owners the gap between market rent and controlled rent.",
+   "key_value": "Local rent control prohibited",
+   "coverage_conditions": "Applies to every city and town in Massachusetts. The only local rent regulation allowed is the voluntary, city-compensated kind described in \u00a7 4(a) to (c).",
+   "exemptions": "A city or town that accepts Chapter 40P may adopt rent control only if: (a) owners may opt out after six months; (b) it does not regulate occupancy, services, evictions, condo conversion or removal of units, and it does not apply to units of owners with fewer than ten rental units or units with a fair market rent over $400; and (c) the city pays owners the difference between market and controlled rent from its general funds.",
+   "effective_date": null,
+   "citation": "M.G.L. c. 40P, \u00a7 4",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": "This is a long-settled state ban on local rent control. The records show no local rent control ordinance currently in effect that conflicts with it. A 2026 ballot initiative to repeal it (Initiative Petition 25-21) was kept off the ballot by the SJC on June 23, 2026, so the ban stays in force.",
+   "confidence": 0.9,
+   "reason": "Merged the official statute text with a secondary source describing the same Chapter 40P ban."
+  },
+  {
+   "member_indices": [
+    2,
+    3
+   ],
+   "quote_index": 2,
+   "status": "failed",
+   "title": "Initiative Petition 25-21: statewide cap on rent increases (blocked from the November 2026 ballot)",
+   "requirement": "This proposal would have limited yearly rent increases to the lower of CPI or 5% and repealed G.L. c. 40P. It is not law: on June 23, 2026 the SJC ruled it cannot appear on the November 2026 ballot because it includes a religious exemption.",
+   "key_value": "Lesser of CPI or 5% annually (proposed; not enacted)",
+   "coverage_conditions": "Would have applied to most residential rental units statewide.",
+   "exemptions": "Owner-occupied buildings with four or fewer units; new units less than 10 years old; certain publicly regulated units; short-term rentals; and units in facilities run only for educational, religious or nonprofit purposes.",
+   "effective_date": null,
+   "citation": "Initiative Petition 25-21; Cella v. Attorney General, SJC-13893",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [
+    {
+     "description": "Owner-occupied buildings with four or fewer units",
+     "if_units_at_most": 4,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    },
+    {
+     "description": "Newly built units less than 10 years old",
+     "if_units_at_most": null,
+     "if_built_after": null,
+     "if_younger_than_years": 10,
+     "needs_unknown_fact": false
+    }
+   ],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.85,
+   "reason": "Merged two secondary sources describing the same 2026 rent-cap ballot initiative that the SJC blocked. It is kept separate from enacted law because it failed."
+  }
+ ]
+}

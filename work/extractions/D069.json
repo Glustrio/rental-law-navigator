@@ -1,0 +1,45 @@
+{
+ "doc_id": "D069",
+ "doc_sha256": "1fdbfb48743a46429c3f47dbd8d08c665739202361661e1a2f19b94bb0ec43a6",
+ "model": "claude-opus-5-5",
+ "extracted_at": "2026-10-03T21:23:59+00:00",
+ "rules": [
+  {
+   "jurisdiction": "NJ",
+   "level": "state",
+   "category": "algorithmic_rent_setting",
+   "status": "not_yet_effective",
+   "title": "FAIR Act: ban on algorithmic rent-setting coordinators and parallel pricing coordination",
+   "requirement": "Landlords may not pay for or use the services of a coordinator, meaning software or an algorithmic device that sets or recommends rents, lease terms or occupancy levels using competitors' nonpublic data. No one may perform a coordinating function or take part in parallel pricing coordination. Violations count as violations of the New Jersey Antitrust Act, and complaints can be filed with the Attorney General.",
+   "key_value": "Use of algorithmic rent-setting coordinators prohibited; violation of NJ Antitrust Act",
+   "coverage_conditions": "All rental property owners of residential dwelling units in New Jersey, including their agents, representatives and subcontractors, and all coordinators and other persons. Covers any house, apartment, accessory unit or other unit used as a primary residence.",
+   "exemptions": "Not a coordinating function: research or statistical use that is not used to set prices; free public rent estimates; real estate brokerage databases that do not set or recommend prices; and government affordability controls. Simple non-AI spreadsheets and query-only databases are not algorithmic devices. Inpatient medical care, long-term care and detention facilities are excluded.",
+   "effective_date": "2027-07-01",
+   "citation": "P.L. 2026, c.43 (A3497 1R ACS), \u00a74 (C.56:9-20 to 56:9-26)",
+   "quoted_span": "a.\u00a0\u00a0\u00a0\u00a0 a rental property owner, or any agent,\nrepresentative, or subcontractor thereof, to receive, subscribe to, contract\nfor, or otherwise exchange any form of consideration in return for the use of,\nthe services of a coordinator;",
+   "penalty": "Violation of the New Jersey Antitrust Act (P.L.1970, c.73); remedies of C.56:9-6 through 56:9-17 apply.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "preemption",
+   "conflict_note": "Section 6(b) bars municipalities from enacting ordinances that conflict with this act. Any local algorithmic-pricing ordinance in Jersey City, Hoboken or Newark that conflicts with the act could be preempted. The effective date is computed from the approval date of July 20, 2026: 'first day of the twelfth month next following the date of enactment' gives 2027-07-01.",
+   "confidence": 0.88,
+   "span_match_score": 100,
+   "source_doc_id": "D069",
+   "source_url": "https://pub.njleg.state.nj.us/Bills/2026/AL26/43_.HTM",
+   "source_type": "official",
+   "source_origin": "corpus",
+   "retrieved_at": "2026-10-01T22:56Z"
+  }
+ ],
+ "dropped": [],
+ "notes": "The document is the enacted chapter law P.L. 2026, c.43, approved July 20, 2026. Section 9 sets the effective date as the first day of the twelfth month after enactment, which I computed as 2027-07-01. The bill text does not state that date directly. Several sections (3, 4, 6) set one prohibition, so I extracted them as a single rule. Section 6(b) also bars conflicting municipal ordinances; I recorded this as a preemption conflict. The bill does not map sections to codified section numbers (for example, it does not say \u00a74 = C.56:9-23), so the citation gives the full range C.56:9-20 to 56:9-26. The quoted span keeps the source's line breaks."
+}

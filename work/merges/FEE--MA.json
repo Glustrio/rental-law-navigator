@@ -1,0 +1,96 @@
+{
+ "digest": "850ba7ae08c6e857",
+ "rules": [
+  {
+   "member_indices": [
+    0,
+    1
+   ],
+   "quote_index": 0,
+   "status": "in_force",
+   "title": "Limit on up-front charges at start of tenancy (no application fees)",
+   "requirement": "At or before move-in, a Massachusetts landlord or the landlord's agent can only require first month's rent, last month's rent, a security deposit of no more than one month's rent, and the cost of buying and installing a new lock and key. Application fees, screening fees, and other up-front charges are not allowed, and neither is a broker fee paid to the landlord's agent.",
+   "key_value": "First month + last month + security deposit (\u22641 month) + lock/key cost; nothing else",
+   "coverage_conditions": "All residential leases and tenancies in Massachusetts. Since the amendment effective August 1, 2025, the rule also covers agents of the landlord.",
+   "exemptions": "Leases or rentals of 100 days or less for vacation or recreational purposes. Licensed real estate brokers may charge fees under separate rules (254 CMR 7; M.G.L. c. 112, \u00a7 87DDD1/2).",
+   "effective_date": null,
+   "citation": "M.G.L. c. 186, \u00a7 15B(1)(b)",
+   "penalty": "Damages. A secondary source cites Perry v. Equity Residential (2014), where a federal court awarded triple damages and attorney's fees for unlawful application fees.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.85,
+   "reason": "I merged the official statute text and a law-firm summary of the same up-front charge limit in c. 186 \u00a7 15B. The effective date is left blank because the base rule is older than the 2025 amendment that added agents, and no member gives its original date."
+  },
+  {
+   "member_indices": [
+    2
+   ],
+   "quote_index": 2,
+   "status": "in_force",
+   "title": "Licensed broker fee disclosure to prospective tenants",
+   "requirement": "Only a licensed broker may charge a prospective tenant a fee for finding an apartment. At the first personal meeting, the broker must tell you in writing the fee amount, when and how it is paid, and whether it depends on a lease being signed.",
+   "key_value": "Written fee disclosure at first personal meeting; broker must be licensed",
+   "coverage_conditions": "Real estate brokers and salespeople who deal with prospective tenants in Massachusetts. The only source is secondary and does not cover the 2025 change on who pays the broker fee (see M.G.L. c. 112, \u00a7 87DDD1/2).",
+   "exemptions": null,
+   "effective_date": null,
+   "citation": "254 CMR 7.00",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.55,
+   "reason": "This is a separate regulation of the broker licensing board, supported only by a law-firm source, so it is kept apart from the statutes."
+  },
+  {
+   "member_indices": [
+    3
+   ],
+   "quote_index": 3,
+   "status": "in_force",
+   "title": "Broker fee paid only by the party that hired the broker",
+   "requirement": "A rental broker's fee may be charged only to the party (landlord or tenant) who first hired the broker under a contract. If the landlord or the landlord's agent hired the broker, you cannot be made to pay the broker fee.",
+   "key_value": "Broker fee paid only by the party that engaged the broker",
+   "coverage_conditions": "Residential rentals in Massachusetts where a licensed real estate broker or salesperson is used to find a tenant or a rental unit.",
+   "exemptions": null,
+   "effective_date": "2025-08-01",
+   "citation": "M.G.L. c. 112, \u00a7 87DDD1/2 (as amended by St. 2025, c. 9, \u00a7 43)",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.9,
+   "reason": "This is a separate statute (the broker licensing law, as amended in 2025) on who pays broker fees, supported by official text."
+  }
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "digest": "5eb0b5154d5b39a2",
+ "rules": [
+  {
+   "member_indices": [
+    0,
+    1,
+    3
+   ],
+   "quote_index": 0,
+   "status": "in_force",
+   "title": "Los Angeles Just Cause Ordinance (JCO)",
+   "requirement": "If you rent a unit in Los Angeles that is not under the Rent Stabilization Ordinance, your landlord can evict you only for a reason listed in the ordinance once you have lived there six months or your first lease has ended, whichever comes first. You cannot be evicted for unpaid rent unless you owe more than one month's Fair Market Rent for your unit's bedroom size, and a no-fault eviction requires relocation assistance.",
+   "key_value": "Just cause required after 6 months' tenancy or first lease expiry; non-payment eviction only if arrears exceed one month's FMR (since Mar 27, 2023); relocation assistance for no-fault evictions",
+   "coverage_conditions": "Most residential rental units in the City of Los Angeles that the RSO does not cover. This includes buildings built after October 1, 1978 and properties with a single single-family dwelling. Protection starts once the tenant has lived in the unit six months or the original lease has expired, whichever comes first. Every eviction notice must be filed with LAHD within 3 business days of service. The Fair Market Rent non-payment threshold took effect March 27, 2023 and applies to both RSO and JCO units.",
+   "exemptions": "Transient hotels, licensed care facilities, fraternity/sorority houses, the owner's roommate, some cooperatives, some nonprofit homeless or short-term substance-abuse facilities, some HACLA or government-owned properties, and units already covered by the RSO, which has its own just-cause rules. For a JCO single-family home owned by a natural person who owns no more than four dwelling units and a single-family home in the City, relocation assistance is one month's rent (per LAHD relocation page).",
+   "effective_date": null,
+   "citation": "L.A. Mun. Code ch. XVI, art. 5 (\u00a7 165.00 et seq.)",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [
+    {
+     "description": "JCO single-family dwelling owned by a natural person who owns no more than four dwelling units and a single-family home in the City: relocation assistance is reduced to one month's rent",
+     "if_units_at_most": 1,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    }
+   ],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": true,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.75,
+   "reason": "Merged the two LAHD descriptions of the JCO with the 2023 FMR non-payment threshold amendment, which applies to JCO units. Removed the tenancy-length condition from building coverage because it is about the tenant, not the building."
+  },
+  {
+   "member_indices": [
+    2,
+    4,
+    5,
+    6,
+    7
+   ],
+   "quote_index": 4,
+   "status": "in_force",
+   "title": "RSO just-cause eviction, landlord declaration and relocation assistance",
+   "requirement": "Your landlord can evict you from a rent-stabilized (RSO) unit only for a listed reason. At-fault reasons include nonpayment, a lease violation, nuisance, illegal use or refusing access. No-fault reasons include owner or family move-in, a required resident manager, demolition or Ellis withdrawal, a government order, HUD sale or conversion to affordable housing. For a no-fault eviction the landlord must first file a Declaration of Intent to Evict with LAHD and then file the notice with LAHD within 3 days of serving it. The landlord must also make relocation assistance available within 15 days of the notice: for July 1, 2026 to June 30, 2027 that is $11,000 or $14,400 for eligible tenants and $23,150 or $27,400 for qualified tenants.",
+   "key_value": "Eligible $11,000/$14,400; Qualified $23,150/$27,400; Mom & Pop $10,550/$21,250 (Jul 1, 2026 \u2013 Jun 30, 2027); payment within 15 days of notice",
+   "coverage_conditions": "Rental units subject to the RSO: first built on or before October 1, 1978, plus replacement units. LAHD applies the same no-fault grounds, declaration filing and relocation amounts to JCO units. Relocation amounts rise every July 1.",
+   "exemptions": "Resident-manager evictions are allowed only if required by law, an affordable housing covenant or a regulatory agreement. Mom and Pop properties pay reduced relocation for owner or relative move-in evictions. No relocation is due when replacing a resident manager or for natural-disaster hazards the landlord did not cause. Accumulated unpaid rent may be offset against relocation, except for government orders to vacate.",
+   "effective_date": null,
+   "citation": "L.A. Mun. Code \u00a7 151.09 (Rent Stabilization Ordinance, ch. XV, art. 1)",
+   "penalty": "An eviction without the filed Landlord Declaration violates the RSO, and the tenant may raise this as a defense. If relocation is not paid, the tenant may raise that as an affirmative defense, file a complaint with LAHD, or bring a private right of action.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": "1978-10-01",
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [
+    {
+     "description": "Mom and Pop reduced relocation for owner or relative move-in evictions: the building has 4 or fewer units, the provision was not used in the prior 3 years, the landlord owns no more than 4 units plus one single-family home in the City, and the relative owns no LA residential property",
+     "if_units_at_most": 4,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    }
+   ],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": true,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.8,
+   "reason": "Merged the RSO just-cause provisions under LAMC \u00a7 151.09 (grounds, LAHD declaration and notice filing, relocation amounts and timing). These candidates cite both the RSO and JCO, and they are placed here because \u00a7 151.09 is their primary RSO cite."
+  },
+  {
+   "member_indices": [
+    8,
+    9
+   ],
+   "quote_index": 9,
+   "status": "in_force",
+   "title": "Resident Protections Ordinance (RPO) for demolition of Protected Units",
+   "requirement": "If a Protected Unit (including every RSO unit) is demolished for new construction, you may stay until 6 months before construction starts and must get 6 months' notice. You may return if the demolition does not go ahead, and some tenants have a right of first refusal in the new building. Lower-income tenants get enhanced relocation: $115,480, $96,750 or $87,450 under the standardized option for July 1, 2026 to June 30, 2027.",
+   "key_value": "6-month notice; enhanced relocation $115,480 / $96,750 / $87,450 (Jul 1, 2026 \u2013 Jun 30, 2027)",
+   "coverage_conditions": "Protected Units demolished for new construction within 5 years after the Notice of Intent to Withdraw or Declaration of Intent to Evict is filed. A Protected Unit is one that was rent-restricted or rented to lower-income households in the past 5 years, or withdrawn under the Ellis Act in the past 10 years; all RSO units count. Enhanced relocation applies to tenants at or below 80% AMI.",
+   "exemptions": "Tenants above low income, or units that are not Protected Units, get the regular RSO/JCO relocation amounts, and the owner pays whichever amount is highest.",
+   "effective_date": "2025-02-11",
+   "citation": "L.A. Ordinance Nos. 188481 and 188482 (Resident Protections Ordinance)",
+   "penalty": "Financial penalties start at $250,000 per displaced unit, and LAHD may withhold permit clearances.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": [
+     "Unit must be a Protected Unit (rent-restricted or rented to lower-income households in the past 5 years, or Ellis-withdrawn in the past 10 years) being demolished for new construction"
+    ]
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.8,
+   "reason": "Merged the two LAHD records on the Resident Protections Ordinance (relocation and occupancy rights) because they describe the same ordinances."
+  }
+ ]
+}

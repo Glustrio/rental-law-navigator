@@ -1,0 +1,45 @@
+{
+ "doc_id": "D060",
+ "doc_sha256": "224404d65c6fd16e7c074585bd8f574ae5490c0e0f3b184d444aa1de4c985a6a",
+ "model": "claude-opus-5-5",
+ "extracted_at": "2026-10-03T21:23:44+00:00",
+ "rules": [
+  {
+   "jurisdiction": "NJ",
+   "level": "state",
+   "category": "algorithmic_rent_setting",
+   "status": "not_yet_effective",
+   "title": "FAIR Act: ban on algorithmic rent-setting using competitors' nonpublic data",
+   "requirement": "Starting July 1, 2027, New Jersey residential landlords may not use algorithmic revenue management software that uses competitors' nonpublic leasing information to set or recommend rents. Software providers and other coordinators may not use such tools to coordinate pricing among competing landlords. Tenants can report violations through an Attorney General complaint portal.",
+   "key_value": "Prohibits use of algorithmic revenue management software using competitors' nonpublic data; effective 2027-07-01",
+   "coverage_conditions": "Residential rental property owners, property managers, software providers and 'coordinators' in New Jersey.",
+   "exemptions": "Does not prohibit spreadsheets requiring human analysis, publicly available rent estimation tools, traditional real estate listing databases, or government-administered affordable housing programs.",
+   "effective_date": "2027-07-01",
+   "citation": "P.L. 2026, c. 43",
+   "quoted_span": "The FAIR Act prohibits residential rental property owners from using algorithmic revenue management software that collects or processes competitors' nonpublic leasing information to set or recommend rental prices.",
+   "penalty": "Attorney General complaint portal; existing remedies under the New Jersey Antitrust Act are preserved. Specific penalties are not stated in this source.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.75,
+   "span_match_score": 100,
+   "source_doc_id": "D060",
+   "source_url": "https://daypitney.com/new-jersey-enacts-fair-act-to-prohibit-algorithmic-rent-setting-practices",
+   "source_type": "secondary (law firm / news / mirror)",
+   "source_origin": "supplement",
+   "retrieved_at": "2026-10-03 21:04 UTC"
+  }
+ ],
+ "dropped": [],
+ "notes": "The source is a secondary law-firm alert from Day Pitney (July 31, 2026), not the official statute text. The source says the law was signed July 20, 2026 and takes effect July 1, 2027, so as of 2026-10-01 it is not_yet_effective. The ban on landlords and the ban on software providers/'coordinators' coordinating pricing come from the same act, so they are recorded as one rule. The rule's citation is the session law number (P.L. 2026, c. 43). No N.J.S.A. section is given. The source does not give penalty amounts. The AG complaint portal requirement is noted in the penalty field and was not recorded as its own rule."
+}

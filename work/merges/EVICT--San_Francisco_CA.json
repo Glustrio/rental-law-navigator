@@ -1,0 +1,39 @@
+{
+ "digest": "c42da45ef9f87587",
+ "rules": [
+  {
+   "member_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "quote_index": 0,
+   "status": "in_force",
+   "title": "San Francisco Rent Ordinance just cause eviction and relocation payment requirements",
+   "requirement": "A landlord can evict you from a unit covered by the San Francisco Rent Ordinance only for one of the 17 just causes in Section 37.9(a), and that cause must be the main reason for the eviction. A lease ending or a change of owner is not just cause. For no-fault evictions (owner or relative move-in, demolition or permanent removal, temporary capital improvement work of 20 days or more, substantial rehabilitation, or an Ellis Act withdrawal), the landlord must also pay relocation money.",
+   "key_value": "17 enumerated just causes. Relocation for eviction notices served 3/1/26 to 2/28/27: (1) for owner move-in, demolition, capital improvement or rehabilitation evictions, $8,245 per tenant, up to $24,733 per unit, plus $5,497 for each tenant who is 60 or older or disabled, or for a household with minor children; (2) for Ellis Act evictions, $11,110.05 per tenant, up to $33,330.13 per unit, plus $7,443.90 for each tenant who is 62 or older or disabled.",
+   "coverage_conditions": "Covers rental units under the San Francisco Rent Ordinance. The eviction rules also reach some tenancies that are exempt from the rent increase limits: units that first got a certificate of occupancy after June 13, 1979, tenancies where Costa-Hawkins allows rent increases, and some units whose rent another government agency regulates. A landlord also needs just cause to take away housing services such as parking, storage or laundry. Relocation amounts depend on the date the notice is served and are adjusted every March 1.",
+   "exemptions": "The sources do not list the units that are fully exempt from the eviction rules. Relocation for temporary capital improvement evictions of less than 20 days is governed by Cal. Civ. Code \u00a7 1947.9, not \u00a7 37.9C. A landlord may temporarily remove some housing services for soft-story seismic retrofit work if the landlord follows Section 37.2(r).",
+   "effective_date": null,
+   "citation": "S.F. Admin. Code ch. 37 (\u00a7\u00a7 37.9, 37.9A, 37.9C)",
+   "penalty": "An unlawful eviction or attempted eviction may expose the landlord to substantial civil and/or criminal liability.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": true,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.8,
+   "reason": "All five candidates describe provisions of the San Francisco Rent Ordinance (Admin. Code ch. 37): just cause in \u00a7 37.9, no-fault relocation in \u00a7 37.9C and Ellis Act relocation in \u00a7 37.9A, so they merge into one record. The 3/1/2026 dates are annual relocation adjustments, not the ordinance's effective date."
+  }
+ ]
+}

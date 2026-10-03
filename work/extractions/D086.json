@@ -1,0 +1,45 @@
+{
+ "doc_id": "D086",
+ "doc_sha256": "76af270bf90792e5d1e6511ef3d90bf266157fda9ed08a6813e9dff47980ebd3",
+ "model": "claude-opus-5-5",
+ "extracted_at": "2026-10-03T21:24:52+00:00",
+ "rules": [
+  {
+   "jurisdiction": "Santa Ana, CA",
+   "level": "city",
+   "category": "algorithmic_rent_setting",
+   "status": "in_force",
+   "title": "Santa Ana ban on algorithmic rent-pricing devices",
+   "requirement": "Landlords in Santa Ana may not use automated or algorithmic software to set rents, and such software may not be sold or licensed for that use in the city. Landlords who use it can be fined $1,000.",
+   "key_value": "Prohibits sale, licensing and use of Algorithmic Devices; $1,000 fine",
+   "coverage_conditions": "Landlords and apartment owners of residential rental property in Santa Ana. The article does not give the ordinance's exact coverage or definitions.",
+   "exemptions": null,
+   "effective_date": "2026",
+   "citation": "Santa Ana ordinance (number not stated in source; second reading adopted March 2026)",
+   "quoted_span": "\u201cThe purpose and intent of this [ordinance] is to protect the residents of Santa Ana from artificially inflated rental rates and unfair rent increases by prohibiting the sale, licensing and use of Algorithmic Devices,\u201d according to a staff report.",
+   "penalty": "Fine of $1,000. Enforced mostly through the city's existing code enforcement system.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "preemption",
+   "conflict_note": "The Apartment Association of Orange County says the city should let the 'recently adopted state regulations' (California's algorithmic pricing law, not named in the article) handle this, and says the ordinance exposes the city to legal liability. Check whether state law preempts or limits the local ban. The exact effective date is not stated. Final adoption was at a Tuesday council meeting shortly before March 9, 2026 (first reading Feb. 17). California ordinances usually take effect about 30 days after adoption, which would be around April 2026.",
+   "confidence": 0.6,
+   "span_match_score": 100,
+   "source_doc_id": "D086",
+   "source_url": "https://www.ocbj.com/real-estate/santa-ana-bans-landlords-from-using-ai-apartment-rent-pricing-software/",
+   "source_type": "secondary (law firm / news / mirror)",
+   "source_origin": "supplement",
+   "retrieved_at": "2026-10-03 21:04 UTC"
+  }
+ ],
+ "dropped": [],
+ "notes": "This is a secondary source (an Orange County Business Journal news article, March 9, 2026). It gives no ordinance number, municipal code section or exact effective date. The article says the Tuesday vote was 'the final step to officially put the ordinance into effect,' so the ban is treated as in force by 2026-10-01. The article also says San Francisco, San Diego and Berkeley have already banned similar algorithmic rent-pricing software, but gives no citations, dates or details, so no separate records were made for them. Check them against official sources. It also mentions 'recently adopted state regulations' in California without naming the law, so no state record was extracted. The DOJ\u2013RealPage settlement is federal and out of scope."
+}

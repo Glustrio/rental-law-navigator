@@ -1,0 +1,45 @@
+{
+ "doc_id": "D047",
+ "doc_sha256": "9af3e5eba834b37a5115fef298f5e2a1c1fc0b93c1d69500aea9d6bc7ee24b93",
+ "model": "claude-opus-5-5",
+ "extracted_at": "2026-10-03T21:23:12+00:00",
+ "rules": [
+  {
+   "jurisdiction": "MA",
+   "level": "state",
+   "category": "algorithmic_rent_setting",
+   "status": "pending",
+   "title": "S.2983 \u2013 An Act prohibiting algorithmic rent setting (bill)",
+   "requirement": "This is a proposed Massachusetts bill that would ban algorithmic rent setting. It is not law. As of the most recent action (3/12/2026), it was sitting in the Senate Committee on Ways and Means.",
+   "key_value": null,
+   "coverage_conditions": "Residential rental housing in Massachusetts. This page does not show the bill's text, so its coverage details are unknown.",
+   "exemptions": null,
+   "effective_date": null,
+   "citation": "Mass. Senate Bill S.2983 (194th General Court)",
+   "quoted_span": "The committee on Housing, to whom was referred the petitions (accompanied by bill, Senate, No. 994) of Cindy F. Friedman and Julian Cyr for legislation to prohibit algorithmic rent setting",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.8,
+   "span_match_score": 100,
+   "source_doc_id": "D047",
+   "source_url": "https://malegislature.gov/Bills/194/S2983/BillHistory",
+   "source_type": "official",
+   "source_origin": "corpus",
+   "retrieved_at": "2026-10-01T22:36Z"
+  }
+ ],
+ "dropped": [],
+ "notes": "The only page available is the bill-history page, not the bill text. Because of that, the bill's details (what it bans, exemptions, penalties, effective date) can't be extracted. S.2983 is a redraft of S.994 (Friedman/Cyr) and S.1016 (Moore/Jehlen/Eldridge). Both were combined into this one pending record and not recorded separately. I marked it 'pending' because the 194th session runs until early January 2027 and the bill was still in Senate Ways and Means with no later action shown. However, formal sessions ended July 31, 2026, so the bill is unlikely to pass. A reviewer should check whether it dies when the session ends and should then be marked 'failed'."
+}

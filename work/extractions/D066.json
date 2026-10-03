@@ -1,0 +1,53 @@
+{
+ "doc_id": "D066",
+ "doc_sha256": "e06aa61acf6ddb50631d5be3c89c4029caccb13c0dcc7be888e0e64f8b182c2e",
+ "model": "claude-opus-5-5",
+ "extracted_at": "2026-10-03T21:23:57+00:00",
+ "rules": [
+  {
+   "jurisdiction": "NJ",
+   "level": "state",
+   "category": "application_screening_fees",
+   "status": "in_force",
+   "title": "Residential rental application fee capped at $50 (CPI-adjusted)",
+   "requirement": "A New Jersey landlord or their agent cannot charge more than $50 as an application or similar fee to apply to rent or sublease a home. Starting January 1, 2027, the cap is adjusted each year for inflation. If you are overcharged, you can report it to the Division of Consumer Affairs, and the overcharge is refunded to you from the penalty collected.",
+   "key_value": "$50 maximum application fee; adjusted annually by CPI starting January 1, 2027 (increases only)",
+   "coverage_conditions": "Landlords and their agents renting or subleasing residential rental property for dwelling purposes in New Jersey.",
+   "exemptions": "Dwelling units in one-family or two-family dwellings; New Jersey Real Estate Commission licensees unless the licensee is the landlord.",
+   "effective_date": "2026-05-01",
+   "citation": "N.J.S.A. 46:8-18.1 (P.L. 2025, c.405)",
+   "quoted_span": "shall not require an application or other similar fee to apply\nto lease or sublease a residential rental property for dwelling purposes, which\nexceeds $50.",
+   "penalty": "Up to $500 for a first offense, $750 for a second, and $1,000 for each later offense, through summary proceedings under the Penalty Enforcement Law. The amount wrongfully charged is refunded to the applicant from the penalty.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [
+    {
+     "description": "Dwelling unit in a one-family or two-family dwelling",
+     "if_units_at_most": 2,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": false
+    }
+   ],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.9,
+   "span_match_score": 100,
+   "source_doc_id": "D066",
+   "source_url": "https://pub.njleg.gov/bills/2024/PL25/405_.HTM",
+   "source_type": "official",
+   "source_origin": "corpus",
+   "retrieved_at": "2026-10-01T22:37Z"
+  }
+ ],
+ "dropped": [],
+ "notes": "The document does not state the effective date directly. It says the act takes effect 'on the first day of the fourth month next following the date of enactment,' and the act was approved January 20, 2026. Counting February as the first month next gives May 1, 2026. Reading 'fourth month next' differently could shift the date by a month, but the rule is in force as of 2026-10-01 either way. The yearly CPI adjustment starts January 1, 2027, and the Division of Consumer Affairs publishes the adjusted cap. The real estate licensee exemption is left out of exemption_tests because it depends on who charges the fee, not on the building. Section 2 (rules to be adopted by the Division of Consumer Affairs, including a way to report violations) is part of putting the fee cap into effect, so it is not recorded as a separate rule."
+}

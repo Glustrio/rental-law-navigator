@@ -1,0 +1,37 @@
+{
+ "digest": "a5992c0a5fedf48c",
+ "rules": [
+  {
+   "member_indices": [
+    0
+   ],
+   "quote_index": 0,
+   "status": "in_force",
+   "title": "Fair Chance Ordinance: limits on using arrest and conviction history in affordable housing",
+   "requirement": "In San Francisco affordable housing, landlords and housing providers are limited in how they can use an applicant's arrest or conviction history when deciding on an application. If you think your record was used improperly, you can contact the San Francisco Human Rights Commission.",
+   "key_value": null,
+   "coverage_conditions": "Applicants and residents of affordable housing in San Francisco who have an arrest or conviction history. The source limits the rule to affordable housing, and an assessor record cannot show whether a building is affordable housing.",
+   "exemptions": null,
+   "effective_date": null,
+   "citation": "S.F. Police Code art. 49 (Fair Chance Ordinance)",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": [
+     "Housing must be affordable housing (subsidized or income-restricted), which an assessor record does not show"
+    ]
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.55,
+   "reason": "There was only one candidate, an official page summarizing the Fair Chance Ordinance's housing provisions, so it stays as its own record. The short summary gives no effective date or penalty."
+  }
+ ]
+}

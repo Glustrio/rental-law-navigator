@@ -1,0 +1,82 @@
+{
+ "doc_id": "D030",
+ "doc_sha256": "4c74bcca97890153bf7a83f48466b69a2bbd087914b1cc6e71546fddac43d23e",
+ "model": "claude-opus-5-5",
+ "extracted_at": "2026-10-03T21:22:26+00:00",
+ "rules": [
+  {
+   "jurisdiction": "Cambridge, MA",
+   "level": "city",
+   "category": "algorithmic_rent_setting",
+   "status": "pending",
+   "title": "Policy order to develop ban on algorithmic rent-pricing services",
+   "requirement": "The Cambridge City Council has started work on a possible ban on residential property management companies using algorithmic or AI rent-pricing services. Nothing is banned yet. The City Manager must draft policy options or ordinance language and bring them back to the council.",
+   "key_value": null,
+   "coverage_conditions": "Residential property management companies that contract with companies using algorithmic or AI-driven models to recommend rents.",
+   "exemptions": null,
+   "effective_date": null,
+   "citation": "Cambridge City Council policy order (number not stated in source)",
+   "quoted_span": "City council also unanimously passed a policy order initiating steps to ban residential property management companies from contracting companies that use algorithmic and AI-driven models to recommend what they should charge for rent.",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": [
+     "Whether the property is run by a management company that uses an algorithmic rent-pricing service"
+    ]
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.6,
+   "span_match_score": 100,
+   "source_doc_id": "D030",
+   "source_url": "https://www.cambridgeday.com/?p=158097",
+   "source_type": "secondary (law firm / news / mirror)",
+   "source_origin": "supplement",
+   "retrieved_at": "2026-10-03 21:04 UTC"
+  },
+  {
+   "jurisdiction": "MA",
+   "level": "state",
+   "category": "algorithmic_rent_setting",
+   "status": "pending",
+   "title": "Proposed state bills banning algorithmic rent-pricing",
+   "requirement": "Bills in the Massachusetts House and Senate would ban algorithmic rent-pricing in the rental market. None has passed, so there is no state ban yet.",
+   "key_value": null,
+   "coverage_conditions": "Rental market statewide (details not given in source).",
+   "exemptions": null,
+   "effective_date": null,
+   "citation": "Massachusetts House and Senate bills (bill numbers not stated in source)",
+   "quoted_span": "Bills banning the practice in the rental market are also working their way through the Massachusetts state",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.4,
+   "span_match_score": 100,
+   "source_doc_id": "D030",
+   "source_url": "https://www.cambridgeday.com/?p=158097",
+   "source_type": "secondary (law firm / news / mirror)",
+   "source_origin": "supplement",
+   "retrieved_at": "2026-10-03 21:04 UTC"
+  }
+ ],
+ "dropped": [],
+ "notes": "Secondary source (Cambridge Day news article). The short-term rental registration petition (fine of $300 per day per violation, 90-day stay limit) is out of scope and was not extracted. The article says Berkeley, CA is among cities 'trying to take matters into their own hands by enacting bans' on algorithmic rent-setting. The wording does not make clear whether Berkeley's ban is enacted, and no citation or details are given, so no Berkeley record was created; it should be checked against official Berkeley sources. Providence, RI is out of scope. The federal DOJ/RealPage settlement is not a rule in scope. The article gives no bill numbers for the Massachusetts state bills or the Cambridge policy order, and no date for the council meeting."
+}

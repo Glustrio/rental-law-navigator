@@ -1,0 +1,9 @@
+{
+ "doc_id": "D051",
+ "doc_sha256": "6c1a194983bb0ee7079919bb8ef0e77efcd35d73dd9795853024a6eaaf5b24de",
+ "model": "claude-opus-5-5",
+ "extracted_at": "2026-10-03T21:23:17+00:00",
+ "rules": [],
+ "dropped": [],
+ "notes": "D051 is M.G.L. c. 186, \u00a7 12, the Massachusetts law on notice to end a tenancy at will. It sets notice periods: three months, or the rent interval or 30 days, whichever is longer. It sets a 14-day notice to quit for nonpayment, with a once-a-year right to cure within 10 days and required wording in that notice. It also covers continuances when government payments are late. All of this is notice-to-quit procedure, which is out of scope. The section does not limit the reasons a landlord may end a tenancy at will, so it is not a just-cause eviction rule. It says nothing about rent caps, security deposits, application or broker fees, screening, or rent-setting software. Nothing was extracted."
+}

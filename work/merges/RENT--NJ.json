@@ -1,0 +1,105 @@
+{
+ "digest": "67fe94f5fd135549",
+ "rules": [
+  {
+   "member_indices": [
+    0
+   ],
+   "quote_index": 0,
+   "status": "in_force",
+   "title": "No statewide rent cap; increases must not be unconscionable and must follow local rent control",
+   "requirement": "New Jersey has no statewide rent cap, but any rent increase must not be unconscionable, must follow any local rent control ordinance, and can only take effect through a notice to quit and an offer of a new lease, not in the middle of a lease. If you think an increase is unconscionable, you can challenge it before a local rent board or in court.",
+   "key_value": "No numeric state cap; unconscionability standard",
+   "coverage_conditions": "Residential tenancies covered by the Anti-Eviction Act. The just-cause summary from the same guide lists apartment buildings, single-family homes, mobile homes and rooming houses.",
+   "exemptions": "Owner-occupied premises with two or fewer rental units are not covered by the Anti-Eviction Act. The same guide's just-cause summary also excludes transient or seasonal hotel and motel guests and units held in trust for a developmentally disabled family member.",
+   "effective_date": null,
+   "citation": "N.J.S.A. 2A:18-61.1(f)",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [
+    {
+     "description": "Owner-occupied premises with two or fewer rental units (up to 3 units total)",
+     "if_units_at_most": 3,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    }
+   ],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": "This rule applies alongside local rent control ordinances, which set numeric caps where they exist. That is not a conflict.",
+   "confidence": 0.75,
+   "reason": "A single candidate on the Anti-Eviction Act's unconscionable-increase standard. It is a different law from the other two candidates, so it was not merged."
+  },
+  {
+   "member_indices": [
+    1
+   ],
+   "quote_index": 1,
+   "status": "in_force",
+   "title": "Newly constructed multiple dwellings exempt from local rent control for 30 years",
+   "requirement": "Newly built multiple dwellings are exempt from local rent control ordinances for 30 years after construction is completed. Check with your local rent control board or municipal clerk to see whether your unit is covered.",
+   "key_value": "30-year exemption from local rent control",
+   "coverage_conditions": "Newly constructed multiple dwellings, for 30 years after construction is completed. The source does not give the statute's qualifying date or how completion is defined.",
+   "exemptions": null,
+   "effective_date": null,
+   "citation": "N.J.S.A. 2A:42-84.5",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "preemption",
+   "conflict_note": "This state law overrides municipal rent control ordinances (e.g. Jersey City, Hoboken, Newark) for multiple dwellings completed within the past 30 years. The source notes that units with HUD or NJHMFA subsidies may also be exempt from local rent control.",
+   "confidence": 0.65,
+   "reason": "A single candidate on the state's new-construction exemption from local rent control. It is a separate statute from the other candidates."
+  },
+  {
+   "member_indices": [
+    2
+   ],
+   "quote_index": 2,
+   "status": "in_force",
+   "title": "No rent increases to cover costs of condominium or cooperative conversion",
+   "requirement": "When your building is converted to condominium, cooperative or fee simple ownership, the landlord may not raise your rent to cover costs that come only from the conversion. Increases for new services or amenities are still allowed.",
+   "key_value": null,
+   "coverage_conditions": "Tenants in buildings being converted to condominium, cooperative or fee simple ownership.",
+   "exemptions": "Increases for new services or amenities are allowed.",
+   "effective_date": null,
+   "citation": "N.J.S.A. 2A:18-61.31",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": [
+     "building is undergoing conversion to condominium, cooperative or fee simple ownership"
+    ]
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.7,
+   "reason": "A single candidate on the conversion-cost rent increase ban. It is a separate statutory provision from the other candidates."
+  }
+ ]
+}

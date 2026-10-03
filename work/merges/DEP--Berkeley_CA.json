@@ -1,0 +1,51 @@
+{
+ "digest": "821a107ae1257297",
+ "rules": [
+  {
+   "member_indices": [
+    0,
+    1
+   ],
+   "quote_index": 0,
+   "status": "in_force",
+   "title": "Annual interest on security deposits for units covered by the Rent Ordinance",
+   "requirement": "If your Berkeley unit is fully or partially covered by the Rent Ordinance, your landlord must pay you interest on your security deposit at the end of each year. If you move out before the year ends, the landlord must pay a prorated amount.",
+   "key_value": "Interest paid every year; prorated at move-out",
+   "coverage_conditions": "Units fully or partially covered by the Berkeley Rent Stabilization and Eviction for Good Cause Ordinance. That includes pre-1980 multifamily units, new construction (certificate of occupancy after June 1980), single-family homes, most condominiums, rooming houses and listed subsidized units. Fully exempt units are not covered.",
+   "exemptions": "Fully exempt units: Golden Duplex (a duplex owner-occupied on Dec 31, 1979 and still owner-occupied); units where the owner shares a kitchen or bath with the tenant and lived on the property when the tenancy began; tenancies that began after Nov 7, 2018 on properties with an ADU where either unit is owner-occupied; university dormitories; nonprofit cooperatives.",
+   "effective_date": null,
+   "citation": "Berkeley Mun. Code ch. 13.76",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [
+    {
+     "description": "Golden Duplex: a duplex that was owner-occupied on Dec 31, 1979 and is owner-occupied now is exempt.",
+     "if_units_at_most": 2,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    },
+    {
+     "description": "Tenancies that began after Nov 7, 2018 on a property where one unit is an ADU and either unit is owner-occupied are exempt.",
+     "if_units_at_most": 2,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    }
+   ],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.75,
+   "reason": "Both candidates are official Rent Board pages describing the same deposit-interest requirement under Berkeley Mun. Code ch. 13.76. D007 states the requirement and D009 gives the coverage and exemption breakdown, so they were merged into one record."
+  }
+ ]
+}

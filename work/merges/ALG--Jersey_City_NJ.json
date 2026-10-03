@@ -1,0 +1,37 @@
+{
+ "digest": "97579a81809d7e98",
+ "rules": [
+  {
+   "member_indices": [
+    0,
+    1,
+    2
+   ],
+   "quote_index": 0,
+   "status": "in_force",
+   "title": "Jersey City ban on algorithmic rent-setting (rent coordination) services",
+   "requirement": "Jersey City landlords may not use algorithmic rent coordination services, such as RealPage-type software that uses nonpublic competitor data to set rents. If you think your rent was set this way, you can report it to the city or take legal action yourself.",
+   "key_value": "Fines up to $2,000 per day",
+   "coverage_conditions": "Applies to all residential rental landlords in Jersey City. The sources do not limit it by building size or age. It is not tied to the Chapter 260 rule that rent control covers only buildings with 5 or more units.",
+   "exemptions": "A news report says real estate agents/realtors are excluded. Someone also asked for an amendment to exclude Multiple Listing Services, but the report does not say whether it was adopted.",
+   "effective_date": "2025-06",
+   "citation": "Jersey City Code \u00a7 218-12",
+   "penalty": "Fines up to $2,000 per day. Both the city and private parties can enforce the ban.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": "A news report says a U.S. House bill under consideration would bar municipalities from passing these bans. That is only a possible future preemption, not a current conflict. Council members also questioned whether the ban can be enforced and said amendments may follow.",
+   "confidence": 0.6,
+   "reason": "Merged two law-firm summaries citing Jersey City Code \u00a7 218-12 and a news report on the council's 9-0 approval of the same rent-algorithm ban, since all three describe one ordinance."
+  }
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "doc_id": "D045",
+ "doc_sha256": "8bc537dfe4d0e00b829147ae82ba11d40bef8a2b0696f487c417ca517673bba7",
+ "model": "claude-opus-5-5",
+ "extracted_at": "2026-10-03T21:23:01+00:00",
+ "rules": [
+  {
+   "jurisdiction": "MA",
+   "level": "state",
+   "category": "algorithmic_rent_setting",
+   "status": "pending",
+   "title": "H.5222 \u2013 An Act relative to preventing algorithmic rent fixing in the rental housing market",
+   "requirement": "Proposed Massachusetts bill that would limit the use of algorithms to fix or coordinate rents. It is not law. As of the retrieval date it sat in the House Committee on Ways and Means.",
+   "key_value": null,
+   "coverage_conditions": "Rental housing market in Massachusetts. The bill text is not in this document, so its scope is unknown.",
+   "exemptions": null,
+   "effective_date": null,
+   "citation": "Mass. H.5222 (194th Gen. Ct.)",
+   "quoted_span": "An Act relative to preventing algorithmic rent fixing in the rental housing market",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "other",
+   "conflict_note": "Status is uncertain. The page lists the 194th session as current and shows H.5222 referred to House Ways and Means on 3/12/2026, with no later action. Formal sessions of the 194th General Court usually end July 31, 2026, so the bill is likely stalled, though it technically stays alive until the session ends in early January 2027. Check again after the session closes and mark it failed if it was not enacted.",
+   "confidence": 0.6,
+   "span_match_score": 100,
+   "source_doc_id": "D045",
+   "source_url": "https://malegislature.gov/Bills/194/H5222",
+   "source_type": "official",
+   "source_origin": "corpus",
+   "retrieved_at": "2026-10-01T22:36Z"
+  }
+ ],
+ "dropped": [],
+ "notes": "The document is only a bill-status page on malegislature.gov. It has no bill text. The only information is the title, sponsor (Joint Committee on Housing), and history: on 3/12/2026 it was reported as a new draft of H1564 and referred to House Ways and Means. The substance of the bill (prohibitions, coverage, penalties) can't be extracted. The status is set to pending because the session is still listed as current, but the bill is probably stalled after formal sessions ended on July 31, 2026. A reviewer should check the final status at the end of the session."
+}

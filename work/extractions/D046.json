@@ -1,0 +1,45 @@
+{
+ "doc_id": "D046",
+ "doc_sha256": "6ea5313d0a656ab73b683e72b594cf143ee61bd6923ee1d9f3df46682248004d",
+ "model": "claude-opus-5-5",
+ "extracted_at": "2026-10-03T21:23:12+00:00",
+ "rules": [
+  {
+   "jurisdiction": "MA",
+   "level": "state",
+   "category": "algorithmic_rent_setting",
+   "status": "pending",
+   "title": "An Act prohibiting algorithmic rent setting (S.2983, 194th General Court)",
+   "requirement": "Proposed Massachusetts bill that would ban algorithmic rent setting. It is not law. It was reported favorably by the Joint Committee on Housing on March 12, 2026 and sent to Senate Ways and Means.",
+   "key_value": null,
+   "coverage_conditions": "Residential rental housing market in Massachusetts. The page does not show the bill text, so the scope is unknown.",
+   "exemptions": null,
+   "effective_date": null,
+   "citation": "Mass. S.2983 (194th Gen. Ct. 2025-2026)",
+   "quoted_span": "Senate, March 12, 2026 -- The committee on Housing, to whom was referred the petitions (accompanied by bill, Senate, No. 994) of Cindy F. Friedman and Julian Cyr for legislation to prohibit algorithmic rent setting;",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.75,
+   "span_match_score": 100,
+   "source_doc_id": "D046",
+   "source_url": "https://malegislature.gov/Bills/194/S2983",
+   "source_type": "official",
+   "source_origin": "corpus",
+   "retrieved_at": "2026-10-01T22:36Z"
+  }
+ ],
+ "dropped": [],
+ "notes": "The page has the bill's history but not its text, so the substantive terms (what is banned, exemptions, penalties, effective date) can't be pulled from it. S.2983 is a new draft that replaces S.994 (Friedman/Cyr) and S.1016 (Moore/Jehlen/Eldridge). The last action shown is on 3/12/2026: referred to Senate Ways and Means. I marked it pending because the page still lists the 194th session as current and the session doesn't formally end until early January 2027. However, formal sessions in the second year usually end July 31, and nothing has happened since March. If it isn't taken up in an informal session, it should be changed to failed when the session ends. A reviewer should check this."
+}

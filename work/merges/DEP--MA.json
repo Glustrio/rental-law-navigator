@@ -1,0 +1,38 @@
+{
+ "digest": "c02417972586881d",
+ "rules": [
+  {
+   "member_indices": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "quote_index": 0,
+   "status": "in_force",
+   "title": "Massachusetts security deposit law: one-month cap, separate bank account, interest, and 30-day return",
+   "requirement": "Your landlord cannot charge a security deposit of more than one month's rent, and must keep it in a separate interest-bearing account at a Massachusetts bank, giving you a receipt within 30 days and a written statement of the unit's condition within 10 days. The landlord must pay you 5% interest a year (or the lower rate the bank actually paid), and must return the deposit plus interest within 30 days after your tenancy ends, minus only allowed deductions backed by a sworn, itemized list.",
+   "key_value": "Max 1 month's rent; separate MA bank account; 5% annual interest (or the lower actual bank rate); return within 30 days; treble damages",
+   "coverage_conditions": "All residential tenancies in Massachusetts where the landlord collects a security deposit or last month's rent in advance. Interest on the security deposit is owed when the landlord holds it for one year or longer.",
+   "exemptions": "Leases or rentals of 100 days or less for vacation or recreational purposes.",
+   "effective_date": null,
+   "citation": "M.G.L. c. 186, \u00a7 15B",
+   "penalty": "If the landlord fails to put the deposit in a proper account, fails to return it within 30 days, or tries to enforce lease terms that conflict with the law, the landlord loses the right to keep any of it. The tenant can recover three times the deposit or balance owed, plus 5% interest, court costs and reasonable attorney's fees (\u00a7 15B(6), (7)). If interest on last month's rent is not paid, the tenant can recover three times that interest plus costs and fees. If the yearly interest is not paid, the tenant may deduct it from the next rent payment.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.9,
+   "reason": "All four candidates describe different parts of the same statute, M.G.L. c. 186, \u00a7 15B (the cap, how the deposit must be held, interest, and return), so they were merged into one record."
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "digest": "564e9c6cdd522589",
+ "rules": [
+  {
+   "member_indices": [
+    0
+   ],
+   "quote_index": 0,
+   "status": "in_force",
+   "title": "Ban on retaliatory termination, rent increase, or change in tenancy terms",
+   "requirement": "A landlord may not threaten or retaliate against you, for example with a termination notice, rent increase or major change in lease terms, because you reported code violations, took legal action under housing laws, complained in writing, or organized or joined a tenants' union. A termination notice (other than for nonpayment), a rent increase, or a major change in terms within six months of that activity is presumed to be retaliation, and you can recover 1 to 3 months' rent or your actual damages, whichever is greater, plus attorney's fees.",
+   "key_value": "6-month rebuttable presumption of reprisal; damages of 1\u20133 months' rent or actual damages, whichever is greater",
+   "coverage_conditions": "Tenants of residential premises in Massachusetts. Applies to any person or agent who threatens or takes reprisals.",
+   "exemptions": "Termination notices for nonpayment of rent do not trigger the presumption.",
+   "effective_date": null,
+   "citation": "M.G.L. c. 186, \u00a7 18",
+   "penalty": "Damages of at least one month's rent and up to three months' rent, or actual damages, whichever is greater, plus costs and reasonable attorney's fees. Any lease waiver is void.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.65,
+   "reason": "Only one candidate, from official statute text. It is kept as a single record for the anti-retaliation statute; the record does not give an effective date."
+  }
+ ]
+}

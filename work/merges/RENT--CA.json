@@ -1,0 +1,60 @@
+{
+ "digest": "bd0b5510aee65be3",
+ "rules": [
+  {
+   "member_indices": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "quote_index": 0,
+   "status": "in_force",
+   "title": "California statewide rent cap (Tenant Protection Act, AB 1482)",
+   "requirement": "If your unit is covered, your landlord cannot raise your rent by more than 5% plus local inflation (CPI), or 10%, whichever is lower, over any 12-month period. The rent can go up no more than twice in 12 months. When a new tenancy starts, the landlord can set any starting rent; the cap applies to increases after that.",
+   "key_value": "Lower of 5% + regional CPI or 10% per 12 months; at most 2 increases per 12 months",
+   "coverage_conditions": "Residential real property in California, including units in mobilehome parks, whose certificate of occupancy was issued more than 15 years ago (rolling test; mobilehomes are excepted from the 15-year rule). The cap applies to rent increases on or after March 15, 2019 (February 18, 2021 for mobilehome tenancies). It does not apply where a local rent control law limits increases below this cap, such as the Los Angeles RSO.",
+   "exemptions": "Housing whose certificate of occupancy was issued within the previous 15 years; affordable housing restricted by deed, regulatory agreement or other recorded document, or covered by a housing subsidy agreement; school or university dormitories; units under local rent control that limits increases below the state cap; owner-occupied duplexes where the owner lived in one unit at the start of the tenancy and still does, and neither unit is an ADU or JADU; separately alienable units (such as single-family homes and condos) not owned by a REIT, a corporation, or an LLC with a corporate member, if the tenant got the required written exemption notice; mobilehome homeowners.",
+   "effective_date": "2020-01-01",
+   "citation": "Cal. Civ. Code \u00a7 1947.12",
+   "penalty": "The tenant can sue for an injunction and damages equal to the overcharge, plus attorney's fees and costs at the court's discretion. For willful, oppressive, fraudulent or malicious conduct, the court can award up to three times the overcharge. The Attorney General and the city attorney or county counsel can also enforce the law. The statute of limitations is three years, and any waiver of these rights is void.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": 15,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [
+    {
+     "description": "Housing that got its certificate of occupancy within the previous 15 years (rolling test)",
+     "if_units_at_most": null,
+     "if_built_after": null,
+     "if_younger_than_years": 15,
+     "needs_unknown_fact": false
+    },
+    {
+     "description": "Owner-occupied duplex: the owner lived in one unit as a principal residence at the start of the tenancy and still lives there, and neither unit is an ADU or JADU",
+     "if_units_at_most": 2,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    },
+    {
+     "description": "Separately alienable single-family home or condo not owned by a REIT, a corporation, or an LLC with a corporate member, where the tenant received the required written exemption notice",
+     "if_units_at_most": 1,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    }
+   ],
+   "yields_to_local_rule": true,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": "AB 1482 took effect January 1, 2020 and applies to rent increases on or after March 15, 2019. The current text, as amended by SB 567, took effect January 1, 2024 and became operative April 1, 2024. That is an amendment, not a conflict. The section is repealed on January 1, 2030. The LA housing page lists past maximums (8.8%, then 8.9% for Aug 1, 2024\u2013Jul 31, 2025), but none of the sources give the maximum for the current period.",
+   "confidence": 0.92,
+   "reason": "I merged all four candidates into one record because they all describe Cal. Civ. Code \u00a7 1947.12: the statute text (D024), the LA housing page (D040), and two San Diego notices that only refer to the statute (D073, D077)."
+  }
+ ]
+}

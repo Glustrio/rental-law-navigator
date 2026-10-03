@@ -1,0 +1,45 @@
+{
+ "doc_id": "D035",
+ "doc_sha256": "6bd3ce2246cfa313cb7c6eb192bd00635b5dd29ed48715ae24b9817a8bbc6485",
+ "model": "claude-opus-5-5",
+ "extracted_at": "2026-10-03T21:22:28+00:00",
+ "rules": [
+  {
+   "jurisdiction": "Jersey City, NJ",
+   "level": "city",
+   "category": "algorithmic_rent_setting",
+   "status": "in_force",
+   "title": "Jersey City ban on rent-setting algorithms (RealPage-type software)",
+   "requirement": "Landlords in Jersey City may not use rent-setting algorithms or revenue management software such as RealPage that rely on nonpublic competitor data to set rents. Tenants who think their rent was set this way can raise it with the city or seek legal action.",
+   "key_value": "Ban on algorithmic rent-setting using nonpublic data; reported fine of $2,000 per day",
+   "coverage_conditions": "Residential rental landlords in Jersey City using rent-setting algorithms or revenue management software. Reported to exclude real estate agents.",
+   "exemptions": "Reportedly excludes real estate agents/realtors. An amendment was also sought to exclude Multiple Listing Services; the article does not say whether it was adopted.",
+   "effective_date": null,
+   "citation": "Jersey City ordinance banning rent-setting algorithms (ordinance number not stated in source)",
+   "quoted_span": "The Jersey City Council unanimously approved (9-0) a measure banning rent-setting algorithms such as RealPage, as well as increasing benefits for laborers, at last night\u2019s meeting.",
+   "penalty": "Reported $2,000 daily fine (mentioned by a public commenter, not confirmed from ordinance text)",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "other",
+   "conflict_note": "The article quotes Solomon as saying the U.S. House was considering a bill that would bar municipalities from passing these bans, so federal preemption is possible. Council members questioned whether the ban can be enforced and said amendments may come. The article gives no passage date, effective date or ordinance number. 'In force' is inferred from final passage.",
+   "confidence": 0.6,
+   "span_match_score": 100,
+   "source_doc_id": "D035",
+   "source_url": "https://hudsoncountyview.com/jersey-city-council-approves-realpage-ban-and-increasing-benefits-for-laborers/",
+   "source_type": "secondary (law firm / news / mirror)",
+   "source_origin": "supplement",
+   "retrieved_at": "2026-10-03 21:04 UTC"
+  }
+ ],
+ "dropped": [],
+ "notes": "The source is a news article from Hudson County View, not the ordinance text. It gives no ordinance number, passage date or effective date. Status is set to in_force because the article reports final passage (9-0) and the article is presumably from 2025. Someone should check the official ordinance for the citation, effective date, penalty amount and exemptions (realtors, MLS). The $2,000 daily fine comes from a public commenter. The laborer minimum-wage ordinance is out of scope. The mention of Jersey City rent control is too vague to extract as a rule. The NJ Attorney General's RealPage lawsuit is litigation, not a rule."
+}

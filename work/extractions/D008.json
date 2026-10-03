@@ -1,0 +1,55 @@
+{
+ "doc_id": "D008",
+ "doc_sha256": "969848595b70aa2ff7b9e8420f610c36b914521c4ea4dd1d0656be776e90c39f",
+ "model": "claude-opus-5-5",
+ "extracted_at": "2026-10-03T21:21:20+00:00",
+ "rules": [
+  {
+   "jurisdiction": "Berkeley, CA",
+   "level": "city",
+   "category": "rent_increase_limits",
+   "status": "in_force",
+   "title": "Berkeley 2026 Annual General Adjustment (AGA) of 1.0%",
+   "requirement": "For 2026, eligible landlords of rent-controlled Berkeley units may raise the 2025 permanent rent ceiling by no more than 1.0%, and not before January 1, 2026. The AGA does not apply to tenancies that began on or after January 1, 2025 with rents set under Costa-Hawkins. Landlords must meet Regulation 1148's eligibility conditions and give tenants the required notice.",
+   "key_value": "1.0% (65% of Bay Area CPI change of 1.5%, July 2024\u2013June 2025)",
+   "coverage_conditions": "Berkeley units under rent ceilings (covered by the Rent Stabilization Ordinance), where the landlord meets the eligibility conditions in Rent Board Regulation 1148. Does not apply to tenancies that began on or after January 1, 2025 with rents set under the Costa-Hawkins Rental Housing Act.",
+   "exemptions": "Tenancies that began on or after January 1, 2025 with rent set under Costa-Hawkins; landlords who do not meet Regulation 1148's eligibility conditions.",
+   "effective_date": "2026-01-01",
+   "citation": "Berkeley Municipal Code \u00a7 13.76.110A; Berkeley Rent Board Regulation 1148",
+   "quoted_span": "eligible landlords to increase the 2025 permanent rent ceilings by 1.0% no earlier than",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": [
+     "Landlord must be eligible under Rent Board Regulation 1148 (conditions not stated in this notice)"
+    ]
+   },
+   "exemption_tests": [
+    {
+     "description": "AGA does not apply to tenancies that began on or after Jan 1, 2025 with rent set under Costa-Hawkins (vacancy decontrol)",
+     "if_units_at_most": null,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    }
+   ],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": true,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.9,
+   "span_match_score": 100,
+   "source_doc_id": "D008",
+   "source_url": "https://rentboard.berkeleyca.gov/sites/default/files/documents/AGA%20Public%20Notice.pdf",
+   "source_type": "official",
+   "source_origin": "corpus",
+   "retrieved_at": "2026-10-01T22:35Z"
+  }
+ ],
+ "dropped": [],
+ "notes": "The document is an official Berkeley Rent Board notice about the 2026 AGA. It also mentions the 65%-of-CPI formula that voters approved in November 2004 (BMC 13.76.110A). I treated that formula as the basis for this single AGA rule, not as a separate record. The notice does not say which buildings are covered: there are no unit-count or year-built tests, such as the Costa-Hawkins pre-1980 limit or Berkeley's coverage provisions. For that reason I left the coverage fields null. The eligibility conditions and the required tenant notice are in Regulation 1148, which this document does not include."
+}

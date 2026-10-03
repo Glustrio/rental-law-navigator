@@ -1,0 +1,53 @@
+{
+ "doc_id": "D029",
+ "doc_sha256": "ce40e4d452c15e43e1bb07e7f03f7bd2bd738b2da614d1d21b7826f7e581e01c",
+ "model": "claude-opus-5-5",
+ "extracted_at": "2026-10-03T21:22:21+00:00",
+ "rules": [
+  {
+   "jurisdiction": "Cambridge, MA",
+   "level": "city",
+   "category": "screening_restrictions",
+   "status": "in_force",
+   "title": "Cambridge Fair Housing Ordinance: no source-of-income discrimination in tenant selection",
+   "requirement": "Cambridge landlords and rental agents may not refuse to rent to you or treat you differently because of your source of income, including a Section 8 voucher or public benefits. They may screen applicants on ability to pay the rent and to care for the apartment only if they apply the same standard to every applicant.",
+   "key_value": "Source of income (incl. Section 8 and public benefits) is a protected category",
+   "coverage_conditions": "Real estate transactions in Cambridge, including viewing or renting an apartment and the terms and conditions of a tenancy.",
+   "exemptions": "Two-family dwellings where the owner lives in the building.",
+   "effective_date": null,
+   "citation": "Cambridge Municipal Code ch. 14.04 (Fair Housing Ordinance)",
+   "quoted_span": "Source of Income, includes Section 8 and public benefits",
+   "penalty": "After a hearing, the Commission may file a criminal complaint, impose civil fines of up to $300 per violation, seek an injunction in Superior Court, and seek damages. After a probable cause finding, either party may move the case to Superior Court or the Attorney General.",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [
+    {
+     "description": "Two-family dwelling occupied by the owner",
+     "if_units_at_most": 2,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    }
+   ],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.8,
+   "span_match_score": 100,
+   "source_doc_id": "D029",
+   "source_url": "https://www.cambridgema.gov/departments/humanrightscommission",
+   "source_type": "official",
+   "source_origin": "corpus",
+   "retrieved_at": "2026-10-01T22:36Z"
+  }
+ ],
+ "dropped": [],
+ "notes": "The source is a Cambridge Human Rights Commission web page that summarizes the ordinance, not the ordinance text. It gives no effective date for the source-of-income protection. The page also mentions the Human Rights Ordinance (ch. 2.76), the Tenants' Rights and Resources Notification Ordinance and the Attorney General's guide, but they were left out: they either cover areas outside the six categories or have no substantive rule text on this page. The page names other protected categories (race, disability, family status and others), but they were not recorded as separate rules because they are general anti-discrimination protections. The citation was built from the chapter number named on the page."
+}

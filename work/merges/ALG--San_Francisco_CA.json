@@ -1,0 +1,38 @@
+{
+ "digest": "0915c8427af8c1f1",
+ "rules": [
+  {
+   "member_indices": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "quote_index": 3,
+   "status": "in_force",
+   "title": "Ban on algorithmic rent-setting devices using nonpublic competitor data",
+   "requirement": "In San Francisco, landlords may not use, and vendors may not sell, software that analyzes nonpublic competitor rental data to recommend rents or manage occupancy for residential units. Tenants or the City Attorney can sue violators for damages, an injunction and civil penalties.",
+   "key_value": "Sale or use banned; civil penalties up to $1,000 per violation, and each month of use for each affected unit can count as a separate violation",
+   "coverage_conditions": "All residential rental units in San Francisco. The ban applies to anyone who sells or uses algorithmic devices that analyze nonpublic competitor rental data to recommend rents or occupancy levels.",
+   "exemptions": null,
+   "effective_date": "2024-10-14",
+   "citation": "S.F. Admin. Code \u00a7 37.10C",
+   "penalty": "Civil action by a tenant or the City Attorney for damages, injunctive relief and civil penalties of up to $1,000 per violation. Each month of use for each affected unit may be a separate violation (S.F. Admin. Code \u00a7 37.10C(b), (d)).",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.85,
+   "reason": "All four candidates describe the same San Francisco ordinance (Admin. Code \u00a7 37.10C, approved July 2024). Official sources were merged with law-firm and news sources, and the official source gives the exact effective date, which matches the October 2024 month in the secondary sources."
+  }
+ ]
+}

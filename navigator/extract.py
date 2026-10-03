@@ -15,10 +15,9 @@ import time
 from concurrent.futures import ThreadPoolExecutor
 from datetime import UTC, datetime
 
-import anthropic
-
 from navigator.corpus import load_documents, locate_span
 from navigator.llm import call_json
+from navigator.llm import client as make_client
 from navigator.paths import AUDIT_LOG, DEFAULT_AS_OF, EXTRACTIONS
 
 CATEGORIES = [
@@ -112,6 +111,30 @@ OUTPUT_SCHEMA = {
     "additionalProperties": False,
 }
 
+COVERAGE_GUIDE = """- coverage and exemption_tests describe which BUILDINGS a rule protects. They are evaluated by code
+  against an assessor record that has only year built, unit count and a use code.
+  * Whether a landlord engages in the regulated conduct (uses pricing software, asks about criminal history,
+    charges a fee) is never a coverage condition. A ban covers every rental in its jurisdiction unless the
+    law limits it to certain buildings.
+  * Fill min_units, max_units, built_on_or_before (certificate-of-occupancy cutoffs), built_after and
+    min_building_age_years (rolling tests, e.g. 15 for "issued more than 15 years ago") only when the law states them.
+  * unresolvable_conditions: only when the rule as a whole is limited to a class of buildings that can't be
+    identified from that record (e.g. a policy that binds only city-funded or income-restricted housing).
+  * exemption_tests: include an exemption only if it has a unit or age limit (owner-occupied duplex = units
+    at most 2; small-landlord rule = units at most 4; new construction = younger than N years or built after a date),
+    with needs_unknown_fact true when owner type or occupancy still matters within that limit.
+    Leave out open-ended exemptions that can't be tested and rarely reach ordinary apartment buildings
+    (government or deed-restricted affordable housing, hotels, dormitories, care facilities, roommates, condos
+    sold by individuals); describe them in the exemptions text instead.
+- yields_to_local_rule: a state rule that steps aside where a local rule in the same category covers the unit
+  (California's statewide rent cap and just-cause law yield to stricter local rent control and just-cause ordinances).
+  displaces_state_rule: the local rule that governs instead in those units.
+- conflict_type: preemption only for a real, unsettled conflict between levels of government. A state law
+  that bars or overrides local ordinances on a subject where cities already have their own ordinances (or
+  that says municipalities may not adopt conflicting rules) is preemption, even if it is not yet effective;
+  name the affected local ordinances in conflict_note when the records show them. Ordinary precedence (local rent control governing instead of a
+  state cap) is not a conflict. inconsistent_sources when published sources give different dates or values."""
+
 SYSTEM = f"""You extract rental housing rules from legal and government documents into structured records.
 
 Scope: residential rental housing in these jurisdictions only: {", ".join(JURISDICTIONS)}.
@@ -133,18 +156,15 @@ Status is as of {DEFAULT_AS_OF}:
 - failed: a proposal that was struck down, withdrawn, or died at the end of its legislative session. Record these too, so nobody reports them as law.
 
 Rules for each record:
-- One record per distinct rule. Several sections of one law that set one requirement are one rule.
+- One record per law and category: all the provisions of one statute or ordinance in one category form a
+  single record (e.g. the deposit cap, the small-landlord exception and the return deadline of one deposit
+  statute are one record). Separate records only for separate laws, bills or ballot questions.
   A document that only restates another jurisdiction's law (a city page explaining state deposit law) still yields that rule, with the jurisdiction of the law itself.
 - quoted_span must be copied exactly from the document text, character for character, 20 to 400 characters, and must support the rule.
   Never paraphrase inside quoted_span. If no sentence in this document supports the rule, do not output the rule.
 - citation is the official legal citation of the rule (statute section, municipal code section, bill number), not the URL.
 - Never invent a rule, date or citation the document does not support. Prefer leaving a field null.
-- coverage: fill the numeric and date tests only when the law states them. A certificate of occupancy cutoff goes in built_on_or_before.
-  unresolvable_conditions is for coverage conditions an assessor record cannot answer and that matter for ordinary multifamily rentals; keep it empty otherwise.
-- exemption_tests: list the exemptions that could matter for apartment buildings, with their unit or age limits.
-  Skip exemptions for categories that are never ordinary apartments (hotels, hospitals, dormitories, nonprofit care facilities).
-- yields_to_local_rule / displaces_state_rule capture precedence between state and local rules in the same category.
-- conflict_note: flag preemption risks (a state law that may override a local ordinance), two different published effective dates, or other disagreements.
+{COVERAGE_GUIDE}
 - confidence: lower it for secondary sources (news, law firms) and for rules whose details are partly missing.
 """
 
@@ -219,7 +239,7 @@ def main():
         docs = [d for d in docs if not (EXTRACTIONS / f"{d.doc_id}.json").exists()]
     print(f"extracting {len(docs)} documents", file=sys.stderr)
 
-    client = anthropic.Anthropic()
+    client = make_client()
     failures = []
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
         futures = {pool.submit(extract_document, client, d): d.doc_id for d in docs}

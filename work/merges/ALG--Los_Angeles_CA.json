@@ -1,0 +1,35 @@
+{
+ "digest": "d1ae69e53d4cefd4",
+ "rules": [
+  {
+   "member_indices": [
+    0
+   ],
+   "quote_index": 0,
+   "status": "pending",
+   "title": "Motion to study a ban on algorithmic rent-setting software (CF 24-1031)",
+   "requirement": "This is only a proposal. It asks the Los Angeles Housing Department to report on how many landlords use algorithm-based software to set rents and whether a ban is feasible. No ban is in effect under this motion.",
+   "key_value": "LAHD report on feasibility of banning algorithmic rent-setting software",
+   "coverage_conditions": "Would concern rental housing in the City of Los Angeles. The motion states no building-type limits.",
+   "exemptions": null,
+   "effective_date": null,
+   "citation": "Los Angeles Council File 24-1031 (Motion, Sept. 3, 2024)",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.5,
+   "reason": "Only one candidate: an official council motion asking for a feasibility report, so it stays a pending proposal."
+  }
+ ]
+}

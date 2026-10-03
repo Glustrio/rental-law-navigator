@@ -1,0 +1,45 @@
+{
+ "doc_id": "D048",
+ "doc_sha256": "090647f489ec5f03c114df23b74c28a107a7e0b855e382969c27dbf58a55837d",
+ "model": "claude-opus-5-5",
+ "extracted_at": "2026-10-03T21:20:41+00:00",
+ "rules": [
+  {
+   "jurisdiction": "MA",
+   "level": "state",
+   "category": "rent_increase_limits",
+   "status": "in_force",
+   "title": "Statewide prohibition on local rent control",
+   "requirement": "Massachusetts cities and towns, including Boston and Cambridge, may not pass, keep or enforce rent control. The only exception is a city or town that accepts Chapter 40P. Even then, owners can opt out after six months, small owners and higher-rent units are excluded, and the city must pay owners the gap between market rent and controlled rent. In practice, renters in Massachusetts have no local rent cap.",
+   "key_value": "Local rent control prohibited",
+   "coverage_conditions": "Applies to all cities and towns in Massachusetts. It bars municipal rent control except the narrow, voluntary, city-compensated regulation allowed in clauses (a) to (c).",
+   "exemptions": "A city or town that accepts Chapter 40P may adopt rent control only if: (a) owner compliance is voluntary after six months; (b) it does not regulate occupancy, services, evictions, condo conversion or removal of units, and does not apply to units owned by someone with fewer than ten rental units or with a fair market rent over $400; and (c) the city pays owners the difference between market and controlled rent from its general funds.",
+   "effective_date": null,
+   "citation": "M.G.L. c. 40P, \u00a7 4",
+   "quoted_span": "Section 4. No city or town may enact, maintain or enforce rent control of any kind, except that any city or town that accepts this chapter may adopt rent control regulation that provides:",
+   "penalty": null,
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "preemption",
+   "conflict_note": "This state law preempts local rent control in every Massachusetts municipality, including Boston and Cambridge. Any local rent stabilization ordinance or home-rule petition in those cities cannot take effect unless the Legislature acts, or this chapter is amended or repealed (for example, by a statewide ballot measure). The effective date is not given in this document.",
+   "confidence": 0.95,
+   "span_match_score": 100,
+   "source_doc_id": "D048",
+   "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleVII/Chapter40P/Section4",
+   "source_type": "official",
+   "source_origin": "corpus",
+   "retrieved_at": "2026-10-01T22:36Z"
+  }
+ ],
+ "dropped": [],
+ "notes": "The document contains one in-scope rule: the M.G.L. c. 40P \u00a7 4 ban on local rent control, filed as rent_increase_limits because it is a state law forbidding local rent control. Clause (b)'s ban on regulating evictions only limits what an allowed rent control scheme may cover. It is not its own just-cause rule, so it was not extracted separately. The effective date of Chapter 40P (adopted by the 1994 ballot initiative) is not stated in the document, so it was left null. Check this record against any Boston or Cambridge rent stabilization records, and against any pending 2026 statewide ballot measure to repeal or amend Chapter 40P. Neither appears in this document."
+}

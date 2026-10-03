@@ -1,0 +1,55 @@
+{
+ "digest": "9ed45d7d29bd27a0",
+ "rules": [
+  {
+   "member_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "quote_index": 5,
+   "status": "in_force",
+   "title": "California security deposit law: one-month cap, 21-day return, deduction limits and photo documentation",
+   "requirement": "A landlord may not take a security deposit (however labeled) of more than one month's rent on top of first month's rent, and may not call any deposit \"nonrefundable.\" Within 21 days after you move out, the landlord must return what is left of the deposit with an itemized statement and receipts. The landlord may not deduct for ordinary wear and tear or damage that was there before you moved in, and must offer a walk-through inspection before move-out and photograph the unit to support any deductions.",
+   "key_value": "1 month's rent cap (2 months for qualifying small landlords); return within 21 days",
+   "coverage_conditions": "Security deposits for residential rental property in California used as the tenant's home. The one-month cap applies to security demanded or collected on or after July 1, 2024. Since January 1, 2025, landlords must show proof that the repairs were done. Since April 1, 2025, landlords must take move-out photos before and after repairs or cleaning. Tenancies starting on or after July 1, 2025 also need move-in photos. Since January 1, 2026, a deposit must be returned electronically if the tenant paid electronically (AB 414). Since April 1, 2025, if a service member is charged a higher deposit, the landlord must explain why in writing and return the extra amount within 6 months if the tenant is current on rent.",
+   "exemptions": "Small landlord exception to the cap: a natural person (including a family trust) or an LLC whose members are all natural persons, owning no more than two residential rental properties with no more than four units for rent in total, may charge up to two months' rent. This exception does not apply when the tenant is a service member. A landlord may also take an advance payment of at least six months' rent on a lease of six months or longer. Security collected before July 1, 2024 is not subject to the cap. Receipts are not required when repair and cleaning deductions total $125 or less, unless the tenant asks for them within 14 days. The move-out inspection notice does not apply when the tenancy ends under CCP \u00a7 1161(2)-(4). Electronic return is not required if the landlord and tenant agreed in writing to another method.",
+   "effective_date": "2024-07-01",
+   "citation": "Cal. Civ. Code \u00a7 1950.5",
+   "penalty": "For bad-faith retention or demand, the tenant can get statutory damages of up to twice the deposit plus actual damages. For bad-faith noncompliance with the return and itemization rules, the landlord loses any claim to the deposit (\u00a7 1950.5(m)).",
+   "coverage": {
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "min_building_age_years": null,
+    "unresolvable_conditions": []
+   },
+   "exemption_tests": [
+    {
+     "description": "Small landlord (natural person, family trust, or LLC whose members are all natural persons) owning no more than two residential rental properties with no more than four units in total may charge up to two months' rent; does not apply to service-member tenants.",
+     "if_units_at_most": 4,
+     "if_built_after": null,
+     "if_younger_than_years": null,
+     "needs_unknown_fact": true
+    }
+   ],
+   "yields_to_local_rule": false,
+   "displaces_state_rule": false,
+   "conflict_type": "none",
+   "conflict_note": null,
+   "confidence": 0.9,
+   "reason": "All 13 candidates describe provisions of Cal. Civ. Code \u00a7 1950.5 (AB 12 cap, return deadline, deductions, inspection, photos, service-member and electronic-return amendments), so they merge into one record citing the statute text from D025."
+  }
+ ]
+}

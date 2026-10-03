@@ -1,0 +1,9 @@
+{
+ "doc_id": "D058",
+ "doc_sha256": "80dcf6692b891859e2601c0732252ba30ec010b5034749c4693ef68ce1fd4281",
+ "model": "claude-opus-5-5",
+ "extracted_at": "2026-10-03T21:23:35+00:00",
+ "rules": [],
+ "dropped": [],
+ "notes": "D058 (M.G.L. c. 186, \u00a7 31) covers a procedural requirement for notices to quit for nonpayment of rent. The landlord must attach a state-developed form that lists rental assistance resources and court rules and includes a statement that the notice is not an eviction. Courts may not accept a nonpayment eviction filing without proof the form was delivered. This is notice-to-quit procedure, which is explicitly out of scope. The section does not limit the reasons a landlord may end a tenancy, so it is not a just_cause_eviction rule. It also does not touch rent caps, security deposits, fees, screening or algorithmic pricing. No records were extracted."
+}
