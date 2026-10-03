@@ -6,7 +6,7 @@ Built for the RealPage × Hack-Nation challenge (7th Global AI Hackathon, Octobe
 
 > **Not legal advice.** This is a research prototype. It summarizes public law text and can be wrong. Check the cited source and talk to a lawyer or local housing agency before acting.
 
-**Live demo:** _link added after deploy_
+**Live demo:** https://glustrio.github.io/rental-law-navigator/
 
 ## What it does
 
