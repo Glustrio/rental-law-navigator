@@ -3,7 +3,8 @@ import { lookup, parseDate } from "./engine.js";
 const T = {
   en: {
     disclaimer: "<strong>Not legal advice.</strong> This prototype summarizes public law text for research. Check the cited source, and talk to a lawyer or your local housing agency before acting.",
-    title: "Rental Housing Law Navigator",
+    kicker: "Rental Housing Law Navigator · CA · NJ · MA",
+    title: "What the law says about this address",
     subtitle: "Which rules cover an apartment on a given date, and what is about to change. Every answer cites the law it comes from.",
     tab_lookup: "Address lookup", tab_changes: "What's changing", tab_rules: "All rules", tab_method: "How it works",
     address_label: "Any address in California, New Jersey or Massachusetts",
@@ -37,14 +38,15 @@ const T = {
     changes_lede: "Change tests from the challenge, run against all 500 sample addresses. Pick a test to map the addresses it affects. Each test is also checked automatically against the behavior the brief expects.",
     affected: "affected", flagged: "flagged for conflict", matched: "Matched rules", show_map: "Show on map",
     check_pass: "Self-check passed", check_fail: "Self-check failed",
-    map_caption: (t, n, f) => `${t}: ${n} affected addresses (blue)${f ? `, ${f} flagged for conflict (orange)` : ""}.`,
+    map_caption: (t, n, f) => `${t}: ${n} affected addresses (dark)${f ? `, ${f} flagged for conflict (red)` : ""}.`,
     all_juris: "All jurisdictions", all_cats: "All categories", any_status: "Any status",
     rules_count: (n, m) => `${n} of ${m} rules extracted from the corpus.`,
     footer: "Built for the RealPage × Hack-Nation challenge. Public data only. Not legal advice.",
   },
   es: {
     disclaimer: "<strong>No es asesoría legal.</strong> Este prototipo resume leyes públicas con fines de investigación. Revise la fuente citada y consulte a un abogado o a la agencia de vivienda local antes de actuar.",
-    title: "Navegador de Leyes de Vivienda en Alquiler",
+    kicker: "Navegador de Leyes de Vivienda en Alquiler · CA · NJ · MA",
+    title: "Lo que dice la ley sobre esta dirección",
     subtitle: "Qué reglas cubren un apartamento en una fecha dada y qué está por cambiar. Cada respuesta cita la ley de donde viene.",
     tab_lookup: "Buscar dirección", tab_changes: "Qué está cambiando", tab_rules: "Todas las reglas", tab_method: "Cómo funciona",
     address_label: "Cualquier dirección en California, Nueva Jersey o Massachusetts",
@@ -78,7 +80,7 @@ const T = {
     changes_lede: "Pruebas de cambio del reto, aplicadas a las 500 direcciones de muestra. Elija una prueba para ver en el mapa las direcciones afectadas. Cada prueba también se verifica automáticamente contra el comportamiento esperado.",
     affected: "afectadas", flagged: "marcadas por conflicto", matched: "Reglas asociadas", show_map: "Ver en el mapa",
     check_pass: "Autoverificación aprobada", check_fail: "Autoverificación fallida",
-    map_caption: (t, n, f) => `${t}: ${n} direcciones afectadas (azul)${f ? `, ${f} marcadas por conflicto (naranja)` : ""}.`,
+    map_caption: (t, n, f) => `${t}: ${n} direcciones afectadas (oscuro)${f ? `, ${f} marcadas por conflicto (rojo)` : ""}.`,
     all_juris: "Todas las jurisdicciones", all_cats: "Todas las categorías", any_status: "Cualquier estado",
     rules_count: (n, m) => `${n} de ${m} reglas extraídas del corpus.`,
     footer: "Hecho para el reto RealPage × Hack-Nation. Solo datos públicos. No es asesoría legal.",
@@ -315,7 +317,7 @@ function renderLookup() {
       </div>
     </div>
     ${factsForm(state.base)}
-    <p class="note">${t("answer_as_of", esc(asOfValue))}</p>
+    <p class="asof">${t("answer_as_of", esc(asOfValue))}</p>
     <div class="summary-bar">${Object.entries(counts).map(([k, n]) => `${badge(k)} <span class="note">${n}</span>`).join(" ")}</div>
     ${meansForYou(results)}`;
 
@@ -324,11 +326,11 @@ function renderLookup() {
     const rule = state.byId[r.team_rule_id];
     (byCat[rule.category] ||= []).push([r, rule]);
   });
-  for (const cat of Object.keys(CATEGORY.en)) {
-    html += `<h3 class="cat">${CATEGORY[state.lang][cat]}</h3>`;
+  Object.keys(CATEGORY.en).forEach((cat, i) => {
+    html += `<h3 class="cat"><span class="sec">§ ${i + 1}</span>${CATEGORY[state.lang][cat]}</h3>`;
     const items = byCat[cat] || [];
     html += items.length ? items.map(([r, rule]) => ruleCard(rule, r)).join("") : `<div class="card note">${t("no_rule_cat")}</div>`;
-  }
+  });
   out.innerHTML = html;
 
   $("#facts").addEventListener("submit", (e) => {
@@ -358,13 +360,14 @@ function ruleCard(rule, r) {
     r && r.needs_review ? `<div class="flagbox"><strong>${t("review")}</strong> ${rule.source_origin === "supplement" ? t("review_secondary") : t("review_low")}</div>` : "",
   ].join("");
   return `
-    <article class="card rule">
-      <div class="rule-head">
-        <h4>${esc(ruleText(rule, "title"))}</h4>
-        <div class="badges">${r ? badge(r.result) : badge(rule.status)}
-          ${r && r.conflict_flag ? `<span class="badge flag">Conflict</span>` : ""}
-          ${r ? `<span class="conf" title="${t("confidence")}">${Math.round(r.confidence * 100)}%</span>` : ""}</div>
+    <article class="rule">
+      <div class="margin">
+        ${r ? badge(r.result) : badge(rule.status)}
+        ${r && r.conflict_flag ? `<span class="badge flag">${state.lang === "es" ? "Conflicto" : "Conflict"}</span>` : ""}
+        <span class="conf">${t("confidence")} <b>${Math.round((r ? r.confidence : rule.confidence ?? 0) * 100)}%</b></span>
       </div>
+      <div class="body">
+      <h4>${esc(ruleText(rule, "title"))}</h4>
       ${summary ? `<p class="summary">${esc(summary)}</p>` : ""}
       <p class="req">${esc(ruleText(rule, "requirement"))}</p>
       ${r ? `<p class="why">${esc(lead || r.explanation)}</p>` : ""}
@@ -374,7 +377,6 @@ function ruleCard(rule, r) {
         <span>${esc(rule.jurisdiction)} · ${rule.level}</span>
         ${rule.effective_date ? `<span>${t("effective")} ${esc(rule.effective_date)}</span>` : ""}
         ${ruleText(rule, "key_value") ? `<span>${t("key_value")}: ${esc(ruleText(rule, "key_value"))}</span>` : ""}
-        ${r ? "" : `<span>${t("confidence")} ${Math.round((rule.confidence ?? 0) * 100)}%</span>`}
       </div>
       ${flags}
       <details>
@@ -387,6 +389,7 @@ function ruleCard(rule, r) {
         ${rule.interaction ? `<p><strong>${t("precedence")}:</strong> ${esc(rule.interaction)}</p>` : ""}
         <p class="note">${t("rule_id")} ${esc(rule.team_rule_id)}${rule.also_supported_by?.length ? ` · ${rule.also_supported_by.map(esc).join(", ")}` : ""}</p>
       </details>
+      </div>
     </article>`;
 }
 
@@ -428,7 +431,7 @@ function renderChanges() {
       <article class="card test ${state.mapTest === test.test_id ? "active" : ""}">
         <div class="rule-head">
           <h4>${esc(test.test_id)} · ${esc(test.title)}</h4>
-          ${check ? `<span class="badge ${check.passed ? "applies" : "pending"}">${check.passed ? "✓ " + t("check_pass") : "✗ " + t("check_fail")}</span>` : ""}
+          ${check ? `<span class="badge ${check.passed ? "applies" : "pending"}">${check.passed ? t("check_pass") : t("check_fail")}</span>` : ""}
         </div>
         <p class="note">${esc(test.expected_behavior || "")}</p>
         <p>${esc(c.notes)}</p>
@@ -456,8 +459,8 @@ function showOnMap(testId) {
   const flagged = new Set(c.conflict_flag_address_ids);
   const markers = c.affected_address_ids.map((id) => state.addresses[id]).filter((a) => a.lat != null).map((a) =>
     L.circleMarker([a.lat, a.lon], {
-      radius: 5, weight: 1, color: flagged.has(a.address_id) ? "#c2410c" : "#1f5f8b",
-      fillColor: flagged.has(a.address_id) ? "#f97316" : "#3b82c4", fillOpacity: 0.8,
+      radius: 5, weight: 1.5, color: flagged.has(a.address_id) ? "#5e1f12" : "#1b1f24",
+      fillColor: flagged.has(a.address_id) ? "#b8432a" : "#2f4f6f", fillOpacity: 0.85,
     }).bindPopup(`${esc(a.street)}, ${esc(a.postal_city)}<br><a href="#${a.address_id}">${a.address_id}</a>`));
   state.mapLayer = L.featureGroup(markers).addTo(state.map);
   if (markers.length) state.map.fitBounds(state.mapLayer.getBounds(), { padding: [20, 20] });
@@ -477,7 +480,7 @@ function renderAll() {
   $("#method").innerHTML = state.method.html;
   $("#examples").innerHTML = EXAMPLES.filter((id) => state.addresses[id])
     .map((id) => `<button type="button" data-addr="${id}">${esc(state.addresses[id].street)}, ${esc(state.addresses[id].postal_city)}</button>`).join(" ")
-    + ` <button type="button" data-live="${esc(LIVE_EXAMPLE)}">${esc(LIVE_EXAMPLE)} ★</button>`;
+    + ` <button type="button" data-live="${esc(LIVE_EXAMPLE)}">${esc(LIVE_EXAMPLE)}</button>`;
   renderLookup();
 }
 
